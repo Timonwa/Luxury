@@ -1,0 +1,53 @@
+
+/*the media query is what makes my site a responsive site to diff screen size*/
+
+/*when the browser screen size is below 800px, the css effect would take place*/
+/* for the individual listings and posts*/
+@media(max-width: 800px){
+
+    #private, #hostel, #shared{
+        width:40%;
+        float:left;
+        margin: 20px;
+    }
+
+    .post, .post2{
+        width:30%;
+        float:left;
+        margin: 10px 10px;
+    }
+ }
+
+ /*when the browser screen size is below 700px, the css effect would take place*/
+ /* for the individual listings and posts*/
+@media(max-width: 700px){
+
+   #private, #hostel, #shared{
+       width:100%;
+       float:none;
+       margin: 20px 0;
+   } 
+    .post, .post2{
+        width:40%;
+        float:left;
+        margin: 20px 20px;
+    }
+}
+
+/*when the browser screen size is below 600px, the css effect would take place*/
+/* for the individual posts welcome section*/ 
+@media(max-width: 620px){
+    .post, .post2{
+        width:80%;
+        margin: 10%;
+        height:300px;
+    }
+
+    .postPictures{
+        height: 145px;
+    }
+ 
+    #wlc-space{
+        padding-bottom: 40px;
+    }
+}

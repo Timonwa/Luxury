@@ -1,0 +1,206 @@
+/** the part defines the general styles of elements in the whole pages */
+/* body of the pages */
+body {
+  line-height: 1rem;
+}
+
+/* nav bar */
+nav {
+  line-height: normal;
+}
+
+/* to ensure that when you click on an id link, the header will not cover the  beginning of the content the id is pointing to */
+[id] {
+  scroll-margin-top: 5em;
+}
+
+/* the header where the picture, welcome and search bar is in */
+header {
+  background-image: url("../img/bedroom.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+/*the search container*/
+/*defines the properties of both dropdowns(accomodation and location)*/
+select {
+  background-color: #eee;
+  font-size: 18px;
+  width: 240px;
+  border-radius: 3px;
+}
+
+/*the search container*/
+/*defines the property of the search button*/
+.form-group > .search {
+  background-color: #2d7187;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #404b4f;
+  border-radius: 5px;
+}
+
+/*the search container*/
+/*defines the property of the filter button*/
+.form-group > .filter {
+  background-color: white;
+  color: rgb(90, 88, 88);
+  font-size: 20px;
+  border: 1px solid #404b4f;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+/* the review section */
+/* the fines the property of the contents(reviews, names and photo) */
+.reviews > div > div > div {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* the post section */
+/* the verification badge of posts that have been verified or posted by users that have been verified by the system */
+.verified {
+  font-size: 12px;
+  background-color: white;
+  color: green;
+  font-weight: 500;
+}
+
+/* the post section */
+/* the ratings badge that shows ratings gotten from the reviews that users have given the post after using the service*/
+.ratings {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* the post section */
+/* highlighting the price of the accomodation on the posts */
+code {
+  font-weight: bold;
+  font-size: 18px;
+  color: #f11313;
+}
+
+/* the post section */
+/* photos of posts */
+.posts img {
+  height: 300px;
+  width: 200px;
+}
+
+/* the post section */
+/* the chat, video inspection and book inspection button on the post */
+.btn-group {
+  font-size: 18px;
+}
+
+/* the post section */
+/* pagination for posts*/
+#pagination {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* footer */
+/*the footer container*/
+footer {
+  background-color: #8cafbb;
+  color: #000;
+  font-size: 16px;
+}
+
+/* footer */
+/* list in footer */
+footer li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* footer */
+/* contact in footer */
+.contact {
+  font-weight: 500;
+}
+
+/* whatsapp external link*/
+/*the whatsapp container*/
+#whatsappCTA {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* whatsapp external link */
+/* whatsapp link */
+#whatsapp {
+  border-radius: 5px;
+  background-color: rgb(65, 197, 65);
+  color: #fff;
+  margin: 0 0 20px;
+}
+
+/** this next part defines how all the links in general on the website interact with the user */
+/** navigation links */
+nav a:link {
+  text-decoration: none;
+  color: #107bff;
+}
+
+/** the post links */
+.posts a {
+  color: black;
+}
+
+.posts a:link {
+  text-decoration: none;
+}
+
+.posts a:hover {
+  color: #107bff;
+}
+
+/** pagination links */
+#pagination > ul > li > a {
+  color: black;
+}
+
+#pagination > ul > li > a:hover {
+  background-color: #107cff6b;
+}
+
+/** footer */
+/* footer link */
+footer a {
+  color: #000;
+}
+
+/* footer hover */
+footer a:hover {
+  text-decoration: none;
+  color: #fafbfc;
+}
+
+/** whatsapp link */
+#whatsapp:hover {
+  color: rgb(63, 54, 54);
+}
+/* whatsapp active */
+#whatsapp:active {
+  border-color: white;
+}
+
+/** post.html where the detailed description of the advert is shown */
+/* the font-size of the paragraph of the review by users on the posted accomodation */
+.reviews > div > div > .post {
+  font-size: 16px;
+}
+/* the font-size of the date posted of the review by users on the posted accomodation */
+.reviews > div > div > .post-date {
+  font-size: 12px;
+}
