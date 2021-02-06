@@ -64,8 +64,16 @@ select {
 }
 
 /* the post section */
+#post, #post2{
+  position: relative;
+}
+
 /* the verification badge of posts that have been verified or posted by users that have been verified by the system */
 .verified {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
   font-size: 12px;
   background-color: white;
   color: green;
@@ -77,6 +85,12 @@ select {
 .ratings {
   font-size: 10px;
   font-weight: 500;
+  position: abslute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background: #fff;
+  padding: 0;
 }
 
 /* the post section */
@@ -107,7 +121,23 @@ code {
   font-weight: bold;
 }
 
-/* footer */
+/* cta to people to post their property with us */
+.reg-here>div{
+  background-color: #607279;
+  line-height: 1.2rem;
+}
+.reg-here>div>p{
+font-size: 22px;
+}
+.reg-here>div>span>button{
+font-size: 22px;
+font-weight:500;
+border: solid 2px #fff;
+color: #fff;
+
+}
+
+/** footer */
 /*the footer container*/
 footer {
   background-color: #8cafbb;
@@ -131,18 +161,23 @@ footer li {
 
 /* whatsapp external link*/
 /*the whatsapp container*/
-#whatsappCTA {
-  font-size: 16px;
-  font-weight: bold;
+#whatsappCTA a {
+  font-size: 30px;
+  position: fixed;
+  bottom: 50%;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  padding: 10px;
 }
 
-/* whatsapp external link */
-/* whatsapp link */
-#whatsapp {
-  border-radius: 5px;
-  background-color: rgb(65, 197, 65);
-  color: #fff;
-  margin: 0 0 20px;
+.cta-btns button{
+  max-width: 150px;
 }
 
 /** this next part defines how all the links in general on the website interact with the user */
@@ -186,14 +221,6 @@ footer a:hover {
   color: #fafbfc;
 }
 
-/** whatsapp link */
-#whatsapp:hover {
-  color: rgb(63, 54, 54);
-}
-/* whatsapp active */
-#whatsapp:active {
-  border-color: white;
-}
 
 /** post.html where the detailed description of the advert is shown */
 /* the font-size of the paragraph of the review by users on the posted accomodation */
@@ -203,4 +230,26 @@ footer a:hover {
 /* the font-size of the date posted of the review by users on the posted accomodation */
 .reviews > div > div > .post-date {
   font-size: 12px;
+}
+
+/** sign in with social media link  */
+.twitter-signin{
+  background-color: #55acee;
+}
+.fb-signin{
+  background-color: #3b5999;
+}
+.google-signin{
+  background-color: #dd4b39;
+}
+
+.table{
+  font-size: 12px;
+}
+.table [colspan]{
+  font-size: 14px;
+  background-color: #8cafbb;
+}
+.table th, .table td{
+  padding: 0 10px;
 }

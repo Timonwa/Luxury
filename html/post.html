@@ -109,73 +109,285 @@
       <section class="posts d-flex flex-column m-2 ml-5 mr-5">
         <!-- name of the advert -->
         <h4 class=" mb-0 p-0">Grey Hostel</h4>
-        <div class="d-flex flex-wrap">
-          <!-- badge of verification for ads that have been verfied or are from verified users -->
-          <div class="d-inline verified pl-1 pr-1"><i class=" fa fa-check-circle"></i> verified</div>
-          <div class="mt-2 mb-2">
-            <div class="d-flex flex-column flex-wrap border ">
+        <div>
+          <div class="row mt-2 mb-2">
+            <div id="post" class="d-flex flex-wrap flex-row border align-self-center justify-content-center text-center">
+              <!-- badge of verification for ads that have been verfied or are from verified users -->
+              <div class=" verified pl-1 pr-1"><i class=" fa fa-check-circle"></i> verified</div>
               <!-- images of the adverts -->
-              <img
-                class="p-0 col-4 rounded-0 align-self-center"
-                style="height: 800px; width:1000px;"
-                src="../img/post_images/hostel.jpg"
-                alt=""
-              />
-              <!-- name and location of the advertized accomodation -->
-              <div class="ratings border d-inline-flex p-0 m-0 text-center">
-                  <div class= "pl-1 pr-1">
-                    <p class="m-0">Ratings</p>
-                    <div class="m-0 p-0">
-                    <i class="fa fa-star text-info text-secondary"></i>
-                    <i class="fa fa-star text-info text-secondary"></i>
-                    <i class="fa fa-star text-info text-secondary"></i>
-                    <i class="fa fa-star text-info text-secondary"></i>
-                    <i class="fa fa-star text-info text-secondary"></i>
-                    <span>5/5</span>
-                    </div>
-                    <!-- the save button to save posts -->                    
-                    <span class="flex-fill"><span><i style="font-size:20px" class="fa fa-heart text-danger"> Save</i></span>
-                  </div>
-                </div>
-                <!-- the basic features that the accomodation has -->
-                <div class="d-flex border text-center col-12 p-0 mt-0 bg-white">
-                  <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-toilet text-secondary"> toilet</i><span style="font-size:16px"> 1</span></span></span>
-                  <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bath text-secondary"> bathroom</i><span style="font-size:16px"> 1</span></span></span>
-                  <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bed text-secondary"> bedroom</i><span style="font-size:16px"> 1</span></span></span>
-                  <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-car text-secondary"> car space</i><span style="font-size:16px"> 1</span></span></span>
-                  <span class="flex-fill"><span class="text-secondary" style="font-size:16px; font-weight:bold;">AC</span><span style="font-size:16px"> yes</span></span></span>
-                  <span class="flex-fill"><span class="text-secondary" style="font-size:16px; font-weight:bold;">GEN</span><span style="font-size:16px"> yes</span></span></span>
-                </div>
-                <div class="ml-5 mr-5 p-2 align-self-center">
-                  <!-- title of the post -->
-                <h5 class=" mb-0 ">Grey Hostel</h5>
-                <!-- location of the accomodation -->
-                <h6  class="m-0 p-0"><small>Yaba, Lagos</small></h6>
-                <!-- price of the accomodation -->
-                <p class="m-0 p-0 text-muted"><small><code>200,000</code> per session</small></p>
-                <!-- property description of the accomodation -->
-                <h6 class="mb-0 " >Property Description</h6>
-                <p class="mb-0 " style="font-size: 14px">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-                  iure atque animi? Odio doloribus sint dolorem harum atque nobis
-                  repellendus?
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem nesciunt molestias modi voluptates atque sed quas maxime tenetur aliquid deleniti totam repellendus ab obcaecati dolorem nostrum distinctio quisquam. Id!
-                  Alias rerum quidem adipisci minima neque nemo iusto blanditiis. Voluptate voluptatem, consectetur nemo harum nam laudantium! Commodi, tempora totam neque, consequatur pariatur, temporibus cum assumenda illum eum aliquam saepe ab.
-                  Facere repudiandae, at ipsa porro obcaecati expedita assumenda neque, quam nemo sed deserunt quasi sequi cupiditate nisi vitae optio iure blanditiis fuga atque accusantium ex nostrum numquam facilis. Maiores, iusto?
-                  Vero molestias numquam qui impedit quod itaque rem cumque, asperiores consequuntur quaerat rerum explicabo? Error ipsam commodi maiores, dignissimos provident necessitatibus magni vero nobis rerum soluta consequatur quos cumque excepturi.
-                </p>
+          <img
+          class="p-0 col-4 rounded-0 align-self-center"
+          style="max-height: 800px; max-width:1000px;"
+          src="../img/post_images/hostel.jpg"
+          alt=""
+          />  
+          <!--* ratings and save button -->
+          <div class="ratings border d-inline-flex p-0 m-0 text-center">
+            <!-- overall ratings of the accomodation -->
+            <div class= "pl-1 pr-1 border">
+              <p class="m-0">Overall Ratings</p>
+              <div class="m-0 p-0">
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <span>5/5</span>
               </div>
-              <!--* call to action on the post -->
-              <div class="d-flex flex-warp btn-group ml-5 mb-3 mt-1 ">
-                <!-- the chat with agent button -->
-                <button class="flex-item btn-primary ml-1 mr-1 p-1 rounded"><a href="#"></a>Chat</button>
-                <!-- the book a video call inspection button -->
-                <button class="flex-item btn-primary ml-1 mr-1 p-1 rounded"><a href="#"></a>Video Call</button>
-                <!-- the book a physical inspection button -->
-                <button class="flex-item btn-primary ml-1 mr-1 p-1 rounded"><a href="#"></a>Book Inspection</button>
+            </div>
+            <!-- value for money ratings of the accomodation -->
+            <div class= "pl-1 pr-1 border">
+              <p class="m-0">Value for money</p>
+              <div class="m-0 p-0">
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <span>5/5</span>
+              </div>
+            </div>
+            <!-- neatness ratings of the accomodation -->
+            <div class= "pl-1 pr-1 border">
+              <p class="m-0">Neatness</p>
+              <div class="m-0 p-0">
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <span>5/5</span>
+              </div>
+            </div>
+            <!-- comfort ratings of the accomodation -->
+            <div class= "pl-1 pr-1 border">
+              <p class="m-0">Comfort</p>
+              <div class="m-0 p-0">
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <i class="fa fa-star text-info text-secondary"></i>
+                <span>5/5</span>
               </div>
             </div>
           </div>
+          <!-- the basic features that the accomodation has -->
+          <div class="d-flex border text-center col-12 p-0 mt-0 bg-white">
+            <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-toilet text-secondary"> toilet</i><span style="font-size:16px"> 1</span></span></span>
+            <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bath text-secondary"> bathroom</i><span style="font-size:16px"> 1</span></span></span>
+            <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bed text-secondary"> bedroom</i><span style="font-size:16px"> 1</span></span></span>
+            <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-car text-secondary"> car space</i><span style="font-size:16px"> 1</span></span></span>
+              <!-- the save button to save posts -->
+              <span class=" text-danger flex-fill"><span style="font-size: 22px;"><i style="font-size:16px" class="fa fa-heart text-danger"></i> save</span></span>
+          </div>
+          <!--* details and description of the accomodation -->
+          <div class="ml-5 mr-5 p-2 align-self-center">
+            <!-- title of the post -->
+            <h5 class=" mb-0 ">Grey Hostel</h5>
+            <!-- location of the accomodation -->
+            <h6  class="m-0 p-0"><small>Yaba, Lagos</small></h6>
+            <!-- price of the accomodation -->
+            <p class="m-0 p-0 text-muted"><small><code>200,000</code> per session</small></p>
+            <!-- property description title of the accomodation -->
+            <h6 class="mb-0 " >Property Description</h6>
+            <!-- property description  -->
+              <p class="mb-0 " style="font-size: 14px">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+              iure atque animi? Odio doloribus sint dolorem harum atque nobis
+              repellendus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem nesciunt molestias modi voluptates atque sed quas maxime tenetur aliquid deleniti totam repellendus ab obcaecati dolorem nostrum distinctio quisquam. Id!
+              </p>
+              <!-- table showing other property details -->
+              <table class="table table-bordered table-striped m-0 mt-3 ">
+                <thead>
+                    <tr>
+                      <th class="text-center" colspan="4">Type</th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                      <th>Type</th>
+                      <th>No per room</th>
+                      <th>Gender</th>
+                      <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td scope="row">Hostel</td>
+                      <td>2</td>
+                      <td>Female</td>
+                      <td></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                      <th class="text-center" colspan="4">Payment method</th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                      <th>Duration</th>
+                      <th>Price</th>
+                      <th>Installmental payments</th>
+                      <th>Slots available</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td scope="row">per school session</td>
+                      <td>200,000</td>
+                      <td scope="row">no</td>
+                      <td>5</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                      <th class="text-center" colspan="4">Rooms</th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                      <th>Room</th>
+                      <th>Kitchen</th>
+                      <th>Toilet</th>
+                      <th>Bathroom</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td scope="row">1</td>
+                      <td>1</td>
+                      <td >1</td>
+                      <td>1</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                      <th class="text-center" colspan="4">Facilities/Utilities</th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                      <th>Bed</th>
+                      <th>Matress</th>
+                      <th>Electricity</th>
+                      <th>Water</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td scope="row">Yes</td>
+                      <td>No</td>
+                      <td scope="row">24hrs</td>
+                      <td>constant</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                      <th>Fan</th>
+                      <th>AirCon</th>
+                      <th>Cupboard</th>
+                      <th>Wardrobe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td scope="row">Yes</td>
+                      <td>Yes</td>
+                      <td scope="row">No</td>
+                      <td>Yes</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                      <th>Gas</th>
+                      <th>Gen</th>
+                      <th>Wifi</th>
+                      <th>Reading/Commom room</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td scope="row">Yes</td>
+                      <td>Yes</td>
+                      <td scope="row">No</td>
+                      <td>No</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                      <th>Cleaning service</th>
+                      <th>Laundering service</th>
+                      <th>Security</th>
+                      <th>Visitation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td scope="row">Yes</td>
+                      <td>Yes</td>
+                      <td scope="row">Yes</td>
+                      <td>Allowed</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                      <th class="text-center" colspan="4">
+                        Inspection
+                    </th>
+                    </tr>
+                </thead>
+                <thead>
+                  <tr>
+                    <th>Inspection days</th>
+                    <th>Inspection hours</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td scope="row">Mon, Thurs</td>
+                      <td>12pm-2pm</td>
+                      <td scope="row"></td>
+                      <td></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                      <th class="text-center" colspan="4">Additional info</th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                      <th>Proximity to road</th>
+                      <th>Proximity to market</th>
+                      <th>Proximity to school</th>
+                      <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td scope="row">5/5</td>
+                      <td>5/5</td>
+                      <td>4/5</td>
+                      <td></td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+        
+        <!--* call to action on the post -->
+        <div class="cta-btns d-flex flex-warp flex-fill justify-content-around btn-group pb-3 pt-2 ml-2 mr-2">
+            <!-- the chat with agent button -->
+            <button class="col col-4 btn-primary ml-1 mr-1 p-1 rounded"><a href="#"></a>Chat</button>
+            <!-- the book a video call inspection button -->
+            <button class="col col-4 btn-primary ml-1 mr-1 p-1 rounded"><a href="#"></a>Video Call</button>
+            <!-- the book a physical inspection button -->
+            <button class="col col-4 btn-primary ml-1 mr-1 p-1 rounded"><a href="#"></a>Book Inspection</button>
         </div>
       </section>
 
@@ -253,6 +465,14 @@
         </div>
       </section>
 
+      <section class="reg-here">
+        <div class=" d-flex flex-wrap text-center pl-5 pr-5 pt-3 pb-3 justify-content-center">
+          <p class=" col col-9 text-center font-weight-bold text-white">Do you own a hostel or are you an estate agent or company?<br>List your property for FREE.</p>
+          <span class="">
+            <button class="col btn p-1 pl-2 pr-2">Register here!</button>
+          </span>
+        </div>
+      </section>
 
       <!--* footer -->
       <footer class="d-flex flex-cloumn p-2">
@@ -309,11 +529,9 @@
       </footer>
       
       <!-- whatsapp button visitors can click on to chat with the website representative -->
-      <div class="d-flex-inline flex-column text-center fixed-bottom " id="whatsappCTA" style="bottom:20px;
-    right: -700px;">
-            <!--whatsapp link to chat with the website representative-->
-            <p class="m-0 p-0">Chat with us</p>
-            <a class="btn btn-success btn-outline-dark btn-sm  m-0 p-0 pl-1 pr-1" id="whatsapp" href="https://api.whatsapp.com/send?phone=23480xxxxxxxx" target="_blank">Whatsapp</a>
+      <!-- whatsapp button visitors can click on to chat with the website representative -->
+      <div id="whatsappCTA" >
+        <a alt="whatsapp chat" href="https://wa.me/23480********" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
 

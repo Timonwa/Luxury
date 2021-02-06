@@ -64,16 +64,30 @@
             type="password"
             placeholder="confirm password"
           />
+        <!-- radio button for users to identify if they are looking for accomodation or offering accomodation -->
+        <div class="m-0 mb-3">
+          <p class="pb-1 m-0">Pick one of the service below:</p>
+          <form class="">
+              <input class="" type="radio" />
+              <label class="">looking for accomodation?</label>
+              <input class="" type="radio" />
+            <label class="">offering accomodation?</label>
+          </form>
+        </div>
+        
           <!-- sign up button -->
-          <button class="form-control form-group bg-info text-white">
+          <button class="form-control form-group bg-info text-white m-0">
             Sign Up
           </button>
         </div>
         <!-- checkbox to accept terms and conditions and privacy policy -->
-        <div class="col form-check">
-          <input class="form-check-input" type="checkbox" />I accept the
-          <a href="#">terms and conditions</a> and
-          <a href="#">privacy policy</a>
+        <div>
+         <div class=" form-check">
+            <input class="form-check-input" type="checkbox" />
+            <label class="form-check-label">I accept the
+            <a href="#">terms and conditions</a> and
+            <a href="#">privacy policy</a></label>
+          </div>
         </div>
         <!-- login button for people already registered -->
         <div class="text-center m-5">
@@ -82,17 +96,17 @@
           <p>or sign in using</p>
           <!-- twitter sign in -->
           <span
-            ><i class="fab fa-twitter bg-info rounded-circle p-1 text-white"></i
+            ><i class="twitter-signin fab fa-twitter rounded-circle p-1 m-1 text-white"></i
           ></span>
           <!-- facebook sign in -->
           <span
             ><i
-              class="fab fa-facebook bg-info rounded-circle p-1 text-white"
+              class="fb-signin fab fa-facebook rounded-circle p-1 m-1 text-white"
             ></i
           ></span>
           <!-- google sign in -->
           <span
-            ><i class="fab fa-google bg-info rounded-circle p-1 text-white"></i
+            ><i class=" google-signin fab fa-google rounded-circle p-1 m-1 text-white"></i
           ></span>
         </div>
       </form>
