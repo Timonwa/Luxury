@@ -2,7 +2,7 @@
 /* body of the pages */
 body {
   line-height: 1rem;
-  background-color: #eee;
+  background-color: #eff0f12a;
 }
 
 /* nav bar */
@@ -30,7 +30,7 @@ header {
 /*the search container*/
 /*defines the properties of both dropdowns(accomodation and location)*/
 select {
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.822);
   font-size: 18px;
   width: 240px;
   border-radius: 3px;
@@ -39,21 +39,21 @@ select {
 /*the search container*/
 /*defines the property of the search button*/
 .form-group > .search {
-  background-color: #2d7187;
+  background-color: rgba(45, 112, 135, 0.9);
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  border: 1px solid #404b4f;
+  border: 1px solid hsla(196, 10%, 28%, 0.50);
   border-radius: 5px;
 }
 
 /*the search container*/
 /*defines the property of the filter button*/
 .form-group > .filter {
-  background-color: white;
-  color: rgb(90, 88, 88);
+  background-color: rgba(255, 255, 255, 0.616);
+  color: rgb(63, 62, 62);
   font-size: 20px;
-  border: 1px solid #404b4f;
+  border: 1px solid rgb(64, 75, 79, 0.70);
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
