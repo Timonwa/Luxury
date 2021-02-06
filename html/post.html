@@ -106,81 +106,47 @@
       </header>
 
       <!-- post for the advert of the accomodation in detail -->
-      <section class="posts d-flex flex-column m-2 ml-5 mr-5">
+      <section class="posts d-flex flex-column m-1 ml-5 mr-5">
         <!-- name of the advert -->
-        <h4 class=" mb-0 p-0">Grey Hostel</h4>
+        <h4 class="individual-post mb-0 p-0">Grey Hostel</h4>
         <div>
           <div class="row mt-2 mb-2">
             <div id="post" class="d-flex flex-wrap flex-row border align-self-center justify-content-center text-center">
-              <!-- badge of verification for ads that have been verfied or are from verified users -->
-              <div class=" verified pl-1 pr-1"><i class=" fa fa-check-circle"></i> verified</div>
-              <!-- images of the adverts -->
-          <img
-          class="p-0 col-4 rounded-0 align-self-center"
-          style="max-height: 800px; max-width:1000px;"
-          src="../img/post_images/hostel.jpg"
-          alt=""
-          />  
-          <!--* ratings and save button -->
-          <div class="ratings border d-inline-flex p-0 m-0 text-center">
-            <!-- overall ratings of the accomodation -->
-            <div class= "pl-1 pr-1 border">
-              <p class="m-0">Overall Ratings</p>
-              <div class="m-0 p-0">
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <span>5/5</span>
+            <!-- badge of verification and ratings for ads -->
+            <div class="ratings-verified">
+              <!-- badge of verification  for ads that have been verfied or are from verified users -->
+              <div class="border"><i class=" fa fa-check-circle"></i> verified</div>
+              <!-- ratings of the accomodation by the users -->
+              <div class="border ratings d-inline-flex p-0 m-0 text-center">
+                <div class= "pl-1 pr-1">
+                  <p class="m-0">Ratings 5/5</p>
+                  <div class="m-0 p-0">
+                  <i class="fa fa-star text-info text-secondary"></i>
+                  <i class="fa fa-star text-info text-secondary"></i>
+                  <i class="fa fa-star text-info text-secondary"></i>
+                  <i class="fa fa-star text-info text-secondary"></i>
+                  <i class="fa fa-star text-info text-secondary"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- value for money ratings of the accomodation -->
-            <div class= "pl-1 pr-1 border">
-              <p class="m-0">Value for money</p>
-              <div class="m-0 p-0">
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <span>5/5</span>
-              </div>
+            <img
+            class="p-0 col-4 rounded-0 align-self-center"
+            style="max-height: 800px; max-width:1000px;"
+            src="../img/post_images/hostel.jpg"
+            alt=""
+            />
+            <!-- the basic features that the accomodation has -->
+            <div class="d-flex border text-center col-12 p-0 mt-0">
+              <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-toilet text-secondary"> toilet</i><span style="font-size:16px"> 1</span></span></span>
+              <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bath text-secondary"> bathroom</i><span style="font-size:16px"> 1</span></span></span>
+              <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bed text-secondary"> bedroom</i><span style="font-size:16px"> 1</span></span></span>
+              <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-car text-secondary"> car space</i><span style="font-size:16px"> 1</span></span></span>
             </div>
-            <!-- neatness ratings of the accomodation -->
-            <div class= "pl-1 pr-1 border">
-              <p class="m-0">Neatness</p>
-              <div class="m-0 p-0">
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <span>5/5</span>
-              </div>
-            </div>
-            <!-- comfort ratings of the accomodation -->
-            <div class= "pl-1 pr-1 border">
-              <p class="m-0">Comfort</p>
-              <div class="m-0 p-0">
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <i class="fa fa-star text-info text-secondary"></i>
-                <span>5/5</span>
-              </div>
-            </div>
-          </div>
-          <!-- the basic features that the accomodation has -->
-          <div class="d-flex border text-center col-12 p-0 mt-0 bg-white">
-            <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-toilet text-secondary"> toilet</i><span style="font-size:16px"> 1</span></span></span>
-            <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bath text-secondary"> bathroom</i><span style="font-size:16px"> 1</span></span></span>
-            <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bed text-secondary"> bedroom</i><span style="font-size:16px"> 1</span></span></span>
-            <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-car text-secondary"> car space</i><span style="font-size:16px"> 1</span></span></span>
+            <div>
               <!-- the save button to save posts -->
-              <span class=" text-danger flex-fill"><span style="font-size: 22px;"><i style="font-size:16px" class="fa fa-heart text-danger"></i> save</span></span>
-          </div>
+              <div class="text-danger border pb-1" style="font-size:20px;"><i style="font-size:16px; !important" class="fa fa-heart"></i> save
+            </div>
           <!--* details and description of the accomodation -->
           <div class="ml-5 mr-5 p-2 align-self-center">
             <!-- title of the post -->
@@ -199,7 +165,8 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem nesciunt molestias modi voluptates atque sed quas maxime tenetur aliquid deleniti totam repellendus ab obcaecati dolorem nostrum distinctio quisquam. Id!
               </p>
               <!-- table showing other property details -->
-              <table class="table table-bordered table-striped m-0 mt-3 ">
+              <div id="table">
+                <table class="table table-responsive table-bordered table-striped m-0 mt-3 ">
                 <thead>
                     <tr>
                       <th class="text-center" colspan="4">Type</th>
@@ -376,23 +343,24 @@
                       <td></td>
                     </tr>
                 </tbody>
-              </table>
+                </table>
+            </div>
             </div>
         </div>
         
         <!--* call to action on the post -->
-        <div class="cta-btns d-flex flex-warp flex-fill justify-content-around btn-group pb-3 pt-2 ml-2 mr-2">
+        <div class="cta-btns d-flex flex-warp flex-row flex-fill justify-content-around btn-group m-2">
             <!-- the chat with agent button -->
-            <button class="col col-4 btn-primary ml-1 mr-1 p-1 rounded"><a href="#"></a>Chat</button>
+            <button class="col col-4 btn-primary m-1 p-1 rounded "><a href="#"></a>Chat</button>
             <!-- the book a video call inspection button -->
-            <button class="col col-4 btn-primary ml-1 mr-1 p-1 rounded"><a href="#"></a>Video Call</button>
+            <button class="col col-4 btn-primary m-1 mr-1 p-1 rounded "><a href="#"></a>Video Call</button>
             <!-- the book a physical inspection button -->
-            <button class="col col-4 btn-primary ml-1 mr-1 p-1 rounded"><a href="#"></a>Book Inspection</button>
+            <button class="col col-4 btn-primary m-1 mr-1 p-1 rounded "><a href="#"></a>Book Inspection</button>
         </div>
       </section>
 
       <!-- reviews buy users who have used the accomodation -->
-      <section class="reviews posts d-flex flex-column m-2 ml-5 mr-5 ">
+      <section class="reviews posts d-flex flex-column m-1 ml-5 mr-5 ">
         <h5 class="mb-0 pl-2">Reviews</h5>
         <div class="">
           <!-- review post by users -->

@@ -2,11 +2,16 @@
 /* body of the pages */
 body {
   line-height: 1rem;
+  background-color: #eee;
 }
 
 /* nav bar */
-nav {
+nav,
+.reviews > h4 {
   line-height: normal;
+}
+.reviews > h4 {
+  line-height: 10px;
 }
 
 /* to ensure that when you click on an id link, the header will not cover the  beginning of the content the id is pointing to */
@@ -63,16 +68,25 @@ select {
   margin-right: 20%;
 }
 
+/** about section*/
+#about {
+  background-color: #fff;
+}
+#about img {
+  background-position: center;
+}
+
 /* the post section */
-#post, #post2{
+#post,
+#post2 {
   position: relative;
 }
 
 /* the verification badge of posts that have been verified or posted by users that have been verified by the system */
-.verified {
+.ratings-verified {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: -1px;
   z-index: 1;
   font-size: 12px;
   background-color: white;
@@ -91,6 +105,12 @@ select {
   z-index: 2;
   background: #fff;
   padding: 0;
+  margin: auto;
+}
+.special-ratings {
+  font-size: 10px;
+  font-weight: 500;
+  width: 50%;
 }
 
 /* the post section */
@@ -122,19 +142,18 @@ code {
 }
 
 /* cta to people to post their property with us */
-.reg-here>div{
+.reg-here > div {
   background-color: #607279;
   line-height: 1.2rem;
 }
-.reg-here>div>p{
-font-size: 22px;
+.reg-here > div > p {
+  font-size: 22px;
 }
-.reg-here>div>span>button{
-font-size: 22px;
-font-weight:500;
-border: solid 2px #fff;
-color: #fff;
-
+.reg-here > div > span > button {
+  font-size: 22px;
+  font-weight: 500;
+  border: solid 2px #fff;
+  color: #fff;
 }
 
 /** footer */
@@ -176,7 +195,7 @@ footer li {
   padding: 10px;
 }
 
-.cta-btns button{
+.cta-btns button {
   max-width: 150px;
 }
 
@@ -221,7 +240,6 @@ footer a:hover {
   color: #fafbfc;
 }
 
-
 /** post.html where the detailed description of the advert is shown */
 /* the font-size of the paragraph of the review by users on the posted accomodation */
 .reviews > div > div > .post {
@@ -233,23 +251,24 @@ footer a:hover {
 }
 
 /** sign in with social media link  */
-.twitter-signin{
+.twitter-signin {
   background-color: #55acee;
 }
-.fb-signin{
+.fb-signin {
   background-color: #3b5999;
 }
-.google-signin{
+.google-signin {
   background-color: #dd4b39;
 }
 
-.table{
+.table {
   font-size: 12px;
 }
-.table [colspan]{
+.table [colspan] {
   font-size: 14px;
   background-color: #8cafbb;
 }
-.table th, .table td{
+.table th,
+.table td {
   padding: 0 10px;
 }
