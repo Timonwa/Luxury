@@ -1,7 +1,62 @@
+:root {
+  font-size: 22px;
+  line-height: ;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+
+  /* variables used*/
+  --white: #fff;
+  --black: #000;
+  --bdy: #effaf12a;
+  --ftr: #8cafbb;
+  --primary: #107bff;
+  /* --primary-transparent: #107cff6b; */
+  --payment-duration-clr: #999;
+  --price-clr: #f11313;
+  --features-clr: #6C757D;
+  --table-header: #8cafbb;
+  --verified-clr: #008000;
+  --reg-bg-clr: #607279;
+  --search-dropdn-clr: #eeeeeed2;
+  --header-btn-bdr: #404b4f80;
+  --search-btn: #2d708736;
+  --filter-btn: #ffffffad;
+  --chat-btn: #25d366;
+  --twitter: #55acee;
+  --facebook: #3b5999;
+  --google: #dd4b39;
+}
+@media screen and (min-width: 800px) {
+  /* h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  } */
+  /* h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  } */
+}
+@media screen and (min-width: 992px) {
+}
+
+
 /** the part defines the general styles of elements in the whole pages */
 /* body of the pages */
 body {
-  line-height: 1rem;
   background-color: #eff0f12a;
 }
 
@@ -30,7 +85,7 @@ header {
 /*the search container*/
 /*defines the properties of both dropdowns(accomodation and location)*/
 select {
-  background-color: rgba(238, 238, 238, 0.822);
+  background-color: #eeeeeed2;
   font-size: 18px;
   width: 240px;
   border-radius: 3px;
@@ -39,21 +94,21 @@ select {
 /*the search container*/
 /*defines the property of the search button*/
 .form-group > .search {
-  background-color: rgba(45, 112, 135, 0.9);
+  background-color: #2d7087e6;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  border: 1px solid hsla(196, 10%, 28%, 0.50);
+  border: 1px solid #404b4f80;
   border-radius: 5px;
 }
 
 /*the search container*/
 /*defines the property of the filter button*/
 .form-group > .filter {
-  background-color: rgba(255, 255, 255, 0.616);
-  color: rgb(63, 62, 62);
+  background-color: #ffffff9d;
+  color: #3f3e3e;
   font-size: 20px;
-  border: 1px solid rgb(64, 75, 79, 0.70);
+  border: 1px solid #404b4fb3;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -90,7 +145,7 @@ select {
   z-index: 1;
   font-size: 12px;
   background-color: white;
-  color: green;
+  color: #008000;
   font-weight: 500;
 }
 
