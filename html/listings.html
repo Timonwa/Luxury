@@ -37,19 +37,19 @@
     <div class="fluid-container d-flex flex-column">
 
       <!--* navigation bar -->
-      <nav class="d-flex fixed-top bg-white font-weight-bold shadow-sm border-bottom">
+      <nav id="nav-bar" class="d-flex fixed-top font-weight-bold shadow-sm border-bottom">
         <ul class="nav nav-tabs col-8">
-          <li class="nav-item ml-2"><a href="../index.html" class="navlink">Luxury</a></li>
+          <li class="nav-item ml-2"><a class="nav-links" href="../index.html">Luxury</a></li>
         </ul>
         <ul class="nav nav-tabs col-4 justify-content-end">
-          <li class="nav-item m-auto"><a href="../index.html#about" class="navlink ">About</a></li>
-          <li class="nav-item m-auto"><a href="../html/listings.html" class="navlink ">Listings</a></li>
-          <li class="nav-item ml-auto"><a href="../html/login.html" class="navlink ">Login</a></li>
+          <li class="nav-item m-auto"><a class="nav-links" href="../index.html#about">About</a></li>
+          <li class="nav-item m-auto"><a class="nav-links" href="listings.html">Listings</a></li>
+          <li class="nav-item m-auto"><a class="nav-links" href="login.html">Login</a></li>
         </ul>
       </nav>
 
       <!--* welcome space and search bar space -->
-      <header class="d-flex flex-column card rounded-0 text-center justify-content-center p-3">
+      <header id="header" class="d-flex flex-column card rounded-0 text-center justify-content-center p-3">
         <!-- the greeting and slogan of the website. -->
         <div class="d-flex flex-column">
           <h1 id="greeting">Welcome to LUXURY</h1>
@@ -62,14 +62,14 @@
           <!-- the search space. the user selects the type of accomodation he is looking for and the prefered location and then press search to get matching results -->
           <form class="">
             <div class="form-group m-1">
-              <label class="" id=""
+              <label id="hdr-label"
                 >What type of accomodation are you looking for?</label
               >
             </div>
 
             <!--the dropdown holder for accomdation.-->
             <div class="form-group m-1">
-              <select id="accomodations" name="accomodations">
+              <select class="hdr-dropdn" name="accomodations">
                 <option value="holder">--Select Acommodation--</option>
                 <option value="hostel">Hostel</option>
                 <option value="privatApartment">Private Apartment</option>
@@ -79,7 +79,7 @@
 
             <!--the dropdown holder for location.-->
             <div class="form-group m-1">
-              <select class="" id="locations" name="locations">
+              <select  class="hdr-dropdn" name="locations">
                 <option value="holder">--Select Location--</option>
                 <option value="akoka">Akoka</option>
                 <option value="abuleOja">Abule Oja</option>
@@ -90,13 +90,13 @@
               <!-- search button -->
               <button
                 type="button"
-                class="search btn p-0 pl-1 pr-1 mr-1"
+                id="hdr-search-btn" class="btn p-0 pl-1 pr-1 mr-1"
               >
                 Search
               </button>
               <!-- filter button -->
               <button
-                class="filter btn p-0 pl-1 pr-1 ml-1"
+                id="hdr-filter-btn" class="filter btn p-0 pl-1 pr-1 ml-1"
               >
                 <i class="fas fa-filter"></i>
               </button>
@@ -106,44 +106,43 @@
       </header>
 
       <!--* posts on adverts of accomodation -->
-       <section class=" posts m-1 ml-5 mr-5">
-        <h4 class=" text-center mb-0 p-0">Posts</h4>
-        <div class="">
-          
-          <div class="row mt-2 mb-4 bg-white">
-            <div id="post" class="d-flex flex-wrap flex-row border align-self-center justify-content-center text-center">
+       <section id="ads-space" class="m-1 ml-5 mr-5">
+        <h4 class="section-title text-center mb-0 p-0">Posts</h4>
+        <div>
+          <div class="ads-post row mt-2 mb-4 bg-white">
+            <div class="post d-flex flex-wrap flex-row border align-self-center justify-content-center text-center">
               <!-- badge of verification and ratings for ads -->
               <div class="ratings-verified">
                 <!-- badge of verification  for ads that have been verfied or are from verified users -->
-                <div class="border"><i class=" fa fa-check-circle"></i> verified</div>
+                <div class="verified border"><i class=" fa fa-check-circle"></i> verified</div>
                 <!-- ratings of the accomodation by the users -->
-                <div class="border ratings d-inline-flex p-0 m-0 text-center">
+                <div class="ratings border d-inline-flex p-0 m-0 text-center">
                   <div class= "pl-1 pr-1">
-                    <p class="m-0">Ratings 5/5</p>
-                    <div class="m-0 p-0">
-                    <i class="fa fa-star text-info text-secondary"></i>
-                    <i class="fa fa-star text-info text-secondary"></i>
-                    <i class="fa fa-star text-info text-secondary"></i>
-                    <i class="fa fa-star text-info text-secondary"></i>
-                    <i class="fa fa-star text-info text-secondary"></i>
+                    <p class=" ratings-title m-0">Ratings 5/5</p>
+                    <div class="ratings-star m-0 p-0">
+                      <i class="fa fa-star text-info text-secondary"></i>
+                      <i class="fa fa-star text-info text-secondary"></i>
+                      <i class="fa fa-star text-info text-secondary"></i>
+                      <i class="fa fa-star text-info text-secondary"></i>
+                      <i class="fa fa-star text-info text-secondary"></i>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- images of the adverts -->
               <img
-                class="p-0 col rounded-0"
+                class="ad-pic p-0 col rounded-0"
                 style="max-width:370px"
                 src="../img/post_images/hostel.jpg"
                 alt=""
               />
-              <div class="col col-8 pl-4 pr-4 pt-2 pb-2 align-self-center">
+              <div class="ad col col-8 pl-4 pr-4 pt-2 pb-2 align-self-center">
                 <!-- name and location of the advertized accomodation -->
-                <h6 class=" post-link pt-2 mb-0 text-center"><a href="post.html">Mirabel Hostel | <small>Yaba</small></a></h6>
+                <h6 id="ad-link" class="pt-2 mb-0 text-center"><a class="ad-title" href="post.html">Mirabel Hostel | <small class="ad-location">Yaba</small></a></h6>
                 <!-- price of the accomodation -->
-                <p class="m-0 p-0 text-muted text-center"><small><code>200,000</code> per session</small></p>
+                <p class="ad-duration m-0 p-0 text-muted text-center"><small><code>200,000</code> per session</small></p>
                 <!-- brief description of the accomodation -->
-                <p class="mb-0 text-center" style="font-size: 14px">
+                <p class="ad-p mb-0 text-center" style="font-size: 14px">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
                   iure atque animi? Odio doloribus sint dolorem harum atque nobis
                   repellendus?
@@ -151,27 +150,27 @@
               </div>
             </div>
             <!-- the basic features that the accomodation has -->
-            <div class="d-flex border text-center col-12 p-0 mt-0">
+            <div class="features d-flex border text-center col-12 p-0 mt-0">
               <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-toilet text-secondary"> toilet</i><span style="font-size:16px"> 1</span></span></span>
               <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bath text-secondary"> bathroom</i><span style="font-size:16px"> 1</span></span></span>
               <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bed text-secondary"> bedroom</i><span style="font-size:16px"> 1</span></span></span>
               <!-- <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-car text-secondary"> car space</i><span style="font-size:16px"> 1</span></span></span> -->
               <!-- the save button to save posts -->
-              <span class=" text-danger flex-fill"><span style="font-size: 22px;"><i style="font-size:16px" class="fa fa-heart text-danger"></i> save</span></span>
+              <span class="save-btn text-danger flex-fill"><span style="font-size: 22px;"><i style="font-size:16px" class="fa fa-heart text-danger"></i> save</span></span>
             </div>
           </div>
          
-          <div class="row mt-2 mb-4 bg-white">
-            <div id="post" class=" d-flex flex-wrap flex-row border align-self-center justify-content-center text-center">
+          <div class="ads-post row mt-2 mb-4 bg-white">
+            <div class="post d-flex flex-wrap flex-row border align-self-center justify-content-center text-center">
               <!-- badge of verification and ratings for ads -->
               <div class="ratings-verified">
                 <!-- badge of verification  for ads that have been verfied or are from verified users -->
-                <div class="border"><i class=" fa fa-check-circle"></i> verified</div>
+                <div class="verified border"><i class=" fa fa-check-circle"></i> verified</div>
                 <!-- ratings of the accomodation by the users -->
-                <div class="border ratings d-inline-flex p-0 m-0 text-center">
+                <div class="ratings border d-inline-flex p-0 m-0 text-center">
                   <div class= "pl-1 pr-1">
-                    <p class="m-0">Ratings 5/5</p>
-                    <div class="m-0 p-0">
+                    <p class=" ratings-title m-0">Ratings 5/5</p>
+                    <div class="ratings-star m-0 p-0">
                     <i class="fa fa-star text-info text-secondary"></i>
                     <i class="fa fa-star text-info text-secondary"></i>
                     <i class="fa fa-star text-info text-secondary"></i>
@@ -183,18 +182,18 @@
               </div>
               <!-- images of the adverts -->
               <img
-                class="p-0 col rounded-0"
+                class="ad-pic p-0 col rounded-0"
                 style="max-width:370px"
                 src="../img/post_images/wooden_bunk.jpg"
                 alt=""
               />
-              <div class="col col-8 pl-4 pr-4 pt-2 pb-2 align-self-center">
+              <div class="ad col col-8 pl-4 pr-4 pt-2 pb-2 align-self-center">
                 <!-- name and location of the advertized accomodation -->
-                <h6 class=" post-link pt-2 mb-0 text-center"><a href="post.html">Grey Hostel | <small>Yaba</small></a></h6>
+                <h6 id="ad-link" class="pt-2 mb-0 text-center"><a class="ad-title" href="post.html">Grey Hostel | <small class="ad-location">Yaba</small></a></h6>
                 <!-- price of the accomodation -->
-                <p class="m-0 p-0 text-muted text-center"><small><code>200,000</code> per session</small></p>
+                <p class="ad-duration m-0 p-0 text-muted text-center"><small><code>200,000</code> per session</small></p>
                 <!-- brief description of the accomodation -->
-                <p class="mb-0 text-center" style="font-size: 14px">
+                <p class="ad-p mb-0 text-center" style="font-size: 14px">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
                   iure atque animi? Odio doloribus sint dolorem harum atque nobis
                   repellendus?
@@ -202,27 +201,27 @@
               </div>
             </div>
             <!-- the basic features that the accomodation has -->
-            <div class="d-flex border text-center col-12 p-0 mt-0">
+            <div class="features d-flex border text-center col-12 p-0 mt-0">
               <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-toilet text-secondary"> toilet</i><span style="font-size:16px"> 1</span></span></span>
               <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bath text-secondary"> bathroom</i><span style="font-size:16px"> 1</span></span></span>
               <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bed text-secondary"> bedroom</i><span style="font-size:16px"> 1</span></span></span>
               <!-- <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-car text-secondary"> car space</i><span style="font-size:16px"> 1</span></span></span> -->
               <!-- the save button to save posts -->
-              <span class=" text-danger flex-fill"><span style="font-size: 22px;"><i style="font-size:16px" class="fa fa-heart text-danger"></i> save</span></span>
+              <span class="save-btn text-danger flex-fill"><span style="font-size: 22px;"><i style="font-size:16px" class="fa fa-heart text-danger"></i> save</span></span>
             </div>
           </div>
           
-          <div class="row mt-2 mb-4 bg-white ">
-            <div id="post" class="d-flex flex-wrap flex-row border align-self-center justify-content-center text-center">
+          <div class="ads-post row mt-2 mb-4 bg-white">
+            <div class="post d-flex flex-wrap flex-row border align-self-center justify-content-center text-center">
               <!-- badge of verification and ratings for ads -->
               <div class="ratings-verified">
                 <!-- badge of verification  for ads that have been verfied or are from verified users -->
-                <div class="border"><i class=" fa fa-check-circle"></i> verified</div>
+                <div class="verified border"><i class=" fa fa-check-circle"></i> verified</div>
                 <!-- ratings of the accomodation by the users -->
-                <div class="border ratings d-inline-flex p-0 m-0 text-center">
+                <div class="ratings border d-inline-flex p-0 m-0 text-center">
                   <div class= "pl-1 pr-1">
-                    <p class="m-0">Ratings 5/5</p>
-                    <div class="m-0 p-0">
+                    <p class=" ratings-title m-0">Ratings 5/5</p>
+                    <div class="ratings-star m-0 p-0">
                     <i class="fa fa-star text-info text-secondary"></i>
                     <i class="fa fa-star text-info text-secondary"></i>
                     <i class="fa fa-star text-info text-secondary"></i>
@@ -234,18 +233,18 @@
               </div>
               <!-- images of the adverts -->
               <img
-                class="p-0 col rounded-0"
+                class="ad-pic p-0 col rounded-0"
                 style="max-width:370px"
                 src="../img/post_images/lobby.jpg"
                 alt=""
               />
-              <div class="col col-8 pl-4 pr-4 pt-2 pb-2 align-self-center">
+              <div class="ad col col-8 pl-4 pr-4 pt-2 pb-2 align-self-center">
                 <!-- name and location of the advertized accomodation -->
-                <h6 class=" post-link pt-2 mb-0 text-center"><a href="post.html">Self Con | <small>Yaba</small></a></h6>
+                <h6 id="ad-link" class="pt-2 mb-0 text-center"><a class="ad-title" href="post.html">Self Con | <small class="ad-location">Yaba</small></a></h6>
                 <!-- price of the accomodation -->
-                <p class="m-0 p-0 text-muted text-center"><small><code>200,000</code> per session</small></p>
+                <p class="ad-duration m-0 p-0 text-muted text-center"><small><code>200,000</code> per session</small></p>
                 <!-- brief description of the accomodation -->
-                <p class="mb-0 text-center" style="font-size: 14px">
+                <p class="ad-p mb-0 text-center" style="font-size: 14px">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
                   iure atque animi? Odio doloribus sint dolorem harum atque nobis
                   repellendus?
@@ -253,70 +252,71 @@
               </div>
             </div>
             <!-- the basic features that the accomodation has -->
-            <div class="d-flex border text-center col-12 p-0 mt-0">
+            <div class="features d-flex border text-center col-12 p-0 mt-0">
               <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-toilet text-secondary"> toilet</i><span style="font-size:16px"> 1</span></span></span>
               <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bath text-secondary"> bathroom</i><span style="font-size:16px"> 1</span></span></span>
               <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-bed text-secondary"> bedroom</i><span style="font-size:16px"> 1</span></span></span>
               <!-- <span class="flex-fill"><span><i style="font-size:16px" class="fa fa-car text-secondary"> car space</i><span style="font-size:16px"> 1</span></span></span> -->
               <!-- the save button to save posts -->
-              <span class=" text-danger flex-fill"><span style="font-size: 22px;"><i style="font-size:16px" class="fa fa-heart text-danger"></i> save</span></span>
-            </div>          
+              <span class="save-btn text-danger flex-fill"><span style="font-size: 22px;"><i style="font-size:16px" class="fa fa-heart text-danger"></i> save</span></span>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- cta to people to post their property with us -->
-      <section class="reg-here">
-        <div class=" d-flex flex-wrap text-center pl-5 pr-5 pt-3 pb-3 justify-content-center">
-          <p class=" col col-9 text-center font-weight-bold text-white">Do you own a hostel or are you an estate agent or company?<br>List your property for FREE.</p>
+      <section id="reg-here">
+        <div class="d-flex flex-wrap text-center pl-5 pr-5 pt-3 pb-3 justify-content-center">
+          <p class="reg-p col col-9 text-center font-weight-bold text-white">Do you own a hostel or are you an estate agent or company?<br>List your property for FREE.</p>
           <span class="">
-            <button class="col btn p-1 pl-2 pr-2">Register here!</button>
+            <button id="reg-btn" class="col btn p-1 pl-2 pr-2">Register here!</button>
           </span>
         </div>
       </section>
 
       <!--* footer -->
-      <footer class="d-flex flex-cloumn p-2">
+      <footer id="footer" class="d-flex flex-cloumn p-2">
         <!-- contact section -->
-        <div class="d-flex flex-column col-12 text-center">
-          <div class="m-0 font-weight-bold" id="contactTitle">CONTACT</div>
+        <div class="contact-us d-flex flex-column col-12 text-center">
+          <div class="contact-hdr m-0 font-weight-bold" >CONTACT</div>
           <div class="">
             <!-- website contact number -->
             <span class="contacts">
-              <span class="contact">Phone</span>
-              <span>: <a href="tel:+23480xxxxxxxx">080xxxxxxxx</a>, <a href="tel:+23480xxxxxxxx">080xxxxxxxx</a></span>
+              <span class="contact-title">Phone</span>
+              <span>: <a class="contact-link" href="tel:+23480xxxxxxxx">080xxxxxxxx</a>, <a href="tel:+23480xxxxxxxx">080xxxxxxxx</a></span>
             </span>
 
             <!-- website email address -->
             <span class="contacts">
-              <span class="contact">Email</span>
-              <span>: <a href="mailto:luxury@gmail.com">luxury@gmail.com</a></span>
+              <span class="contact-title">Email</span>
+              <span>: <a class="contact-link" href="mailto:luxury@gmail.com">luxury@gmail.com</a></span>
             </span>
           </div>
           
           <!-- website social media handles -->
-          <div class="m-0">
-            <ul class="justify-content-center p-0 m-0"> 
+          <div class="social-handles m-0">
+            <ul class="d-flex justify-content-center p-0 m-0"> 
               <!-- facebook handle -->
               <li>
-                <a class="socials" alt="facebook handle" href="https://facebook.com/luxury" target="_blank"
+                <a class="socials fb" alt="facebook handle" href="https://facebook.com/luxury" target="_blank"
                   ><i class="fab fa-facebook-square"></i
                 ></a>
               </li>
               <!-- instagram handle -->
               <li>
-                <a class="socials" alt="instagram handle" href="https://instagram.com/luxury" target="_blank"
+                <a class="socials ig" alt="instagram handle" href="https://instagram.com/luxury" target="_blank"
                   ><i class="fab fa-instagram"></i
                 ></a>
               </li>
               <!-- twitter handle -->
               <li>
-                <a class="socials" alt="twitter handle" href="https://www.twitter.com/luxury" target="_blank"
+                <a class="socials twitter" alt="twitter handle" href="https://www.twitter.com/luxury" target="_blank"
                   ><i class="fab fa-twitter-square"></i
                 ></a>
               </li>
               <!-- whatsapp number -->
               <li>
-                <a class="socials" alt="whatsapp handle" href="https://wa.me/23480********" target="_blank"
+                <a class="socials whatsapp" alt="whatsapp handle" href="https://wa.me/23480********" target="_blank"
                   ><i class="fab fa-whatsapp-square"></i
                 ></a>
               </li>
@@ -328,10 +328,9 @@
         </div>
       </footer>
       
-      <!-- whatsapp button visitors can click on to chat with the website representative -->
-      <!-- whatsapp button visitors can click on to chat with the website representative -->
-      <div id="whatsappCTA" >
-        <a alt="whatsapp chat" href="https://wa.me/23480********" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <!-- chat button visitors can click on to chat with the website representative -->
+      <div id="chat-with-us" >
+        <a alt="chat" href="https://wa.me/23480********" target="_blank"><i class="fas fa-comment"></i></a>
       </div>
     </div>
 

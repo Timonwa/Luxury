@@ -1,6 +1,6 @@
 :root {
   font-size: 22px;
-  line-height: ;
+  line-height: 1rem;
   list-style-type: none;
   text-decoration: none;
   text-align: center;
@@ -235,7 +235,7 @@ footer li {
 
 /* whatsapp external link*/
 /*the whatsapp container*/
-#whatsappCTA a {
+#chat-with-us a {
   font-size: 30px;
   position: fixed;
   bottom: 50%;
