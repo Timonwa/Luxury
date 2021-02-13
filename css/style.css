@@ -68,7 +68,6 @@ body {
 nav{
   background-color: var(--white);
   color: var(--primary);
-  line-height: ;
 }
 
 /** to ensure that when you click on an id link, the header will not cover the  beginning of the content the id is pointing to */
@@ -115,7 +114,6 @@ header {
 .section-title, .detail-post-title{
   font-size: 1.5rem;
   padding: 0.4rem 0 0rem 0;
-  border: solid var(--black);
 }
 #detail-post{
   background-color: var(--white);
@@ -230,9 +228,9 @@ code {
   background-color: var(--primary);
   max-width: 7.2rem;
 }
-/*todo pagination for posts*/
-#pagination {
-  font-size: 12px;
+/* pagination for posts */
+.pagination {
+  font-size: 0.54rem;
   font-weight: bold;
 }
 
@@ -334,58 +332,35 @@ color: var(--white);
 background-color: var(--primary);
 }
 
-/** this next part defines how all the links in general on the website interact with the user */
-/** navigation links */
-nav a:link {
-  text-decoration: none;
-  color: #107bff;
+/** LINKS: this next part defines how all the links in general on the website interact with the user */
+/* header form dropdown and filter button */
+.form-group>select:hover, .form-group>#hdr-filter-btn:hover{
+  background-color: var(--table-header);
 }
-
 /** the post links */
-.posts a {
-  color: black;
+#ads-space a:hover{
+text-decoration: none;
+color: var(--primary);
 }
-
-.posts a:link {
-  text-decoration: none;
+/* register here link */
+#reg-btn:hover{
+border:solid var(--black);
 }
-
-.posts a:hover {
-  color: #107bff;
-}
-
-/** pagination links */
-#pagination > ul > li > a {
-  color: black;
-}
-
-#pagination > ul > li > a:hover {
-  background-color: #107cff6b;
-}
-
-/** footer */
 /* footer link */
 footer a {
-  color: #000;
+  color: var(--black);
 }
-
 /* footer hover */
 footer a:hover {
   text-decoration: none;
-  color: #fafbfc;
+  color: var(--white);
 }
-
-/** post.html where the detailed description of the advert is shown */
-/* the font-size of the paragraph of the review by users on the posted accomodation */
-.reviews > div > div > .post {
-  font-size: 16px;
+/* chat,call and book inspection links */
+.cta-btns>button:hover{
+color: var(--black);
+font-weight: 500;
 }
-/* the font-size of the date posted of the review by users on the posted accomodation */
-.reviews > div > div > .post-date {
-  font-size: 12px;
-}
-
-/** sign in with social media link  */
+/* sign in with social media link  */
 .twitter-signin {
   background-color: var(--twitter);
 }
@@ -394,4 +369,19 @@ footer a:hover {
 }
 .google-signin {
   background-color: var(--google);
+}
+
+/** login and signin forms */
+.login>input:hover,
+.signup>input:hover{
+  border-color: var(--primary);
+}
+.login>input:focus,
+.signup>input:focus{
+  background-color: palegoldenrod;
+}
+.login>input:invalid,
+.signup>input:invalid{
+color: red;
+border: solid red 1px;
 }
