@@ -327,7 +327,7 @@ footer li {
 }
 /* signin/signup */
 /* the buttons */
-#signup-btn, #signin-btn{
+#signup-btn, #signin-btn, #fltr-search-btn{
 color: var(--white);
 background-color: var(--primary);
 }
