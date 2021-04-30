@@ -1,387 +1,161 @@
+/*? ==========  */
+/*? beginning of basic css styles */
+/*? ========== */
+/** offline font links */
+@font-face {
+    font-family: "name";
+    src: url('');
+  }
+/*! root file */
 :root {
-  font-size: 22px;
-  line-height: 1rem;
-  list-style-type: none;
-  text-decoration: none;
-  text-align: center;
-
-  /* variables used*/
+  /** variables */
+  /* main color variables */
+  --main-bg: ;
+  --main-bg2: ;
+  --main-color: ;
+  --main-color2: ;
   --white: #fff;
   --black: #000;
-  --bdy: #effaf12a;
-  --ftr: #8cafbb;
-  --primary: #107bff;
-  /* --primary-transparent: #107cff6b; */
-  --payment-duration-clr: #999;
-  --price-clr: #f11313;
-  --features-clr: #6C757D;
-  --save-btn: #f11313;
-  --table-header: #8cafbb;
-  --verified-clr: #008000;
-  --reg-bg-clr: #607279;
-  --search-dropdn-clr: #eeeeeed2;
-  --header-btn-bdr: #404b4f80;
-  --search-btn: #2d7087e6;
-  --filter-btn: #ffffffad;
-  --cta-btns: #107bff;
-  --chat-btn: #25b0d3;
-  --twitter: #55acee;
-  --facebook: #3b5999;
-  --google: #dd4b39;
-}
-@media screen and (min-width: 800px) {
-  /* h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  } */
-  /* h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  } */
-}
-@media screen and (min-width: 992px) {
-}
 
-/** ===== */
-/** the part defines the general styles of elements in the whole pages */
-/** ==== */
-
-/** body of the pages */
+  /* dimensions */
+  --nav-height: ;
+  --section-div-margin: ;
+  --section-div-padding: ;
+}
+/** all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/** large screen=1024px (960px-1024px) */
+/* body */
 body {
-  background-color: var(--bdy);
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: normal;
+  background-color: var(--main-bgc);
+  color: var(--main-color);
 }
-
-/** nav bar */
-nav{
-  background-color: var(--white);
-  color: var(--primary);
+/* text elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 150%;
+  text-align: center;
 }
-
-/** to ensure that when you click on an id link, the header will not cover the  beginning of the content the id is pointing to */
+h1 {
+  margin-bottom: 0.8rem;
+}
+h2 {
+  margin-bottom: 0.75rem;
+}
+h3 {
+  margin-bottom: 0.6rem;
+}
+h4 {
+  margin-bottom: 0.5rem;
+}
+h5 {
+  margin-bottom: 0.4rem;
+}
+h6 {
+  margin-bottom: 0.3rem;
+}
+/** to ensure that when you click on an id link, the header will not cover the beginning of the content the id is pointing to */
 [id] {
   scroll-margin-top: 5em;
 }
-
-/** the header where the picture, welcome and search bar is in */
-header {
-  background-image: url("../img/bedroom.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 25rem;
-}
-
-/**the search container*/
-/*defines the properties of both dropdowns(accomodation and location)*/
-.form-group>select {
-  background-color: var(--search-dropdn-clr);
-  font-size: 0.8rem;
-  width: 11rem;
-  border-radius: 0.25rem;
-  -webkit-border-radius: 0.25rem;
-  -moz-border-radius: 0.25rem;
-  -ms-border-radius: 0.25rem;
-  -o-border-radius: 0.25rem;
-}
-/*defines the property of the search button*/
-.form-group>#hdr-search-btn {
-  background-color: var(--search-btn);
-  border: var(--header-btn-bdr)  solid 0.05rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-/*defines the property of the filter button*/
-.form-group>#hdr-filter-btn {
-  background-color: var(--filter-btn);
-  border: var(--header-btn-bdr)  solid 0.05rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-/** section titles */
-.section-title, .detail-post-title{
-  font-size: 1.5rem;
-  padding: 0.4rem 0 0rem 0;
-}
-#detail-post{
-  background-color: var(--white);
-}
-
-/** the review section */
-/* the fines the property of the contents(reviews, names and photo) */
-.site-review-post {
-  background-color: var(--white);
-  font-size: 0.63rem;
-}
-.site-review-img {
-  background-position: center;height: 3.6rem;
-  width: 3.6rem;
-}
-
-/** the post section */
-/* the ad post cards */
-.ads-post{
-  background-color: var(--white);
-}
-/* the ad post part above the features */
-.post, #detail-post {
-  position: relative;
-}
-/* the verification badge of posts that have been verified or posted by users that have been verified by the system */
-.ratings-verified {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  font-size: 0.54rem;
-  background-color: white;
-  color: var(--verified-clr);
-  font-weight: 500;
-}
-/* the ratings badge that shows ratings gotten from the reviews that users have given the post after using the service*/
-.ratings{
-  font-size: 0.45rem;
-  font-weight: 500;
-  background: var(--white);
-}
-/* star ratings */
-.ratings-star{
-  color: var(--primary);
-}
-/* photos of posts */
-.ad-pic {
-  height: 13.5rem;
-  max-width: 16.65rem;
-}
-/* the detailed post image */
-.detail-post-img{
-  height: 19rem;
-  max-width: 20rem;
-}
-/* ad post link (title and location) to detailed post */
-#ad-link>a{
-  color: var(--black);
-}
-/* ad title of the detailed post; location and description */
-.ad>.ad-location, .ad>.ad-duration{
-  line-height: 0.8rem;
-}
-/* duration of the rent of the ad property */
-.ad-duration{
-  color: var(--payment-duration-clr);
-}
-/* highlighting the price of the accomodation on the posts */
-code {
-  font-weight: bold;
-  font-size: 18px;
-  color: var(--price-clr);
-}
-/* ad paragraph */
-.ad-p{
-  font-size: 0.63rem;
-}
-/* features */
-.features{
-  color: var(--features-clr);
-  font-size: 0.72rem;
-}
-/* save button */
-.save{
- color: var(--save-btn); 
-  font-size: 0.72rem;
-  letter-spacing: 0.1rem;
-  font-weight: 600;
-}
-.save i{
- color: var(--save-btn); 
-  font-size: 0.6rem;
-}
-/* table of detailed description of ads */
-/* the table */
-.table {
-  font-size: 0.54rem;
-}
-/* the headers of the subtables in the table */
-.table [colspan] {
-  font-size: 14px;
-  background-color: var(--ftr);
-}
-.table th,
-.table td {
-  padding: 0 0.45rem;
-}
-/* the chat, video inspection and book inspection button on the post */
-.cta-btns>button {
-  font-size: 0.81rem;
-  background-color: var(--primary);
-  max-width: 7.2rem;
-}
-/* pagination for posts */
-.pagination {
-  font-size: 0.54rem;
-  font-weight: bold;
-}
-
-/** about section */
-/* about image */
-.about-img{
-  height: 13.5rem;
-  max-width: 13.5rem;
-}
-/* about description */
-.about-p{
-  font-size: 0.81rem;
-}
-
-/** reviews of the posts by users who have used the accomodation */
-/* the card */
-.ad-review{
-  padding: 1rem;
-}
-/* user name of ppl that made reviews */
-.ad-review-name{
-  line-height: 1rem;
-}
-/* the ratings */
-.ratings-star{
-  padding: 0.1rem 0;
-  font-size: 0.7rem;
-  font-weight: 500;
-  background-color: var(--white);
-}
-/* the date the user made the review */
-.ad-review-date{
-  font-size: 0.5rem;
-  line-height: 0.5rem;
-}
-/* the paragraph/description */
-.ad-review-p{
-  font-size: 0.7rem;
-  padding-top: 0.3rem ;
-}
-
-/** cta to people to post their property with us */
-/* the register her container */
-#reg-here{
-  background-color: #607279;
-  color: var(--white);
-  line-height: 1.2rem;
-}
-/* the register paragraph */
-.reg-p {
-  font-size: 1rem;
-}
-/* the register button */
-#reg-btn {
-  font-size: 1rem;
-  font-weight: 500;
-  border: solid 2px var(--white);
-  color: var(--white);
-}
-
-/** footer */
-/*the footer container*/
-footer {
-  background-color: var(--ftr);
-  color: var(--black);
-  font-size: 0.72rem;
-}
-/* contact in footer */
-.contact-hdr {
-  font-weight: 500;
-  text-decoration: underline;
-}
-/* list in footer */
-footer li {
-  display: inline-block;
-  margin: 0.45rem;
-}
-
-/** chat external link*/
-/*the chat bubble*/
-#chat-with-us a {
-  position: fixed;
-  font-size: 1.35rem;
-  bottom: 50%;
-  right: 20px;
-  background-color: var(--chat-btn);
-  color: var(--white);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  padding: 0.2rem 0.5rem;
-}
-/* signin/signup */
-/* the buttons */
-#signup-btn, #signin-btn, #fltr-search-btn{
-color: var(--white);
-background-color: var(--primary);
-}
-
-/** LINKS: this next part defines how all the links in general on the website interact with the user */
-/* header form dropdown and filter button */
-.form-group>select:hover, .form-group>#hdr-filter-btn:hover{
-  background-color: var(--table-header);
-}
-/** the post links */
-#ads-space a:hover{
-text-decoration: none;
-color: var(--primary);
-}
-/* register here link */
-#reg-btn:hover{
-border:solid var(--black);
-}
-/* footer link */
-footer a {
-  color: var(--black);
-}
-/* footer hover */
-footer a:hover {
+/** reseting the link states to the page's main color and no decoration */
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
   text-decoration: none;
-  color: var(--white);
+  color: var(--main-color);
 }
-/* chat,call and book inspection links */
-.cta-btns>button:hover{
-color: var(--black);
-font-weight: 500;
+/** removing the outline when inputs are on focus */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
-/* sign in with social media link  */
-.twitter-signin {
-  background-color: var(--twitter);
+/** button */
+button {
+  cursor: pointer;
 }
-.fb-signin {
-  background-color: var(--facebook);
+/** list */
+ul {
+  list-style: none;
+  list-style-position: unset;
 }
-.google-signin {
-  background-color: var(--google);
+/*! ===== LARGE SCREEN FIRST RWD ===== */
+/*! the ffg queries determine the font size and line height and any other basic styles of the elements in the file */
+/*! the main media queries are located at the end of this file this is just the default media query styles */
+/** extra-large=1440px+ */
+@media screen and (max-width: 1440px) {
+  /* body */
+  body {
+    font-size: 19px;
+  }
 }
-
-/** login and signin forms */
-.login>input:hover,
-.signup>input:hover{
-  border-color: var(--primary);
+/** medium=608px (608px-960px) */
+@media screen and (max-width: 960px) {
+  /* body */
+  body {
+    font-size: 17px;
+  }
+  /* text elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 140%;
+  }
 }
-.login>input:focus,
-.signup>input:focus{
-  background-color: palegoldenrod;
+/** small=400px (400px-608px) */
+@media screen and (max-width: 608px) {
+  /* body */
+  body {
+    font-size: 16px;
+  }
+  /* text elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 130%;
+  }
 }
-.login>input:invalid,
-.signup>input:invalid{
-color: red;
-border: solid red 1px;
+/** small=400px (400px and below) */
+@media screen and (max-width: 400px) {
+  /* body */
+  body {
+    font-size: 16px;
+  }
+  /* text elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 130%;
+  }
 }
+/*? ==========  */
+/*? end of basic css styles */
+/*? ========== */
