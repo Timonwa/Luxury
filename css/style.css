@@ -159,3 +159,7 @@ ul {
 /*? ==========  */
 /*? end of basic css styles */
 /*? ========== */
+img{
+  width: 100px;
+  height: 100px;
+}
