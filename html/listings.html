@@ -105,7 +105,7 @@
               <!-- form accomodation dropdown -->
               <div class="form-group-2">
                 <select class="form-search-dropdn" name="accomodations">
-                  <option value="holder" name="holder" disabled>
+                  <option value="holder" name="holder" >
                     --Select Acommodation--
                   </option>
                   <option value="hostel" name="hostel">Hostel</option>
@@ -121,7 +121,7 @@
               <!-- form location dropdown -->
               <div class="form-group-3">
                 <select class="form-search-dropdn" name="locations">
-                  <option value="holder" name="holder" disabled>
+                  <option value="holder" name="holder">
                     --Select Location--
                   </option>
                   <option value="akoka" name="akoka">Akoka</option>
@@ -146,7 +146,7 @@
                   id="form-filter-btn"
                   class="form-filter-btn"
                 >
-                  <i class="fas fa-filter"><a href="/html/filter.html"></a></i>
+                  <a href="/html/filter.html"><i class="fas fa-filter"></i></a>
                 </button>
               </div>
             </form>
@@ -157,7 +157,7 @@
       <!--* posts on adverts of accomodation -->
       <main id="ads-section">
         <div class="ads-wrapper">
-          <h4 class="section-title">Posts</h4>
+          <h2 class="section-title">Posts</h2>
           <!-- the ads -->
           <div class="ads-cntr">
             <!-- ad1 -->
@@ -174,11 +174,11 @@
                   <div class="ratings">
                     <p class="ratings-title">Ratings 5/5</p>
                     <p class="ratings-star">
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
+                      <i id="rstar1" class="rstar fa fa-star"></i>
+                      <i id="rstar2" class="rstar fa fa-star"></i>
+                      <i id="rstar3" class="rstar fa fa-star"></i>
+                      <i id="rstar4" class="rstar fa fa-star"></i>
+                      <i id="rstar5" class="rstar fa fa-star"></i>
                     </p>
                   </div>
                 </div>
@@ -186,20 +186,23 @@
                 <img class="ad-pic" src="/img/post_images/lobby.jpg" alt="" />
               </div>
               <div class="ad-group2">
-                <!-- name and location -->
-                <h4 class="ad-link">
-                  <a class="ad-title" href="/html/post.html"
-                    >Mirabel Hostel | <small class="ad-location">Yaba</small></a
-                  >
-                </h4>
-                <!-- price -->
-                <p class="ad-price"><price>200,000</price> per session</p>
-                <!--  description -->
-                <p class="ad-body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nihil iure atque animi? Odio doloribus sint dolorem harum
-                  atque nobis repellendus?
-                </p>
+                <div class="ad-brief-discription">
+                  <!-- name and location -->
+                  <h4 class="ad-link">
+                    <a class="ad-title" href="/html/post.html"
+                      >Mirabel Hostel |
+                      <small class="ad-location">Yaba</small></a
+                    >
+                  </h4>
+                  <!-- price -->
+                  <p class="ad-price"><price>200,000</price> per session</p>
+                  <!--  description -->
+                  <p class="ad-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nihil iure atque animi? Odio doloribus sint dolorem harum
+                    atque nobis repellendus?
+                  </p>
+                </div>
                 <!-- ad basic features -->
                 <div class="features-cntr">
                   <div class="feature">
@@ -207,11 +210,11 @@
                     <span>toilet</span>
                   </div>
                   <div class="feature">
-                    <span>1<i class="fa fa-bath"></i></span>
+                    <span>1 <i class="fa fa-bath"></i></span>
                     <span>bathroom</span>
                   </div>
                   <div class="feature">
-                    <span>1<i class="fa fa-bed"></i></span>
+                    <span>1 <i class="fa fa-bed"></i></span>
                     <span>bedroom</span>
                   </div>
                   <div class="feature">
@@ -239,11 +242,11 @@
                   <div class="ratings">
                     <p class="ratings-title">Ratings 5/5</p>
                     <p class="ratings-star">
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
+                      <i id="rstar1" class="rstar fa fa-star"></i>
+                      <i id="rstar2" class="rstar fa fa-star"></i>
+                      <i id="rstar3" class="rstar fa fa-star"></i>
+                      <i id="rstar4" class="rstar fa fa-star"></i>
+                      <i id="rstar5" class="rstar fa fa-star"></i>
                     </p>
                   </div>
                 </div>
@@ -251,20 +254,23 @@
                 <img class="ad-pic" src="/img/post_images/lobby.jpg" alt="" />
               </div>
               <div class="ad-group2">
-                <!-- name and location -->
-                <h4 class="ad-link">
-                  <a class="ad-title" href="/html/post.html"
-                    >Mirabel Hostel | <small class="ad-location">Yaba</small></a
-                  >
-                </h4>
-                <!-- price -->
-                <p class="ad-price"><price>200,000</price> per session</p>
-                <!--  description -->
-                <p class="ad-body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nihil iure atque animi? Odio doloribus sint dolorem harum
-                  atque nobis repellendus?
-                </p>
+                <div class="ad-brief-discription">
+                  <!-- name and location -->
+                  <h4 class="ad-link">
+                    <a class="ad-title" href="/html/post.html"
+                      >Mirabel Hostel |
+                      <small class="ad-location">Yaba</small></a
+                    >
+                  </h4>
+                  <!-- price -->
+                  <p class="ad-price"><price>200,000</price> per session</p>
+                  <!--  description -->
+                  <p class="ad-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nihil iure atque animi? Odio doloribus sint dolorem harum
+                    atque nobis repellendus?
+                  </p>
+                </div>
                 <!-- ad basic features -->
                 <div class="features-cntr">
                   <div class="feature">
@@ -272,11 +278,11 @@
                     <span>toilet</span>
                   </div>
                   <div class="feature">
-                    <span>1<i class="fa fa-bath"></i></span>
+                    <span>1 <i class="fa fa-bath"></i></span>
                     <span>bathroom</span>
                   </div>
                   <div class="feature">
-                    <span>1<i class="fa fa-bed"></i></span>
+                    <span>1 <i class="fa fa-bed"></i></span>
                     <span>bedroom</span>
                   </div>
                   <div class="feature">
@@ -304,11 +310,11 @@
                   <div class="ratings">
                     <p class="ratings-title">Ratings 5/5</p>
                     <p class="ratings-star">
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
+                      <i id="rstar1" class="rstar fa fa-star"></i>
+                      <i id="rstar2" class="rstar fa fa-star"></i>
+                      <i id="rstar3" class="rstar fa fa-star"></i>
+                      <i id="rstar4" class="rstar fa fa-star"></i>
+                      <i id="rstar5" class="rstar fa fa-star"></i>
                     </p>
                   </div>
                 </div>
@@ -316,20 +322,23 @@
                 <img class="ad-pic" src="/img/post_images/lobby.jpg" alt="" />
               </div>
               <div class="ad-group2">
-                <!-- name and location -->
-                <h4 class="ad-link">
-                  <a class="ad-title" href="/html/post.html"
-                    >Mirabel Hostel | <small class="ad-location">Yaba</small></a
-                  >
-                </h4>
-                <!-- price -->
-                <p class="ad-price"><price>200,000</price> per session</p>
-                <!--  description -->
-                <p class="ad-body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nihil iure atque animi? Odio doloribus sint dolorem harum
-                  atque nobis repellendus?
-                </p>
+                <div class="ad-brief-discription">
+                  <!-- name and location -->
+                  <h4 class="ad-link">
+                    <a class="ad-title" href="/html/post.html"
+                      >Mirabel Hostel |
+                      <small class="ad-location">Yaba</small></a
+                    >
+                  </h4>
+                  <!-- price -->
+                  <p class="ad-price"><price>200,000</price> per session</p>
+                  <!--  description -->
+                  <p class="ad-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nihil iure atque animi? Odio doloribus sint dolorem harum
+                    atque nobis repellendus?
+                  </p>
+                </div>
                 <!-- ad basic features -->
                 <div class="features-cntr">
                   <div class="feature">
@@ -337,11 +346,11 @@
                     <span>toilet</span>
                   </div>
                   <div class="feature">
-                    <span>1<i class="fa fa-bath"></i></span>
+                    <span>1 <i class="fa fa-bath"></i></span>
                     <span>bathroom</span>
                   </div>
                   <div class="feature">
-                    <span>1<i class="fa fa-bed"></i></span>
+                    <span>1 <i class="fa fa-bed"></i></span>
                     <span>bedroom</span>
                   </div>
                   <div class="feature">
@@ -369,11 +378,11 @@
                   <div class="ratings">
                     <p class="ratings-title">Ratings 5/5</p>
                     <p class="ratings-star">
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
+                      <i id="rstar1" class="rstar fa fa-star"></i>
+                      <i id="rstar2" class="rstar fa fa-star"></i>
+                      <i id="rstar3" class="rstar fa fa-star"></i>
+                      <i id="rstar4" class="rstar fa fa-star"></i>
+                      <i id="rstar5" class="rstar fa fa-star"></i>
                     </p>
                   </div>
                 </div>
@@ -381,20 +390,23 @@
                 <img class="ad-pic" src="/img/post_images/lobby.jpg" alt="" />
               </div>
               <div class="ad-group2">
-                <!-- name and location -->
-                <h4 class="ad-link">
-                  <a class="ad-title" href="/html/post.html"
-                    >Mirabel Hostel | <small class="ad-location">Yaba</small></a
-                  >
-                </h4>
-                <!-- price -->
-                <p class="ad-price"><price>200,000</price> per session</p>
-                <!--  description -->
-                <p class="ad-body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nihil iure atque animi? Odio doloribus sint dolorem harum
-                  atque nobis repellendus?
-                </p>
+                <div class="ad-brief-discription">
+                  <!-- name and location -->
+                  <h4 class="ad-link">
+                    <a class="ad-title" href="/html/post.html"
+                      >Mirabel Hostel |
+                      <small class="ad-location">Yaba</small></a
+                    >
+                  </h4>
+                  <!-- price -->
+                  <p class="ad-price"><price>200,000</price> per session</p>
+                  <!--  description -->
+                  <p class="ad-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nihil iure atque animi? Odio doloribus sint dolorem harum
+                    atque nobis repellendus?
+                  </p>
+                </div>
                 <!-- ad basic features -->
                 <div class="features-cntr">
                   <div class="feature">
@@ -402,11 +414,11 @@
                     <span>toilet</span>
                   </div>
                   <div class="feature">
-                    <span>1<i class="fa fa-bath"></i></span>
+                    <span>1 <i class="fa fa-bath"></i></span>
                     <span>bathroom</span>
                   </div>
                   <div class="feature">
-                    <span>1<i class="fa fa-bed"></i></span>
+                    <span>1 <i class="fa fa-bed"></i></span>
                     <span>bedroom</span>
                   </div>
                   <div class="feature">
@@ -434,11 +446,11 @@
                   <div class="ratings">
                     <p class="ratings-title">Ratings 5/5</p>
                     <p class="ratings-star">
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
-                      <i class="rstar fa fa-star"></i>
+                      <i id="rstar1" class="rstar fa fa-star"></i>
+                      <i id="rstar2" class="rstar fa fa-star"></i>
+                      <i id="rstar3" class="rstar fa fa-star"></i>
+                      <i id="rstar4" class="rstar fa fa-star"></i>
+                      <i id="rstar5" class="rstar fa fa-star"></i>
                     </p>
                   </div>
                 </div>
@@ -446,20 +458,23 @@
                 <img class="ad-pic" src="/img/post_images/lobby.jpg" alt="" />
               </div>
               <div class="ad-group2">
-                <!-- name and location -->
-                <h4 class="ad-link">
-                  <a class="ad-title" href="/html/post.html"
-                    >Mirabel Hostel | <small class="ad-location">Yaba</small></a
-                  >
-                </h4>
-                <!-- price -->
-                <p class="ad-price"><price>200,000</price> per session</p>
-                <!--  description -->
-                <p class="ad-body">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nihil iure atque animi? Odio doloribus sint dolorem harum
-                  atque nobis repellendus?
-                </p>
+                <div class="ad-brief-discription">
+                  <!-- name and location -->
+                  <h4 class="ad-link">
+                    <a class="ad-title" href="/html/post.html"
+                      >Mirabel Hostel |
+                      <small class="ad-location">Yaba</small></a
+                    >
+                  </h4>
+                  <!-- price -->
+                  <p class="ad-price"><price>200,000</price> per session</p>
+                  <!--  description -->
+                  <p class="ad-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nihil iure atque animi? Odio doloribus sint dolorem harum
+                    atque nobis repellendus?
+                  </p>
+                </div>
                 <!-- ad basic features -->
                 <div class="features-cntr">
                   <div class="feature">
@@ -467,11 +482,11 @@
                     <span>toilet</span>
                   </div>
                   <div class="feature">
-                    <span>1<i class="fa fa-bath"></i></span>
+                    <span>1 <i class="fa fa-bath"></i></span>
                     <span>bathroom</span>
                   </div>
                   <div class="feature">
-                    <span>1<i class="fa fa-bed"></i></span>
+                    <span>1 <i class="fa fa-bed"></i></span>
                     <span>bedroom</span>
                   </div>
                   <div class="feature">
@@ -489,13 +504,31 @@
           <!-- pagination -->
           <div class="pagination">
             <ul>
-              <li><a class="page-link" href="#">start</a></li>
-              <li><a class="page-link" href="#">prev</a></li>
+              <li>
+                <a class="page-link" href="#"
+                  ><i class="fas fa-chevron-left"></i
+                  ><i class="fas fa-chevron-left"></i
+                ></a>
+              </li>
+              <li>
+                <a class="page-link" href="#"
+                  ><i class="fas fa-chevron-left"></i
+                ></a>
+              </li>
               <li><a class="page-link" href="#">1</a></li>
               <li><a class="page-link" href="#">2</a></li>
               <li><a class="page-link" href="#">3</a></li>
-              <li><a class="page-link" href="#">next</a></li>
-              <li><a class="page-link" href="#">end</a></li>
+              <li>
+                <a class="page-link" href="#"
+                  ><i class="fas fa-chevron-right"></i
+                ></a>
+              </li>
+              <li>
+                <a class="page-link" href="#"
+                  ><i class="fas fa-chevron-right"></i
+                  ><i class="fas fa-chevron-right"></i
+                ></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -505,13 +538,15 @@
       <section id="cta-section">
         <div class="cta-section-wrapper">
           <div class="reg-cntr">
-            <p class="reg-body">
-              Do you own a hostel or are you an estate agent or company?<br />List
-              your property for FREE.
-            </p>
-            <span class="">
-              <button id="reg-btn" class="reg-btn" type="button">
-                <a href="/html/signup.html">Register here!</a>
+            <span class="reg-body">
+              <p>
+                Do you own a hostel or are you an estate agent or company?<br />List
+                your property for FREE.
+              </p>
+            </span>
+            <span class="reg-btn">
+              <button id="reg-btn" class="" type="button">
+                <a href="html/signup.html">Register here!</a>
               </button>
             </span>
           </div>
