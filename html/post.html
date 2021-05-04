@@ -65,7 +65,7 @@
           <div class="nav-links">
             <ul>
               <li>
-                <a class="nav-link" href="/index.html#about">About</a>
+                <a class="nav-link" href="/index.html#about-section">About</a>
               </li>
               <li>
                 <a class="nav-link" href="/html/listings.html">Listings</a>
@@ -105,7 +105,7 @@
               <!-- form accomodation dropdown -->
               <div class="form-group-2">
                 <select class="form-search-dropdn" name="accomodations">
-                  <option value="holder" name="holder" disabled>
+                  <option value="holder" name="holder">
                     --Select Acommodation--
                   </option>
                   <option value="hostel" name="hostel">Hostel</option>
@@ -121,7 +121,7 @@
               <!-- form location dropdown -->
               <div class="form-group-3">
                 <select class="form-search-dropdn" name="locations">
-                  <option value="holder" name="holder" disabled>
+                  <option value="holder" name="holder">
                     --Select Location--
                   </option>
                   <option value="akoka" name="akoka">Akoka</option>
@@ -146,7 +146,7 @@
                   id="form-filter-btn"
                   class="form-filter-btn"
                 >
-                  <i class="fas fa-filter"><a href="/html/filter.html"></a></i>
+                  <a href="/html/filter.html"><i class="fas fa-filter"></i></a>
                 </button>
               </div>
             </form>
@@ -155,11 +155,20 @@
       </header>
 
       <!--* ad post in detail -->
-      <main class="post-section">
+      <main id="post-section">
         <div class="post-section-wrapper">
-          <!-- name of the advert -->
-          <h4 class="post-title">Grey Hostel</h4>
           <div class="post-cntr">
+            <!-- name of the advert -->
+            <div class="post-title">
+              <span>
+                <h3>Grey Hostel</h3>
+                <price>200,000</price>
+              </span>
+              <span>
+                <p>Posted by Lorem ipsum</p>
+                <p>21/03/2021</p>
+              </span>
+            </div>
             <div class="ad-group1">
               <div class="ratings-verified">
                 <!-- verify -->
@@ -191,15 +200,15 @@
                   <span>toilet</span>
                 </div>
                 <div class="feature">
-                  <span>1<i class="fa fa-bath"></i></span>
+                  <span>1 <i class="fa fa-bath"></i></span>
                   <span>bathroom</span>
                 </div>
                 <div class="feature">
-                  <span>1<i class="fa fa-bed"></i></span>
+                  <span>1 <i class="fa fa-bed"></i></span>
                   <span>bedroom</span>
                 </div>
                 <div class="feature">
-                  <span>1<i class="fa fa-car"></i></span>
+                  <span>1 <i class="fa fa-car"></i></span>
                   <span>car space</span>
                 </div>
                 <!-- save button -->
@@ -210,9 +219,9 @@
             </div>
             <div class="ad-group3">
               <!-- title -->
-              <h4 class="post-title">Grey Hostel</h4>
-              <!-- location -->
-              <h4 class="post-location"><small>Yaba, Lagos</small></h4>
+              <h4 class="post-title"> Grey Hostel serviced apartment</h4>
+                <p>Akoka road,Yaba, Lagos</p>
+              
               <!-- price -->
               <p class="ad-price"><price>200,000</price> per session</p>
               <!-- description title -->
@@ -253,7 +262,7 @@
                 </tbody>
                 <thead>
                   <tr>
-                    <thcolspan="4">Payment method</thcolspan=>
+                    <th colspan="4">Payment method</th>
                   </tr>
                 </thead>
                 <thead>
@@ -295,9 +304,7 @@
                 </tbody>
                 <thead>
                   <tr>
-                    <th colspan="4">
-                      Facilities/Utilities
-                    </th>
+                    <th colspan="4">Facilities/Utilities</th>
                   </tr>
                 </thead>
                 <thead>
@@ -416,7 +423,7 @@
             </div>
           </div>
           <!-- cta -->
-          <div class="post-cta-cntr" >
+          <div class="post-cta-cntr">
             <!-- the chat with agent button -->
             <button id="chat-btn" type="button">
               <a href="#">Chat</a>
@@ -436,7 +443,7 @@
       <!--* reviews buy users who have used the accomodation -->
       <section id="ad-reviews-section">
         <div class="ad-reviews-wrapper">
-          <h5 class="section-title">Reviews</h5>
+          <h3 class="section-title">Reviews</h3>
           <!-- review posts -->
           <div class="ad-reviews-cntr">
             <!-- review1 -->
@@ -455,7 +462,7 @@
                 </div>
                 <div class="user-name-date">
                   <!-- user name -->
-                  <h5 class="user-ad-name">User1</h5>
+                  <h4 class="user-ad-name">User1</h4>
                   <!-- date the post was made -->
                   <p class="user-ad-review-date">January 6th, 2021</p>
                 </div>
@@ -490,7 +497,7 @@
                 </div>
                 <div class="user-name-date">
                   <!-- user name -->
-                  <h5 class="user-ad-name">User2</h5>
+                  <h4 class="user-ad-name">User2</h4>
                   <!-- date the post was made -->
                   <p class="user-ad-review-date">January 6th, 2021</p>
                 </div>
@@ -525,7 +532,7 @@
                 </div>
                 <div class="user-name-date">
                   <!-- user name -->
-                  <h5 class="user-ad-name">User3</h5>
+                  <h4 class="user-ad-name">User3</h4>
                   <!-- date the post was made -->
                   <p class="user-ad-review-date">January 6th, 2021</p>
                 </div>
@@ -560,7 +567,7 @@
                 </div>
                 <div class="user-name-date">
                   <!-- user name -->
-                  <h5 class="user-ad-name">User4</h5>
+                  <h4 class="user-ad-name">User4</h4>
                   <!-- date the post was made -->
                   <p class="user-ad-review-date">January 6th, 2021</p>
                 </div>
@@ -587,12 +594,14 @@
       <section id="cta-section">
         <div class="cta-section-wrapper">
           <div class="reg-cntr">
-            <p class="reg-body">
-              Do you own a hostel or are you an estate agent or company?<br />List
-              your property for FREE.
-            </p>
-            <span class="">
-              <button id="reg-btn" class="reg-btn" type="button">
+            <span class="reg-body">
+              <p>
+                Do you own a hostel or are you an estate agent or company?<br />List
+                your property for FREE.
+              </p>
+            </span>
+            <span class="reg-btn">
+              <button id="reg-btn" class="" type="button">
                 <a href="html/signup.html">Register here!</a>
               </button>
             </span>
