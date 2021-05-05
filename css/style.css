@@ -44,7 +44,7 @@
 
   /* dimensions */
   --nav-height: 60px;
-  --section-div-margin: 40px auto;
+  --section-div-margin: 30px auto;
   --section-div-padding: 20px;
   --section-width: 700px;
 }
@@ -243,7 +243,7 @@ img {
 .flex > header > .header-wrapper > .greeting-cntr {
   padding: var(--section-div-padding);
 }
-.flex > header > .header-wrapper > .greeting-cntr > h2 {
+.flex > header > .header-wrapper > .greeting-cntr > h1 {
   margin-bottom: 0;
 }
 .flex > header > .header-wrapper > .greeting-cntr > h4 {
@@ -503,9 +503,6 @@ img {
   animation-delay: 10s;
 }
 /* * the ads section */
-.flex > #ads-section {
-  /* border-top: 1px var(--section-width); */
-}
 .flex > #ads-section > .ads-wrapper {
   margin: var(--section-div-margin);
   padding: var(--section-div-padding);
@@ -1117,6 +1114,13 @@ text-align: right;
     padding: var(--section-div-padding);
     padding: 20px 40px;
   border-bottom: solid 1px var(--main-post-bgc-eee);
+  }
+.flex
+  > #post-section
+  > .post-section-wrapper
+  > .post-cntr
+  > .ad-group3 h4{
+   margin-bottom: 0;
   }
 .flex
   > #post-section
