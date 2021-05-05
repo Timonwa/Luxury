@@ -10,12 +10,13 @@
 :root {
   /** variables */
   /* main  bg and color variables */
-  --main-bgc1-grey: #effaf12a;
-  --main-bgc2-white: #fff;
+  --main-bgc1-grey: rgb(252, 245, 245);
+  --main-bgc2-white: rgb(255, 254, 254);
   --main-bgc3-dark-blue: #607279;
   --main-bgc4-vlight-blue: #8cafbb;
   --main-color1-black: rgb(15, 15, 15);
-  --main-color2-light-blue: #107bff;
+  --main-color2-light-blue:  #25b0d3;
+  --main-color2-light-blue2: #107bff;
   --main-color3-grey: rgb(153, 153, 153);
   --main-color4-red: #f11313;
   --main-color4-silver: #6c757d;
@@ -23,6 +24,8 @@
   --main-color6-inactive: rgb(202, 202, 202);
   --white: #fff;
   --black: #000;
+  --main-bdr: solid #ddd;
+  --main-post-bgc-eee: #eee;
 
   /* search form colors */
   --search-dropdn-bgc: #eeeeeed2;
@@ -41,9 +44,9 @@
 
   /* dimensions */
   --nav-height: 60px;
-  --section-div-margin: 20px auto;
+  --section-div-margin: 40px auto;
   --section-div-padding: 20px;
-  --section-width: 960px;
+  --section-width: 700px;
 }
 /** all elements */
 * {
@@ -54,7 +57,7 @@
 /** large screen=1024px (960px-1024px) */
 /* body */
 body {
-  font-size: 18px;
+  font-size: 16px;
   font-family: sans-serif;
   font-weight: normal;
   background-color: var(--main-bgc1-grey);
@@ -126,18 +129,14 @@ ul {
 /*! the ffg queries determine the font size and line height and any other basic styles of the elements in the file */
 /*! the main media queries are located at the end of this file this is just the default media query styles */
 /** extra-large=1440px+ */
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1200px) {
   /* body */
   body {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 /** medium=608px (608px-960px) */
 @media screen and (max-width: 960px) {
-  /* body */
-  body {
-    font-size: 17px;
-  }
   /* text elements */
   h1,
   h2,
@@ -151,10 +150,6 @@ ul {
 }
 /** small=400px (400px-608px) */
 @media screen and (max-width: 608px) {
-  /* body */
-  body {
-    font-size: 16px;
-  }
   /* text elements */
   h1,
   h2,
@@ -168,10 +163,6 @@ ul {
 }
 /** small=400px (400px and below) */
 @media screen and (max-width: 400px) {
-  /* body */
-  body {
-    font-size: 16px;
-  }
   /* text elements */
   h1,
   h2,
@@ -224,7 +215,7 @@ img {
 }
 /* * nav empty space */
 .flex > #nav-empty-space {
-  height: var(--nav-height);
+  height: calc(var(--nav-height) /2 );
 }
 /* * header section */
 .flex > header {
@@ -252,7 +243,7 @@ img {
 .flex > header > .header-wrapper > .greeting-cntr {
   padding: var(--section-div-padding);
 }
-.flex > header > .header-wrapper > .greeting-cntr > h1 {
+.flex > header > .header-wrapper > .greeting-cntr > h2 {
   margin-bottom: 0;
 }
 .flex > header > .header-wrapper > .greeting-cntr > h4 {
@@ -343,7 +334,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 700px;
+  width:var(--section-width);
 }
 .flex
   > #company-reviews-section
@@ -354,8 +345,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(700px - (var(--section-div-padding) * 2));
-  height: 180px;
+  width: calc(var(--section-width) - (var(--section-div-padding) * 2));
+  height: 200px;
 }
 .flex
   > #company-reviews-section
@@ -370,7 +361,7 @@ img {
   left: 0px;
   color: var(--main-color4-silver);
   padding: 10px;
-  box-shadow: 0px 0px 1px grey;
+  border: 1px var(--main-bdr);
 }
 .flex
   > #company-reviews-section
@@ -385,7 +376,7 @@ img {
   right: 0px;
   color: var(--main-color4-silver);
   padding: 10px;
-  box-shadow: 0px 0px 1px grey;
+  border: 1px var(--main-bdr);
 }
 .flex
   > #company-reviews-section
@@ -398,7 +389,7 @@ img {
   align-items: center;
   margin: auto;
   padding: 0 20px;
-  box-shadow: 0px 0px 1px grey;
+  border: 1px var(--main-bdr);
   background-color: var(--main-bgc2-white);
 }
 .flex
@@ -513,12 +504,12 @@ img {
 }
 /* * the ads section */
 .flex > #ads-section {
-  border-top: 1px solid var(--main-color6-inactive);
+  /* border-top: 1px var(--section-width); */
 }
 .flex > #ads-section > .ads-wrapper {
   margin: var(--section-div-margin);
   padding: var(--section-div-padding);
-  width: 700px;
+  width: var(--section-width);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -537,7 +528,7 @@ img {
   align-items: center;
   margin: 20px;
   width: 100%;
-  box-shadow: 0px 0px 1px grey;
+  border: 1px var(--main-bdr);
 }
 .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post:first-child {
   margin-top: 0;
@@ -613,7 +604,7 @@ img {
   .flex > #ad-reviews-section  > .ad-reviews-wrapper > .ad-reviews-cntr > .user-ad-review > .user-ad-review-heading > .user-ad-ratings{
   padding: 2px;
   margin-bottom: 0;
-  color: var(--main-color2-light-blue);
+  color: var(--main-color2-light-blue2);
 }
 .flex
   > #ads-section
@@ -660,6 +651,22 @@ img {
   align-items: center;
   padding: 20px;
   height: 250px;
+}
+.flex
+  > #ads-section
+  > .ads-wrapper
+  > .ads-cntr
+  > .ads-post
+  > .ad-group2
+  > .ad-brief-discription
+  > h5:first-child,
+  .flex
+  > #post-section
+  > .post-section-wrapper
+  > .post-cntr
+  > .ad-group3
+  > h5{
+  margin-bottom: 0;
 }
 .flex
   > #ads-section
@@ -724,7 +731,7 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-top: solid 1px var(--main-color3-grey);
+  border-top: solid 1px var(--main-color6-inactive);
 }
 .flex
   > #ads-section
@@ -823,23 +830,26 @@ img {
   justify-content: space-around;
   align-items: center;
 }
-.flex > #ads-section > .ads-wrapper > .pagination > ul > li a {
+.flex > #ads-section > .ads-wrapper > .pagination > ul > li  {
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 1px var(--main-color4-silver);
+  border-left: solid 1px;
   width: 50px;
   color: var(--main-color2-light-blue);
 }
+.flex > #ads-section > .ads-wrapper > .pagination > ul > li:first-child{
+  border-left: none;
+}
 /* * about section */
 .flex > #about-section {
-  border-top: 1px solid var(--main-color6-inactive);
+  background-color: var(--main-bgc2-white);
 }
 .flex > #about-section > .about-section-wrapper {
   margin: var(--section-div-margin);
   padding: var(--section-div-padding);
-  width: 700px;
+  width: var(--section-width);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -905,7 +915,7 @@ img {
 .flex > #cta-section > .cta-section-wrapper > .reg-cntr > .reg-btn > button {
   padding: 10px;
   border: solid 2px var(--main-bgc2-white);
-  background-color: transparent;
+  background-color: var(--main-bgc4-vlight-blue);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -920,8 +930,8 @@ img {
   > button
   > a {
   color: white;
-  font-weight: 600;
   font-size: 20px;
+  text-decoration: underline;
 }
 .flex > #cta-section > .cta-section-wrapper > .reg-cntr {
   display: flex;
@@ -939,7 +949,8 @@ img {
   align-items: center;
 }
 .flex > #footer-section > .footer-wrapper > address {
-  padding: 10px;
+  margin: 0;
+  padding: 5px;
   font-style: normal;
 }
 .flex > #footer-section > .footer-wrapper > .contact-cntr > h5 {
@@ -974,7 +985,7 @@ img {
   padding: 10px;
   background-color: var(--main-bgc2-white);
   color: var(--main-color2-light-blue);
-  border: solid 1px var(--header-btn-bdr-color);
+  border: solid 2px var(--main-post-bgc-eee);
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -996,18 +1007,18 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 700px;
+  width: var(--section-width);
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 1px #eee;
-  width: 700px;
+  border: solid 1px var(--main-post-bgc-eee);
+  width: var(--section-width);
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .post-title{
-background-color: #eee;
+background-color: var(--main-post-bgc-eee);
 display: flex;
 justify-content: space-between;
 align-items: flex-end;
@@ -1017,10 +1028,17 @@ padding: 10px 20px;
 .flex > #post-section > .post-section-wrapper > .post-cntr > .post-title *{
 margin-bottom: 0;
 text-align: left;
-font-size: 10px;
+font-size: 12px;
+}
+.flex > #post-section > .post-section-wrapper > .post-cntr > .post-title > span:first-child p{
+font-weight: bold;
+font-size: 13px;
+}
+.flex > #post-section > .post-section-wrapper > .post-cntr > .post-title > span:last-child *{
+text-align: right;
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1 {
-  width: 700px;
+  width: var(--section-width);
   height: 500px;
   position: relative;
 }
@@ -1040,7 +1058,7 @@ font-size: 10px;
   background-color: var(--filter-btn-bgc);
   opacity: 0.7;
   padding: 10px;
-  border: solid 1px #eee;
+  border: solid 1px var(--main-post-bgc-eee);
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1::after {
   font-family: "Font Awesome 5 Free";
@@ -1054,7 +1072,7 @@ font-size: 10px;
   background-color: var(--filter-btn-bgc);
   opacity: 0.7;
   padding: 10px;
-  border: solid 1px #eee;
+  border: solid var(--main-bdr);
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1 > img {
   width: inherit;
@@ -1068,8 +1086,8 @@ font-size: 10px;
   > .features-cntr
   {
     border: none;
-  border: solid 1px #eee;
-  width: 700px;
+  border-bottom: solid 1px var(--main-post-bgc-eee);
+  width: var(--section-width);
   }
 .flex
   > #post-section
@@ -1078,7 +1096,7 @@ font-size: 10px;
   > .ad-group2
   > .features-cntr
   > .feature {
-  width: calc(600px / 4);
+  width: calc((var(--section-width) / 7 * 6) / 4);
   color: var(--main-color4-silver);
 }
 .flex
@@ -1087,7 +1105,7 @@ font-size: 10px;
   > .post-cntr
   > .ad-group2
   > .features-cntr > .save-btn {
-    width: 100px;
+    width: calc(var(--section-width) / 7);
   color: var(--main-color6-inactive);
   cursor: pointer;
 }
@@ -1098,7 +1116,7 @@ font-size: 10px;
   > .ad-group3{
     padding: var(--section-div-padding);
     padding: 20px 40px;
-  border: solid 1px #eee;
+  border-bottom: solid 1px var(--main-post-bgc-eee);
   }
 .flex
   > #post-section
@@ -1106,7 +1124,6 @@ font-size: 10px;
   > .post-cntr
   > .ad-group4{
     margin: 40px;
-  border: solid 1px #eee;
   }
   .flex
   > #post-section
@@ -1136,7 +1153,7 @@ table th {
   > .post-section-wrapper
   > .post-cntr
   > .ad-group5{
-    border: solid 1px #eee;
+    border-top: solid 1px var(--main-post-bgc-eee);
     width: 100%;
     padding: var(--section-div-padding);
     display: flex;
@@ -1148,7 +1165,7 @@ table th {
   > .ad-group5 > span{
     font-size: 14px;
     font-weight: 500;
-    background-color: #eee;
+    background-color: var(--main-post-bgc-eee);
     margin: 5px;
     padding: 5px 10px;
     border-radius: 5px;
@@ -1161,10 +1178,9 @@ table th {
   > #post-section
   > .post-section-wrapper
   > .post-cta-cntr{
-    /* margin: 20px 0; */
     padding: var(--section-div-padding);
-    background-color: #eee;
-    width: 700px;
+    background-color: var(--main-post-bgc-eee);
+    width: var(--section-width);
   }
    .flex
   > #post-section
@@ -1184,7 +1200,7 @@ table th {
     -o-border-radius: 5px;
   }
   .flex > #ad-reviews-section{
-  border-top: 1px solid var(--main-color6-inactive);
+  border-top: solid 1px var(--main-post-bgc-eee);
     display: flex;
     background-color: var(--white);
   }
@@ -1193,18 +1209,18 @@ table th {
     flex-direction: column;
     margin: var(--section-div-margin);
     padding: var(--section-div-padding);
-    width: 700px;
+    width: var(--section-width);
   }
   .flex > #ad-reviews-section  > .ad-reviews-wrapper > .ad-reviews-cntr{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 700px;
+    width: var(--section-width);
     font-size: 14px;
   }
   .flex > #ad-reviews-section  > .ad-reviews-wrapper > .ad-reviews-cntr > .user-ad-review{
-  border: solid 1px #eee;
+  border: solid 1px var(--main-post-bgc-eee);
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -1218,7 +1234,7 @@ table th {
     justify-content: space-between;
     padding: 10px 20px;
     font-size: 12px;
-    background-color: #eee;
+    background-color: var(--main-post-bgc-eee);
   }
   .flex > #ad-reviews-section  > .ad-reviews-wrapper > .ad-reviews-cntr > .user-ad-review > .user-ad-review-body{
     padding: 10px 20px;
