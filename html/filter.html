@@ -15,90 +15,81 @@
     <!-- FontAwesome offline -->
     <link rel="stylesheet" href="../fontawesome5.15\css\all.css" />
 
-    <!-- Bootstrap CSS online -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap CSS offline -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../bootstrap-4.5.3-dist\css\bootstrap.min.css"
-    />
-
     <!-- My CSS code -->
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
   </head>
 
   <body>
-    <div class="m-3 border p-3">
-      <form action="" class="form">
-        <legend class="text-center ">FILTER</legend>
-        <fieldset>
-          <!-- type of accomodation -->
-          <select class="hdr-dropdn form-control form-group" name="accomodations">
-            <option value="holder">--Select Acommodation--</option>
-            <option value="hostel">Hostel</option>
-            <option value="privatApartment">Private Apartment</option>
-            <option value="sharedApartment">Shared Apartment</option>
-          </select>
-
-          <!-- location of accomodation -->
-          <select class="hdr-dropdn form-control form-group" name="locations">
-            <option value="holder">--Select Location--</option>
-            <option value="akoka">Akoka</option>
-            <option value="abuleOja">Abule Oja</option>
-            <option value="pako">Pako</option>
-          </select>
-
-          <!-- number of bedroom -->
-          <input
-            class=" form-control form-group"
-            type="number"
-            placeholder="bedroom"
-          />
-          <!-- number of toilet -->
-          <input
-            class=" form-control form-group"
-            type="number"
-            placeholder="toilet"
-          />
-          <!-- number of bathroom -->
-          <input
-            class=" form-control form-group"
-            type="number"
-            placeholder="bathroom"
-          />
-
-          <!-- sort by -->
-          <select class="hdr-dropdn form-control form-group" name="locations">
-            <option value="holder">--Sort by--</option>
-            <option value="akoka">Relevance</option>
-            <option value="abuleOja">Popularity</option>
-            <option value="pako">New to Old</option>
-            <option value="pako">Old to New</option>
-          </select>
-
-          <!-- location of accomodation -->
-          <select class="hdr-dropdn form-control form-group" name="locations">
-            <option value="holder">--Order of post--</option>
-            <option value="akoka">Lowest price</option>
-            <option value="abuleOja">Highest price</option>
-          </select>
-
-          <!-- price range -->
-          <input type="range"
-          placeholder="price">
-        
-          <!-- filter search button -->
-          <button id="fltr-search-btn" class=" form-control form-group m-0">
-          Search
-        </button>
-        </fieldset>
-      </form>
+    <div class="flex">
+      <main>
+        <form action="" class="form-cntr filter-cntr">
+          <legend>FILTER</legend>
+          <fieldset>
+            <!-- form accomodation dropdown -->
+            <select class="filter-search-input" name="accomodations">
+              <option value="holder" name="holder">
+                --Select Acommodation--
+              </option>
+              <option value="hostel" name="hostel">Hostel</option>
+              <option value="privatApartment" name="privatApartment">
+                Private Apartment
+              </option>
+              <option value="sharedApartment" name="sharedApartment">
+                Shared Apartment
+              </option>
+            </select>
+            <!-- form location dropdown -->
+            <select class="filter-search-input" name="locations">
+              <option value="holder" name="holder">--Select Location--</option>
+              <option value="akoka" name="akoka">Akoka</option>
+              <option value="abuleOja" name="abuleOja">Abule Oja</option>
+              <option value="pako" name="pako">Pako</option>
+            </select>
+            <!-- number of bedroom -->
+            <div class="filter-search-input">
+              <label for="bedroom"></label>
+              <input name="bedroom" type="text" placeholder="no of bedroom" />
+            </div>
+            <!-- number of toilet -->
+            <div class="filter-search-input">
+              <label for="toilet"></label>
+              <input name="toilet" type="text" placeholder="no of toilet" />
+            </div>
+            <!-- number of bathroom -->
+            <div class="filter-search-input">
+              <label for="bathroom"></label>
+              <input name="bathroom" type="text" placeholder="no of bathroom" />
+            </div>
+            <!-- sort by -->
+            <select class="filter-search-input" name="locations">
+              <option value="holder">--Sort by--</option>
+              <option value="akoka">Relevance</option>
+              <option value="abuleOja">Popularity</option>
+              <option value="pako">New to Old</option>
+              <option value="pako">Old to New</option>
+            </select>
+            <!-- location of accomodation -->
+            <select class="filter-search-input" name="locations">
+              <option value="holder">--Order of post--</option>
+              <option value="akoka">Lowest price</option>
+              <option value="abuleOja">Highest price</option>
+            </select>
+            <!-- price range -->
+            <div class="filter-search-input">
+              <div class="minmax-input">
+                <label for="min-range">Min price</label>
+                <input name="min-range" type="text" placeholder="min price" />
+                <label for="max-range">Max price</label>
+                <input name="max-range" type="text" placeholder="max price" />
+              </div>
+              <label for="range"></label>
+              <input name="range" type="range" placeholder="price" />
+            </div>
+            <!-- filter search button -->
+            <button id="fltr-search-btn" type="submit">Search</button>
+          </fieldset>
+        </form>
+      </main>
     </div>
 
     <!--* Online Optional JavaScript; choose one of the two! -->

@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Luxury | Post</title>
+    <!--* The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- title -->
+    <title></title>
 
+<<<<<<< HEAD
     <!-- FontAwesome online -->
     <script src="https://kit.fontawesome.com/dfede42a17.js" crossorigin="anonymous"></script>
     <!-- FontAwesome offline -->
@@ -20,489 +22,686 @@
       crossorigin="anonymous"
     />
     <!-- Bootstrap CSS offline -->
+=======
+    <!--* fonts -->
+    <!-- fonts online -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+>>>>>>> newDesign
     <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam:wght@300&family=Playfair+Display&family=Raleway&display=swap"
       rel="stylesheet"
-      type="text/css"
-      href="../bootstrap-4.5.3-dist\css\bootstrap.min.css"
     />
+    <!-- fonts offline -->
+    <link rel="preload" href="" as="fonts" />
 
-    <!-- My CSS code -->
-    <link rel="stylesheet"
-      type="text/css"
-      href="../css/style.css" />
+    <!--* FontAwesome -->
+    <!-- FontAwesome online -->
+    <script
+      src="https://kit.fontawesome.com/dfede42a17.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FontAwesome offline -->
+    <link rel="stylesheet" href="/fontawesome5.15\css\all.css" /> 
+
+    <!--* My CSS code -->
+    <!-- main CSS styles -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
 
   <body>
-    <!-- container for every content in the body -->
-    <div class="fluid-container d-flex flex-column">
-
+    <!--* container/body wrapper for every content in the body -->
+    <div class="flex">
       <!--* navigation bar -->
-      <nav id="nav-bar" class="d-flex fixed-top font-weight-bold shadow-sm border-bottom">
-        <ul class="nav nav-tabs col-8">
-          <li class="nav-item ml-2"><a class="nav-links" href="../index.html">Luxury</a></li>
-        </ul>
-        <ul class="nav nav-tabs col-4 justify-content-end">
-          <li class="nav-item m-auto"><a class="nav-links" href="../index.html#about">About</a></li>
-          <li class="nav-item m-auto"><a class="nav-links" href="listings.html">Listings</a></li>
-          <li class="nav-item m-auto"><a class="nav-links" href="login.html">Login</a></li>
-        </ul>
-      </nav>
-
-      <!--* welcome space and search bar space -->
-      <header id="header" class="d-flex flex-column card rounded-0 text-center justify-content-center p-3">
-        <!-- the greeting and slogan of the website. -->
-        <div class="d-flex flex-column">
-          <h1 id="greeting">Welcome to LUXURY</h1>
-          <h3 id="motto">
-            <small>Your one stop to the home of your dreams.</small>
-          </h3>
+      <nav id="nav-section">
+        <div class="nav-wrapper">
+          <!-- webpage logo -->
+          <div class="logo">
+            <ul>
+              <li>
+                <a class="nav-link" href="/index.html">Luxury</a>
+              </li>
+            </ul>
+          </div>
+          <!-- webpage nav-links -->
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a class="nav-link" href="/index.html#about-section">About</a>
+              </li>
+              <li>
+                <a class="nav-link" href="/html/listings.html">Listings</a>
+              </li>
+              <li>
+                <a class="nav-link" href="/html/login.html">Login</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <!--* nav empty space -->
+      <div id="nav-empty-space"></div>
 
-        <div>
+      <!-- * header -->
+      <!-- welcome space and search bar space -->
+      <header id="header-section">
+        <div class="header-wrapper">
+          <!-- the greeting and slogan of the website. -->
+          <div class="greeting-cntr">
+            <h1 class="greeting">Welcome to LUXURY</h1>
+            <h4 class="motto">
+              <small>Your one stop to the home of your dreams.</small>
+            </h4>
+          </div>
+
           <!-- the search space. the user selects the type of accomodation he is looking for and the prefered location and then press search to get matching results -->
-          <form class="">
-            <div class="form-group m-1">
-              <label id="hdr-label"
-                >What type of accomodation are you looking for?</label
-              >
-            </div>
+          <div class="search-form-cntr">
+            <form class="search-form" action="">
+              <!-- form heading -->
+              <div class="form-group-1">
+                <h3 class="form-search-hdr"
+                  >What type of accomodation are you looking for?</h3
+                >
+              </div>
 
-            <!--the dropdown holder for accomdation.-->
-            <div class="form-group m-1">
-              <select class="hdr-dropdn" name="accomodations">
-                <option value="holder">--Select Acommodation--</option>
-                <option value="hostel">Hostel</option>
-                <option value="privatApartment">Private Apartment</option>
-                <option value="sharedApartment">Shared Apartment</option>
-              </select>
-            </div>
+              <!-- form accomodation dropdown -->
+              <div class="form-group-2">
+                <select class="form-search-dropdn" name="accomodations">
+                  <option value="holder" name="holder">
+                    --Select Acommodation--
+                  </option>
+                  <option value="hostel" name="hostel">Hostel</option>
+                  <option value="privatApartment" name="privatApartment">
+                    Private Apartment
+                  </option>
+                  <option value="sharedApartment" name="sharedApartment">
+                    Shared Apartment
+                  </option>
+                </select>
+              </div>
 
-            <!--the dropdown holder for location.-->
-            <div class="form-group m-1">
-              <select  class="hdr-dropdn" name="locations">
-                <option value="holder">--Select Location--</option>
-                <option value="akoka">Akoka</option>
-                <option value="abuleOja">Abule Oja</option>
-                <option value="pako">Pako</option>
-              </select>
-            </div>
-            <div class="form-group m-1">
-              <!-- search button -->
-              <button
-                type="button"
-                id="hdr-search-btn" class="btn p-0 pl-1 pr-1 mr-1"
-              >
-                Search
-              </button>
-              <!-- filter button -->
-              <button
-                id="hdr-filter-btn" class="filter btn p-0 pl-1 pr-1 ml-1"
-              >
-                <i class="fas fa-filter"></i>
-              </button>
-            </div>
-          </form>
+              <!-- form location dropdown -->
+              <div class="form-group-3">
+                <select class="form-search-dropdn" name="locations">
+                  <option value="holder" name="holder">
+                    --Select Location--
+                  </option>
+                  <option value="akoka" name="akoka">Akoka</option>
+                  <option value="abuleOja" name="abuleOja">Abule Oja</option>
+                  <option value="pako" name="pako">Pako</option>
+                </select>
+              </div>
+
+              <!-- form search and filter button -->
+              <div class="form-group-4">
+                <!-- search -->
+                <button
+                  type="submit"
+                  id="form-search-btn"
+                  class="form-search-btn"
+                >
+                  Search
+                </button>
+                <!-- filter button -->
+                <button
+                  type="button"
+                  id="form-filter-btn"
+                  class="form-filter-btn"
+                >
+                  <a href="/html/filter.html"><i class="fas fa-filter"></i></a>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </header>
 
-      <!-- post for the advert of the accomodation in detail -->
-      <section class="detail-post-section d-flex flex-column m-1 ml-5 mr-5">
-        <!-- name of the advert -->
-        <h4 class="detail-post-title ">Grey Hostel</h4>
-        <div id="detail-post" class="row mb-2 d-flex flex-wrap flex-row border align-self-center justify-content-center text-center">
-          <!-- badge of verification and ratings for ads -->
-          <div class="ratings-verified">
-            <!-- badge of verification  for ads that have been verfied or are from verified users -->
-            <div class="verified"><i class=" fa fa-check-circle"></i> verified</div>
-            <!-- ratings of the accomodation by the users -->
-            <div class="ratings border-top d-inline-flex p-0 m-0 text-center">
-              <div class= "pl-1 pr-1">
-                <p class="ratings-title m-0">Ratings 5/5</p>
-                <div class="ratings-star m-0 p-0">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
+      <!--* ad post in detail -->
+      <main id="post-section">
+        <div class="post-section-wrapper">
+          <div class="post-cntr">
+            <!-- name of the advert -->
+            <div class="post-title">
+              <span>
+                <p>Grey Hostel</p>
+                <price>200,000</price>
+              </span>
+              <span>
+                <p>Posted by Lorem ipsum</p>
+                <p>21/03/2021</p>
+              </span>
+            </div>
+            <div class="ad-group1">
+              <div class="ratings-verified">
+                <!-- verify -->
+                <div class="verified">
+                  <p class="verified-title">
+                    <i class="fa fa-check-circle"></i> verified
+                  </p>
+                </div>
+                <!-- rating -->
+                <div class="ratings">
+                  <p class="ratings-title">Ratings 5/5</p>
+                  <p class="ratings-star">
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- images of the adverts -->
+              <img class="ad-pic" src="/img/post_images/lobby.jpg" alt="" />
+            </div>
+            <div class="ad-group2">
+              <!-- ad basic features -->
+              <div class="features-cntr">
+                <div class="feature">
+                  <span>1 <i class="fa fa-toilet"></i></span>
+                  <span>toilet</span>
+                </div>
+                <div class="feature">
+                  <span>1 <i class="fa fa-bath"></i></span>
+                  <span>bathroom</span>
+                </div>
+                <div class="feature">
+                  <span>1 <i class="fa fa-bed"></i></span>
+                  <span>bedroom</span>
+                </div>
+                <div class="feature">
+                  <span>1 <i class="fa fa-car"></i></span>
+                  <span>car space</span>
+                </div>
+                <!-- save button -->
+                <div class="save-btn">
+                  <span><i class="fa fa-heart"></i></span>
                 </div>
               </div>
             </div>
-          </div>
-          <img
-          class="detail-post-img p-0 col-4 rounded-0 align-self-center"
-          src="../img/post_images/hostel.jpg"
-          alt=""
-          />
-          <!-- the basic features that the accomodation has -->
-          <div class="features d-flex border text-center col-12 p-0 mt-0">
-            <span class="flex-fill"><span><i class="fa fa-toilet"> toilet</i><span> 1</span></span></span>
-            <span class="flex-fill"><span><i class="fa fa-bath"> bathroom</i><span> 1</span></span></span>
-            <span class="flex-fill"><span><i class="fa fa-bed"> bedroom</i><span> 1</span></span></span>
-            <span class="flex-fill"><span><i class="fa fa-car"> car space</i><span> 1</span></span></span>
-          </div>
-          
-          <!-- the save button to save posts -->
-          <div class="save border pb-1"><i class="fa fa-heart"></i> save
-          </div>
-          <!--* details and description of the accomodation -->
-          <div class="ad ml-5 mr-5 p-2 align-self-center">
-            <!-- title of the post -->
-            <h6 class="ad-title mb-0 ">Grey Hostel</h6>
-            <!-- location of the accomodation -->
-            <h6  class="ad-location  m-0 p-0"><small>Yaba, Lagos</small></h6>
-            <!-- price of the accomodation -->
-            <p class="ad-duration  m-0 p-0"><small><code >200,000</code> per session</small></p>
-            <!-- property description title of the accomodation -->
-            <h6 class="ad-p-title mb-0 pt-2">Property Description</h6>
-            <!-- property description  -->
-            <p class="ad-p mb-0 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-            iure atque animi? Odio doloribus sint dolorem harum atque nobis
-            repellendus?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem nesciunt molestias modi voluptates atque sed quas maxime tenetur aliquid deleniti totam repellendus ab obcaecati dolorem nostrum distinctio quisquam. Id!
-            </p>
-            <!-- table showing other property details -->
-            <div id="table">
-              <table class="table table-bordered table-striped m-0 mt-3 ">
-              <thead>
+            <div class="ad-group3">
+              <!-- title -->
+              <h4 class="post-title"> Grey Hostel serviced apartment</h4>
+                <h4>Akoka road, Yaba, Lagos</h4>
+              
+              <!-- price -->
+              <p class="ad-price"><price>200,000</price> per session</p>
+              <!-- description title -->
+              <h4 class="post-body-title">Property Description</h4>
+              <!-- description  -->
+              <p class="post-body">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                iure atque animi? Odio doloribus sint dolorem harum atque nobis
+                repellendus? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Rerum, voluptatem nesciunt molestias modi voluptates atque
+                sed quas maxime tenetur aliquid deleniti totam repellendus ab
+                obcaecati dolorem nostrum distinctio quisquam. Id!
+              </p>
+            </div>
+            <div class="ad-group4">
+              <!-- table of additional features -->
+              <table>
+                <thead>
                   <tr>
-                    <th class="text-center" colspan="4">Type</th>
+                    <th colspan="4">Type</th>
                   </tr>
-              </thead>
-              <thead>
+                </thead>
+                <thead>
                   <tr>
                     <th>Type</th>
                     <th>No per room</th>
                     <th>Gender</th>
                     <th></th>
                   </tr>
-              </thead>
-              <tbody>
+                </thead>
+                <tbody>
                   <tr>
                     <td scope="row">Hostel</td>
                     <td>2</td>
                     <td>Female</td>
                     <td></td>
                   </tr>
-              </tbody>
-              <thead>
+                </tbody>
+                <thead>
                   <tr>
-                    <th class="text-center" colspan="4">Payment method</th>
+                    <th colspan="4">Payment method</th>
                   </tr>
-              </thead>
-              <thead>
+                </thead>
+                <thead>
                   <tr>
                     <th>Duration</th>
                     <th>Price</th>
                     <th>Installmental payments</th>
                     <th>Slots available</th>
                   </tr>
-              </thead>
-              <tbody>
+                </thead>
+                <tbody>
                   <tr>
                     <td scope="row">per school session</td>
                     <td>200,000</td>
                     <td scope="row">no</td>
                     <td>5</td>
                   </tr>
-              </tbody>
-              <thead>
+                </tbody>
+                <thead>
                   <tr>
-                    <th class="text-center" colspan="4">Rooms</th>
+                    <th colspan="4">Rooms</th>
                   </tr>
-              </thead>
-              <thead>
+                </thead>
+                <thead>
                   <tr>
                     <th>Room</th>
                     <th>Kitchen</th>
                     <th>Toilet</th>
                     <th>Bathroom</th>
                   </tr>
-              </thead>
-              <tbody>
+                </thead>
+                <tbody>
                   <tr>
                     <td scope="row">1</td>
                     <td>1</td>
-                    <td >1</td>
+                    <td>1</td>
                     <td>1</td>
                   </tr>
-              </tbody>
-              <thead>
+                </tbody>
+                <thead>
                   <tr>
-                    <th class="text-center" colspan="4">Facilities/Utilities</th>
+                    <th colspan="4">Facilities/Utilities</th>
                   </tr>
-              </thead>
-              <thead>
+                </thead>
+                <thead>
                   <tr>
                     <th>Bed</th>
                     <th>Matress</th>
                     <th>Electricity</th>
                     <th>Water</th>
                   </tr>
-              </thead>
-              <tbody>
+                </thead>
+                <tbody>
                   <tr>
                     <td scope="row">Yes</td>
                     <td>No</td>
                     <td scope="row">24hrs</td>
                     <td>constant</td>
                   </tr>
-              </tbody>
-              <thead>
+                </tbody>
+                <thead>
                   <tr>
                     <th>Fan</th>
                     <th>AirCon</th>
                     <th>Cupboard</th>
                     <th>Wardrobe</th>
                   </tr>
-              </thead>
-              <tbody>
+                </thead>
+                <tbody>
                   <tr>
                     <td scope="row">Yes</td>
                     <td>Yes</td>
                     <td scope="row">No</td>
                     <td>Yes</td>
                   </tr>
-              </tbody>
-              <thead>
+                </tbody>
+                <thead>
                   <tr>
                     <th>Gas</th>
                     <th>Gen</th>
                     <th>Wifi</th>
                     <th>Reading/Commom room</th>
                   </tr>
-              </thead>
-              <tbody>
+                </thead>
+                <tbody>
                   <tr>
                     <td scope="row">Yes</td>
                     <td>Yes</td>
                     <td scope="row">No</td>
                     <td>No</td>
                   </tr>
-              </tbody>
-              <thead>
+                </tbody>
+                <thead>
                   <tr>
                     <th>Cleaning service</th>
                     <th>Laundering service</th>
                     <th>Security</th>
                     <th>Visitation</th>
                   </tr>
-              </thead>
-              <tbody>
+                </thead>
+                <tbody>
                   <tr>
                     <td scope="row">Yes</td>
                     <td>Yes</td>
                     <td scope="row">Yes</td>
                     <td>Allowed</td>
                   </tr>
-              </tbody>
-              <thead>
+                </tbody>
+                <thead>
                   <tr>
-                    <th class="text-center" colspan="4">
-                      Inspection
-                  </th>
+                    <th colspan="4">Inspection</th>
                   </tr>
-              </thead>
-              <thead>
-                <tr>
-                  <th>Inspection days</th>
-                  <th>Inspection hours</th>
-                  <th></th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
+                </thead>
+                <thead>
+                  <tr>
+                    <th>Inspection days</th>
+                    <th>Inspection hours</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
                   <tr>
                     <td scope="row">Mon, Thurs</td>
                     <td>12pm-2pm</td>
                     <td scope="row"></td>
                     <td></td>
                   </tr>
-              </tbody>
-              <thead>
+                </tbody>
+                <thead>
                   <tr>
-                    <th class="text-center" colspan="4">Additional info</th>
+                    <th colspan="4">Additional info</th>
                   </tr>
-              </thead>
-              <thead>
+                </thead>
+                <thead>
                   <tr>
                     <th>Proximity to road</th>
                     <th>Proximity to market</th>
                     <th>Proximity to school</th>
                     <th></th>
                   </tr>
-              </thead>
-              <tbody>
+                </thead>
+                <tbody>
                   <tr>
                     <td scope="row">5/5</td>
                     <td>5/5</td>
                     <td>4/5</td>
                     <td></td>
                   </tr>
-              </tbody>
+                </tbody>
               </table>
             </div>
+            <div class="ad-group5">
+              <span class="tags">2man</span>
+              <span class="tags">female hostel</span>
+              <span class="tags">serviced apartment</span>
+              <span class="tags">yaba</span>
+            </div>
           </div>
-        </div>
-        
-        <!--* call to action on the post -->
-        <div class="cta-btns d-flex flex-warp flex-row flex-fill justify-content-around btn-group m-2 mb-3">
+          <!-- cta -->
+          <div class="post-cta-cntr">
             <!-- the chat with agent button -->
-            <button id="chat-btn" class="col col-4 btn-primary m-1 p-1 rounded "><a href="#"></a>Chat</button>
+            <button id="chat-btn" type="button">
+              <a href="#">Chat</a>
+            </button>
             <!-- the book a video call inspection button -->
-            <button id="video-btn" class="col col-4 btn-primary m-1 mr-1 p-1 rounded "><a href="#"></a>Video Call</button>
+            <button id="video-btn" type="button">
+              <a href="#">Video Call</a>
+            </button>
             <!-- the book a physical inspection button -->
-            <button id="book-btn" class="col col-4 btn-primary m-1 mr-1 p-1 rounded "><a href="#"></a>Book Inspection</button>
+            <button id="book-btn" type="button">
+              <a href="#">Book Inspection</a>
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <!--* reviews buy users who have used the accomodation -->
+      <section id="ad-reviews-section">
+        <div class="ad-reviews-wrapper">
+          <h3 class="section-title">Reviews</h3>
+          <!-- review posts -->
+          <div class="ad-reviews-cntr">
+            <!-- review1 -->
+            <div class="user-ad-review">
+              <div class="user-ad-review-heading">
+                <!-- user star ratings -->
+                <div class="user-ad-ratings">
+                  <p class="ratings-title">5/5</p>
+                  <p class="ratings-star">
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                  </p>
+                </div>
+                <div class="user-name-date">
+                  <!-- user name -->
+                  <h4 class="user-ad-name">User1</h4>
+                  <!-- date the post was made -->
+                  <p class="user-ad-review-date">January 6th, 2021</p>
+                </div>
+              </div>
+              <!-- user review -->
+              <div class="user-ad-review-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  ipsam a sed aliquid. Quidem quam explicabo excepturi! Tempore
+                  esse doloribus quaerat. Odit perferendis quidem asperiores
+                  molestiae. Odio amet et iste.Est inventore dicta, iste nobis
+                  possimus cupiditate quasi saepe corrupti vitae velit natus
+                  necessitatibus architecto libero a ea voluptas, officiis, ipsa
+                  soluta optio quia molestias dolor cumque incidunt. Nesciunt,
+                  laborum?
+                </p>
+              </div>
+            </div>
+            <!-- review2 -->
+            <div class="user-ad-review">
+              <div class="user-ad-review-heading">
+                <!-- user star ratings -->
+                <div class="user-ad-ratings">
+                  <p class="ratings-title">5/5</p>
+                  <p class="ratings-star">
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                  </p>
+                </div>
+                <div class="user-name-date">
+                  <!-- user name -->
+                  <h4 class="user-ad-name">User2</h4>
+                  <!-- date the post was made -->
+                  <p class="user-ad-review-date">January 6th, 2021</p>
+                </div>
+              </div>
+              <!-- user review -->
+              <div class="user-ad-review-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  ipsam a sed aliquid. Quidem quam explicabo excepturi! Tempore
+                  esse doloribus quaerat. Odit perferendis quidem asperiores
+                  molestiae. Odio amet et iste.Est inventore dicta, iste nobis
+                  possimus cupiditate quasi saepe corrupti vitae velit natus
+                  necessitatibus architecto libero a ea voluptas, officiis, ipsa
+                  soluta optio quia molestias dolor cumque incidunt. Nesciunt,
+                  laborum?
+                </p>
+              </div>
+            </div>
+            <!-- review3 -->
+            <div class="user-ad-review">
+              <div class="user-ad-review-heading">
+                <!-- user star ratings -->
+                <div class="user-ad-ratings">
+                  <p class="ratings-title">5/5</p>
+                  <p class="ratings-star">
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                  </p>
+                </div>
+                <div class="user-name-date">
+                  <!-- user name -->
+                  <h4 class="user-ad-name">User3</h4>
+                  <!-- date the post was made -->
+                  <p class="user-ad-review-date">January 6th, 2021</p>
+                </div>
+              </div>
+              <!-- user review -->
+              <div class="user-ad-review-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  ipsam a sed aliquid. Quidem quam explicabo excepturi! Tempore
+                  esse doloribus quaerat. Odit perferendis quidem asperiores
+                  molestiae. Odio amet et iste.Est inventore dicta, iste nobis
+                  possimus cupiditate quasi saepe corrupti vitae velit natus
+                  necessitatibus architecto libero a ea voluptas, officiis, ipsa
+                  soluta optio quia molestias dolor cumque incidunt. Nesciunt,
+                  laborum?
+                </p>
+              </div>
+            </div>
+            <!-- review4 -->
+            <div class="user-ad-review">
+              <div class="user-ad-review-heading">
+                <!-- user star ratings -->
+                <div class="user-ad-ratings">
+                  <p class="ratings-title">5/5</p>
+                  <p class="ratings-star">
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar fa fa-star"></i>
+                  </p>
+                </div>
+                <div class="user-name-date">
+                  <!-- user name -->
+                  <h4 class="user-ad-name">User4</h4>
+                  <!-- date the post was made -->
+                  <p class="user-ad-review-date">January 6th, 2021</p>
+                </div>
+              </div>
+              <!-- user review -->
+              <div class="user-ad-review-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  ipsam a sed aliquid. Quidem quam explicabo excepturi! Tempore
+                  esse doloribus quaerat. Odit perferendis quidem asperiores
+                  molestiae. Odio amet et iste.Est inventore dicta, iste nobis
+                  possimus cupiditate quasi saepe corrupti vitae velit natus
+                  necessitatibus architecto libero a ea voluptas, officiis, ipsa
+                  soluta optio quia molestias dolor cumque incidunt. Nesciunt,
+                  laborum?
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- reviews buy users who have used the accomodation -->
-      <section id="ad-reviews" class=" d-flex flex-column ml-5 mr-5 ">
-        <h5 class="section-title">Reviews</h5>
-        <div class="">
-          <!-- review post by users -->
-          <div class="ad-review border">
-            <!-- user name -->
-            <h5 class="ad-review-name m-0 p-0 col col-6 "><small>User1</small></h5>
-            <!-- star ratings by the user -->
-            <div class="ratings-star border d-inline-flex m-0 mt-1 mb-1 text-center">
-              <div class= "pl-1 pr-1">
-                <div class="m-0 p-0">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <span>5/5</span>
-                </div>
-              </div>
-            </div>
-            <!-- date the post was made -->
-            <p class="ad-review-date p-0 m-0 post-date">January 6th, 2021</p>
-            <!-- user review -->
-            <p class="ad-review-p post pb-0 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam a sed aliquid. Quidem quam explicabo excepturi! Tempore esse doloribus quaerat. Odit perferendis quidem asperiores molestiae. Odio amet et iste.Est inventore dicta, iste nobis possimus cupiditate quasi saepe corrupti vitae velit natus necessitatibus architecto libero a ea voluptas, officiis, ipsa soluta optio quia molestias dolor cumque incidunt. Nesciunt, laborum?
-            </p>
+      <!--* cta section -->
+      <section id="cta-section">
+        <div class="cta-section-wrapper">
+          <div class="reg-cntr">
+            <span class="reg-body">
+              <p>
+                Do you own a hostel or are you an estate agent or company?<br />List
+                your property for FREE.
+              </p>
+            </span>
+            <span class="reg-btn">
+              <button id="reg-btn" class="" type="button">
+                <a href="html/signup.html">Register here!</a>
+              </button>
+            </span>
           </div>
-          <div class="ad-review border">
-            <!-- user name -->
-            <h5 class="ad-review-name m-0 p-0 col col-6"><small>User1</small></h5>
-            <!-- star ratings by the user -->
-            <div class="ratings-star border d-inline-flex m-0 mt-1 mb-1 text-center">
-              <div class= "pl-1 pr-1">
-                <div class="m-0 p-0">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <span>5/5</span>
-                </div>
-              </div>
-            </div>
-            <!-- date the post was made -->
-            <p class="ad-review-date p-0 m-0 post-date">January 6th, 2021</p>
-            <!-- user review -->
-            <p class="ad-review-p post pb-0 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam a sed aliquid. Quidem quam explicabo excepturi! Tempore esse doloribus quaerat. Odit perferendis quidem asperiores molestiae. Odio amet et iste.Est inventore dicta, iste nobis possimus cupiditate quasi saepe corrupti vitae velit natus necessitatibus architecto libero a ea voluptas, officiis, ipsa soluta optio quia molestias dolor cumque incidunt. Nesciunt, laborum?
-            </p>
-          </div>
-          <div class="ad-review border">
-            <!-- user name -->
-            <h5 class="ad-review-name m-0 p-0 col col-6"><small>User1</small></h5>
-            <!-- star ratings by the user -->
-            <div class="ratings-star border d-inline-flex m-0 mt-1 mb-1 text-center">
-              <div class= "pl-1 pr-1">
-                <div class="m-0 p-0">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <span>5/5</span>
-                </div>
-              </div>
-            </div>
-            <!-- date the post was made -->
-            <p class="ad-review-date p-0 m-0 post-date">January 6th, 2021</p>
-            <!-- user review -->
-            <p class="ad-review-p post pb-0 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam a sed aliquid. Quidem quam explicabo excepturi! Tempore esse doloribus quaerat. Odit perferendis quidem asperiores molestiae. Odio amet et iste.Est inventore dicta, iste nobis possimus cupiditate quasi saepe corrupti vitae velit natus necessitatibus architecto libero a ea voluptas, officiis, ipsa soluta optio quia molestias dolor cumque incidunt. Nesciunt, laborum?
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- cta to people to post their property with us -->
-      <section id="reg-here">
-        <div class="d-flex flex-wrap text-center pl-5 pr-5 pt-3 pb-3 justify-content-center">
-          <p class="reg-p col col-9 text-center font-weight-bold text-white">Do you own a hostel or are you an estate agent or company?<br>List your property for FREE.</p>
-          <span class="">
-            <button id="reg-btn" class="col btn p-1 pl-2 pr-2">Register here!</button>
-          </span>
         </div>
       </section>
 
       <!--* footer -->
-      <footer id="footer" class="d-flex flex-cloumn p-2">
-        <!-- contact section -->
-        <div class="contact-us d-flex flex-column col-12 text-center">
-          <div class="contact-hdr m-0 font-weight-bold" >CONTACT</div>
-          <div class="">
-            <!-- website contact number -->
-            <span class="contacts">
-              <span class="contact-title">Phone</span>
-              <span>: <a class="contact-link" href="tel:+23480xxxxxxxx">080xxxxxxxx</a>, <a href="tel:+23480xxxxxxxx">080xxxxxxxx</a></span>
-            </span>
+      <footer id="footer-section">
+        <div class="footer-wrapper">
+          <!--* contacts -->
+          <address class="contact-cntr">
+            <h5 class="contact-hdr">CONTACT</h5>
+            <div class="contacts">
+              <!-- website contact number -->
+              <span class="contact-link">
+                Phone
+                <a href="tel:+23480xxxxxxxx">: 080xxxxxxxx</a>
+                <a href="tel:+23480xxxxxxxx">, 080xxxxxxxx</a>
+              </span>
 
-            <!-- website email address -->
-            <span class="contacts">
-              <span class="contact-title">Email</span>
-              <span>: <a class="contact-link" href="mailto:luxury@gmail.com">luxury@gmail.com</a></span>
-            </span>
-          </div>
-          
+              <!-- website email address -->
+              <span class="contact-link">
+                Email
+                <a href="mailto:luxury@gmail.com">: luxury@gmail.com</a>
+              </span>
+            </div>
+          </address>
+
           <!-- website social media handles -->
-          <div class="social-handles m-0">
-            <ul class="d-flex justify-content-center p-0 m-0"> 
+          <address class="social-handles-cntr">
+            <ul>
               <!-- facebook handle -->
               <li>
-                <a class="socials fb" alt="facebook handle" href="https://facebook.com/luxury" target="_blank"
+                <a
+                  class="socials fb"
+                  alt="facebook handle"
+                  href="#"
+                  target="_blank"
                   ><i class="fab fa-facebook-square"></i
                 ></a>
               </li>
               <!-- instagram handle -->
               <li>
-                <a class="socials ig" alt="instagram handle" href="https://instagram.com/luxury" target="_blank"
+                <a
+                  class="socials ig"
+                  alt="instagram handle"
+                  href="#"
+                  target="_blank"
                   ><i class="fab fa-instagram"></i
                 ></a>
               </li>
               <!-- twitter handle -->
               <li>
-                <a class="socials twitter" alt="twitter handle" href="https://www.twitter.com/luxury" target="_blank"
+                <a
+                  class="socials twitter"
+                  alt="twitter handle"
+                  href="#"
+                  target="_blank"
                   ><i class="fab fa-twitter-square"></i
                 ></a>
               </li>
               <!-- whatsapp number -->
               <li>
-                <a class="socials whatsapp" alt="whatsapp handle" href="https://wa.me/23480********" target="_blank"
+                <a
+                  class="socials whatsapp"
+                  alt="whatsapp handle"
+                  href="#"
+                  target="_blank"
                   ><i class="fab fa-whatsapp-square"></i
                 ></a>
               </li>
             </ul>
-          </div>
+          </address>
 
           <!--the name of the designer of the website-->
-          <p id="designer" class="p-0 m-0 font-weight-bold">Designed by Pelumi Akintokun</p> 
+          <p class="designer">Designed by Pelumi Akintokun</p>
         </div>
       </footer>
-      
-      <!-- chat button visitors can click on to chat with the website representative -->
-      <div id="chat-with-us" >
-        <a alt="chat" href="https://wa.me/23480********" target="_blank"><i class="fas fa-comment"></i></a>
+
+      <!--* chat button -->
+      <div id="chat-with-us">
+        <a
+          alt="button to chat with customer representive"
+          href="#"
+          target="_blank"
+          ><i class="fas fa-comment"></i
+        ></a>
       </div>
+
+      <!-- todo -->
     </div>
 
-    <!--* Online Optional JavaScript; choose one of the two! -->
+    <!--* My Javascript code link -->
+    <!-- main Javascript code -->
+    <script type="text/javascript" src="/js/index.js"></script>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!--* Bootstrap Online JavaScript, jQuery, Popper; choose one of the two! -->
+    <!--todo Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -514,25 +713,34 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+    <!--todo Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script> -->
 
-    <!--* jQuery offline (necessary for Bootstrap's JavaScript plugins) -->
+    <!--* Bootstrap Offline jQuery, Popper (necessary for Bootstrap's JavaScript plugins) -->
     <!-- bootstrap Javascript offline -->
     <script
       type="text/javascript"
-      src="../bootstrap-4.5.3-dist\js\bootstrap.min.js"
+      src="/bootstrap-4.5.3-dist\js\bootstrap.min.js"
     ></script>
     <!-- [offline] Include all compiled plugins (below), or include individual files as needed -->
     <!-- bootstrap jQuery offline -->
     <script
       type="text/javascript"
-      src="../bootstrap-4.5.3-dist\js\jquery-3.5.1.min.js"
+      src="/bootstrap-4.5.3-dist\js\jquery-3.5.1.min.js"
     ></script>
-    <!-- My Javascript code link -->
-    <script type="text/javascript" src="js.js"></script>
   </body>
 </html>
