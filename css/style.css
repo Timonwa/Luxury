@@ -44,7 +44,7 @@
 
   /* dimensions */
   --nav-height: 60px;
-  --section-div-margin: 30px auto;
+  --section-div-margin: 20px auto 30px;
   --section-div-padding: 20px;
   --section-width: 700px;
 }
@@ -217,6 +217,9 @@ img {
 .flex > #nav-empty-space {
   height: calc(var(--nav-height) / 2);
 }
+.flex > #nav-empty-space2 {
+  height: calc(var(--nav-height) / 3 * 2);
+}
 /* * header section */
 .flex > header {
   display: flex;
@@ -233,6 +236,9 @@ img {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+}
+.flex > header > .header-wrapper2 {
+  height: 250px;
 }
 .flex > header > .header-wrapper > div {
   display: flex;
@@ -328,6 +334,9 @@ img {
   -o-border-radius: 3px;
 }
 /* * reviews section */
+.flex > #company-reviews-section {
+  border-bottom: 1px var(--main-bdr);
+}
 .flex > #company-reviews-section > .company-reviews-section-wrapper {
   margin: var(--section-div-margin);
   padding: var(--section-div-padding);
@@ -523,7 +532,7 @@ img {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
   width: 100%;
   border: 1px var(--main-bdr);
 }
@@ -662,7 +671,7 @@ img {
   > .ads-post
   > .ad-group2
   > .ad-brief-discription
-  > h5:first-child,
+  > h4:first-child,
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group3 > h5 {
   margin-bottom: 0;
 }
@@ -906,6 +915,7 @@ price {
 .flex > #cta-section > .cta-section-wrapper > .reg-cntr > span {
   margin: 0 10px;
   font-weight: 700;
+  font-size: 18px;
 }
 .flex > #cta-section > .cta-section-wrapper > .reg-cntr > .reg-btn {
   padding: 0px;
@@ -1252,14 +1262,122 @@ table th {
   padding: 10px 20px;
   font-size: 12px;
 }
+@media screen and (min-width: 1200px) {
+  :root {
+    --section-width: 960px;
+  }
+  /* body */
+  body {
+    font-size: 18px;
+  }
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group1 {
+    width: 430px;
+    position: relative;
+  }
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group2 {
+    width: 530px;
+  }
+}
 @media screen and (max-width: 700px) {
-  .flex > #company-reviews-section > .company-reviews-section-wrapper {
-    width: 300px;
+  :root {
+    --section-width: 500px;
   }
   .flex
     > #company-reviews-section
     > .company-reviews-section-wrapper
     > .company-reviews-cntr {
-    width: calc(300px - (var(--section-div-padding) * 2));
+    width: calc((var(--section-width)) - (var(--section-div-padding) * 2));
+  }
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post {
+    width: calc(var(--section-width) - 100px);
+  }
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post {
+    flex-wrap: wrap;
+  }
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > div {
+    height: 250px;
+  }
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group1 {
+    width: 100%;
+    position: relative;
+  }
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group2 {
+    width: 100%;
+  }
+  .flex
+    > #ads-section
+    > .ads-wrapper
+    > .ads-cntr
+    > .ads-post
+    > .ad-group2
+    > .ad-brief-discription {
+    padding: 10px;
+  }
+  .flex
+    > #ads-section
+    > .ads-wrapper
+    > .ads-cntr
+    > .ads-post
+    > .ad-group2
+    > .features-cntr
+    > .feature,
+  .flex
+    > #ads-section
+    > .ads-wrapper
+    > .ads-cntr
+    > .ads-post
+    > .ad-group2
+    > .features-cntr
+    > .save-btn {
+    width: calc(360px / 5);
+  }
+}
+@media screen and (max-width: 500px) {
+  :root {
+    --section-div-margin: 20px auto;
+    --section-div-padding: 10px;
+    --section-width: 400px;
+  }
+  .flex > #about-section > .about-section-wrapper > .about-us > .about-us-ctnr {
+    flex-direction: column;
+    margin: 20px 40px;
+  }
+  .flex
+    > #about-section
+    > .about-section-wrapper
+    > .about-us
+    > .about-us-ctnr
+    > img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 425px){
+:root{
+    --section-width: 300px;
+}
+.flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post {
+    width: 320px
+  }
+  .flex
+    > #ads-section
+    > .ads-wrapper
+    > .ads-cntr
+    > .ads-post
+    > .ad-group2
+    > .features-cntr
+    > .feature{
+      
+    width: 60px;
+    }
+  .flex
+    > #ads-section
+    > .ads-wrapper
+    > .ads-cntr
+    > .ads-post
+    > .ad-group2
+    > .features-cntr
+    > .save-btn {
+    width: 60px;
   }
 }
