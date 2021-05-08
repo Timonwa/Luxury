@@ -117,7 +117,9 @@ button:focus {
 }
 /** button */
 button,
-select {
+select,
+input,
+a {
   cursor: pointer;
 }
 /** list */
@@ -1352,12 +1354,12 @@ table th {
     height: 200px;
   }
 }
-@media screen and (max-width: 425px){
-:root{
+@media screen and (max-width: 425px) {
+  :root {
     --section-width: 300px;
-}
-.flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post {
-    width: 320px
+  }
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post {
+    width: 320px;
   }
   .flex
     > #ads-section
@@ -1366,10 +1368,9 @@ table th {
     > .ads-post
     > .ad-group2
     > .features-cntr
-    > .feature{
-      
+    > .feature {
     width: 60px;
-    }
+  }
   .flex
     > #ads-section
     > .ads-wrapper
