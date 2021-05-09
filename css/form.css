@@ -10,6 +10,7 @@
   background-color: var(--main-bgc3-dark-blue);
   color: var(--color);
   overflow: hidden;
+  font-size: 16px;
 }
 .flex > .form-cntr {
   display: flex;
@@ -62,7 +63,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 40px 20px;
   width: 300px;
   background-color: var(--glass-color);
   backdrop-filter: blur(var(--blur));
@@ -91,6 +92,7 @@
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
+  font-size: 16px;
 }
 .flex > .form-cntr > form > .group1 > input {
   background-color: var(--input-bgc);
@@ -143,7 +145,7 @@ button {
 }
 .flex > .form-cntr > form > .group3 > p #signup,
 .flex > .form-cntr > form > .group3 > p #signin {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
 }
 .flex > .form-cntr > form > .group3 > p.social-signin {
@@ -191,7 +193,7 @@ background-repeat: no-repeat;
 .filter-flex > .form-cntr > form {
   backdrop-filter: blur(5px);
   color: var(--color);
-  padding: 20px 40px;
+  padding: 40px;
 }
 .filter-flex > .form-cntr > form > div{
  display: flex;
@@ -232,4 +234,7 @@ button {
 }
 .filter-flex > .form-cntr > form > div > div label{
     font-size: 14px;
+} 
+.filter-flex > .form-cntr > form button{
+    font-size: 16px;
 } 
