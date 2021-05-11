@@ -97,14 +97,23 @@ else{
 }
 }
 
-// submit validation
-function validate(){
+// signup validation
+function signupValidate(){
     if (validateName() === true && validateEmail() === true && validatePassword() === true && validateCPassword() === true && termsCons.checked){
         return true
     }
     else if(validateName() === true && validateEmail() === true && validatePassword() === true && validateCPassword() === true && !termsCons.checked){
         alert("you must agree to the terms and conditions!");
         return false
+    }
+    else{
+        return false
+    }
+}
+// login validation
+function loginValidate(){
+    if (validateEmail() === true && validatePassword() === true){
+        return true
     }
     else{
         return false

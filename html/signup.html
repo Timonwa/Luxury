@@ -37,7 +37,7 @@
         <div class="circle"></div>
         <div class="square"></div>
         <div class="triangle"></div>
-        <form action="/message.html" onsubmit="return validate()" id="signup">
+        <form action="/message.html" onsubmit="return signupValidate()" id="signup">
           <!-- legend/title of the form -->
           <h3>SIGN UP</h3>
           <div class="group1">
@@ -78,7 +78,9 @@
           <div class="group2">
             <!-- terms and conditions checkbox  -->
             <div class="terms">
-              <I accept the
+              <input id="terms" name="terms" type="checkbox" />
+              <label for="terms">
+                I accept the
                 <a class="terms-cons" href="#">terms and conditions</a> and
                 <a class="priv-policy" href="#">privacy policy</a>
               </label>

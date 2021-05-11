@@ -41,7 +41,7 @@
         <div class="circle"></div>
         <div class="square"></div>
         <div class="triangle"></div>
-        <form action="/message.html" onsubmit="return " id="login">
+        <form action="/message.html" onsubmit="return loginValidate()" id="login">
           <!-- legend/title -->
           <h3>LOGIN</h3>
           <div class="group1">
@@ -51,7 +51,6 @@
               name="email"
               type="email"
               placeholder="email"
-              required
             />
             <label id="email-lbl" for="email"></label>
             <!-- user password -->
@@ -60,7 +59,6 @@
               name="password"
               type="password"
               placeholder="password"
-              required
             />
             <label id="password-lbl" for="password"></label>
             <!-- login button -->
