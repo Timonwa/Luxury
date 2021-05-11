@@ -41,12 +41,11 @@
         <div class="circle"></div>
         <div class="square"></div>
         <div class="triangle"></div>
-        <form action="" id="login">
+        <form action="/message.html" onsubmit="return " id="login">
           <!-- legend/title -->
           <h3>LOGIN</h3>
           <div class="group1">
             <!-- user email -->
-            <label for="email"></label>
             <input
               id="email"
               name="email"
@@ -54,8 +53,8 @@
               placeholder="email"
               required
             />
+            <label id="email-lbl" for="email"></label>
             <!-- user password -->
-            <label for="password"></label>
             <input
               id="password"
               name="password"
@@ -63,15 +62,16 @@
               placeholder="password"
               required
             />
+            <label id="password-lbl" for="password"></label>
             <!-- login button -->
             <button id="signin-btn" type="submit">Login</button>
           </div>
           <div class="group2">
             <!-- remember me checkbox -->
-            <input id="form-check-input" type="checkbox" />
+            <input id="rmmbr-me" type="checkbox" />
             <label for="form-check-input">remember me</label>
             <!-- forgot password  -->
-            <p class="forgot-pswd"><a href="#">forgot password?</a></p>
+            <p id="forgot-pswd"><a href="#">forgot password?</a></p>
           </div>
           <div class="group3">
             <!-- sign up link -->

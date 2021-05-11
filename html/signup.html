@@ -37,54 +37,48 @@
         <div class="circle"></div>
         <div class="square"></div>
         <div class="triangle"></div>
-        <form action="" id="signup">
+        <form action="/message.html" onsubmit="return validate()" id="signup">
           <!-- legend/title of the form -->
           <h3>SIGN UP</h3>
           <div class="group1">
             <!-- user name -->
-            <label for="name"></label>
             <input
               id="name"
               name="name"
               type="text"
               placeholder="name"
-              required
             />
+           <label id="name-lbl" for="name"></label>
             <!-- user email -->
-            <label for="email"></label>
             <input
               id="email"
               name="email"
               type="email"
               placeholder="email"
-              required
             />
+            <label id="email-lbl" for="email"></label>
             <!-- user password -->
-            <label for="password"></label>
             <input
               id="password"
               name="password"
               type="password"
               placeholder="password"
-              required
             />
-            <label for="confirm-password"></label>
+            <label id="password-lbl" for="password"></label>
             <input
               id="confirm-password"
               name="confirm-password"
               type="password"
               placeholder="confirm password"
-              required
             />
+            <label id="confirm-password-lbl" for="password"></label>
             <!-- sign up button -->
-            <button id="signup-btn" type="submit">Sign Up</button>
+            <button id="signup" type="submit">Sign Up</button>
           </div>
           <div class="group2">
             <!-- terms and conditions checkbox  -->
             <div class="terms">
-              <input name="terms" type="checkbox" />
-              <label for="terms">
-                I accept the
+              <I accept the
                 <a class="terms-cons" href="#">terms and conditions</a> and
                 <a class="priv-policy" href="#">privacy policy</a>
               </label>

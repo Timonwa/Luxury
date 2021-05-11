@@ -226,18 +226,19 @@ img {
 .flex > header {
   display: flex;
   flex-direction: column;
+  background-image: url("/img/bg2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .flex > header > .header-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/img/bedroom.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
 }
 .flex > header > .header-wrapper2 {
   height: 250px;
@@ -247,6 +248,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--main-bgc2-white);
+  color: var(--main-post-bgc-eee);
 }
 .flex > header > .header-wrapper > .greeting-cntr {
   padding: var(--section-div-padding);
