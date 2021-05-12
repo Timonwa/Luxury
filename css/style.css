@@ -43,7 +43,7 @@
   --google: #dd4b39;
 
   /* dimensions */
-  --nav-height: 60px;
+  --nav-height: 40px;
   --section-div-margin: 20px auto 30px;
   --section-div-padding: 20px;
   --section-width: 700px;
@@ -190,8 +190,8 @@ ul {
   height: var(--nav-height);
   position: fixed;
   z-index: 100;
-  background-color: var(--main-bgc2-white);
-  border-bottom: solid 2px var(--main-color6-inactive);
+  background-color: rgba(0, 0, 0, 0.548);
+  color: var(--main-post-bgc-eee);
 }
 .flex > nav > .nav-wrapper {
   display: flex;
@@ -209,11 +209,12 @@ ul {
 .flex > nav > .nav-wrapper > div > ul > li > a {
   padding: 0 10px;
   color: var(--main-color2-light-blue);
+  color: #fff;
   font-weight: 700;
 }
 /* * nav empty space */
 .flex > #nav-empty-space {
-  height: calc(var(--nav-height) / 2);
+  /* height: calc(var(--nav-height) / 2); */
 }
 .flex > #nav-empty-space2 {
   height: calc(var(--nav-height) / 3 * 2);
@@ -357,6 +358,7 @@ ul {
   align-items: center;
   width: calc(var(--section-width) - (var(--section-div-padding) * 2));
   height: 230px;
+  margin: 10px;
 }
 .flex
   > #company-reviews-section
@@ -992,12 +994,6 @@ price {
   justify-content: center;
 }
 .flex > #footer-section {
-  background-image: linear-gradient(
-    90deg,
-    var(--main-bgc3-dark-blue) 45%,
-    var(--main-bgc4-vlight-blue) 55%,
-    var(--main-bgc3-dark-blue) 100%
-  );
   background-image: linear-gradient(45deg, var(--main-bgc3-dark-blue), black);
   color: var(--main-post-bgc-eee);
 }
