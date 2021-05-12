@@ -179,10 +179,6 @@ ul {
 /*? ==========  */
 /*? end of basic css styles */
 /*? ========== */
-img {
-  width: 100px;
-  height: 100px;
-}
 .flex {
   display: flex;
   flex-direction: column;
@@ -360,7 +356,7 @@ img {
   justify-content: center;
   align-items: center;
   width: calc(var(--section-width) - (var(--section-div-padding) * 2));
-  height: 200px;
+  height: 230px;
 }
 .flex
   > #company-reviews-section
@@ -398,13 +394,30 @@ img {
   > .company-reviews-cntr
   > .user-company-review {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   margin: auto;
-  padding: 0 20px;
-  border: 1px var(--main-bdr);
-  background-color: var(--main-bgc2-white);
+  padding: 30px;
+  box-shadow: 0px 0px 5px 5px #eee;
+}
+.flex
+  > #company-reviews-section
+  > .company-reviews-section-wrapper
+  > .company-reviews-cntr
+  > .user-company-review
+  > div {
+  padding: 20px;
+}
+.flex
+  > #company-reviews-section
+  > .company-reviews-section-wrapper
+  > .company-reviews-cntr
+  > .user-company-review
+  > .user-review {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .flex
   > #company-reviews-section
@@ -414,7 +427,7 @@ img {
   > .user-review
   > p {
   position: relative;
-  padding: 10px;
+  padding: 10px 30px;
   font-size: 12px;
   text-align: center;
   margin-bottom: 0;
@@ -435,9 +448,8 @@ img {
   content: "\f10d";
   position: absolute;
   top: 0px;
-  left: -5px;
-  width: 20px;
-  height: 20px;
+  left: 0px;
+  font-size: 20px;
   color: var(--main-color2-light-blue);
 }
 .flex
@@ -457,8 +469,7 @@ img {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  width: 20px;
-  height: 20px;
+  font-size: 20px;
   color: var(--main-color2-light-blue);
 }
 .flex
@@ -466,14 +477,29 @@ img {
   > .company-reviews-section-wrapper
   > .company-reviews-cntr
   > .user-company-review
+  > .user-img {
+  background-color: var(--main-post-bgc-eee);
+}
+.flex
+  > #company-reviews-section
+  > .company-reviews-section-wrapper
+  > .company-reviews-cntr
+  > .user-company-review
+  > .user-img
   > img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 0px 5px rgb(134, 134, 134);
+}
+.flex
+  > #company-reviews-section
+  > .company-reviews-section-wrapper
+  > .company-reviews-cntr
+  > .user-company-review
+  > .user-img
+  > h6 {
+  font-weight: bold;
+  padding-top: 5px;
 }
 .flex
   > #company-reviews-section
@@ -896,21 +922,35 @@ price {
 /* * cta section */
 .flex > #cta-section {
   background-color: var(--main-bgc3-dark-blue);
-  color: var(--main-bgc2-white);
+  background-image: url("/img/form-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+  color: var(--main-post-bgc-eee);
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
 }
 .flex > #cta-section > .cta-section-wrapper {
-  margin: var(--section-div-margin);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+.flex > #cta-section > .cta-section-wrapper > .reg-cntr {
   padding: var(--section-div-padding);
   padding-top: 40px;
   padding-bottom: 40px;
   width: 800px;
-  display: flex;
-  justify-content: center;
-}
-.flex > #cta-section > .cta-section-wrapper > .reg-cntr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -928,7 +968,7 @@ price {
 .flex > #cta-section > .cta-section-wrapper > .reg-cntr > .reg-btn > button {
   padding: 10px;
   border: solid 2px var(--main-bgc2-white);
-  background-color: var(--main-bgc4-vlight-blue);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -942,7 +982,7 @@ price {
   > .reg-btn
   > button
   > a {
-  color: white;
+  color: var(--main-post-bgc-eee);
   font-size: 20px;
   text-decoration: underline;
 }
@@ -952,7 +992,14 @@ price {
   justify-content: center;
 }
 .flex > #footer-section {
-  background-color: var(--main-bgc4-vlight-blue);
+  background-image: linear-gradient(
+    90deg,
+    var(--main-bgc3-dark-blue) 45%,
+    var(--main-bgc4-vlight-blue) 55%,
+    var(--main-bgc3-dark-blue) 100%
+  );
+  background-image: linear-gradient(45deg, var(--main-bgc3-dark-blue), black);
+  color: var(--main-post-bgc-eee);
 }
 .flex > #footer-section > .footer-wrapper {
   padding: var(--section-div-padding);
@@ -993,8 +1040,8 @@ price {
 /* * chat button */
 .flex > #chat-with-us {
   position: fixed;
-  top: 50vh;
-  left: 30px;
+  right: 30px;
+  bottom: 30px;
   padding: 10px;
   background-color: var(--main-bgc2-white);
   color: var(--main-color2-light-blue);
