@@ -1,4 +1,4 @@
-//* form variabes
+//* login and signup form variabes
     // labels
 const unameLbl = document.getElementById("name-lbl");
 const uemailLbl = document.getElementById("email-lbl");
@@ -114,17 +114,39 @@ function loginValidate(){
 }
 // !==
 // * the like button
-var likeButtons = document.querySelectorAll("i.fa-heart");
-for(i = 0; i < likeButtons.length; i++){
-var likeButton = function likeButtonToggle() {
-    if (likeButtons[i].style.color == "var(--main-color6-inactive)"){
-        likeButtons[i].style.color = "red";
-    }
-    else{
-        likeButtons[i].style.color = "var(--main-color6-inactive)"
-    }
-}
-    likeButtons[i].addEventListener("click", likeButton);
-}
+// var likeButtons = document.querySelectorAll("i.fa-heart");
+// for(i = 0; i < likeButtons.length; i++){
+// var likeButton = function likeButtonToggle() {
+//     if (likeButtons[i].style.color == "var(--main-color6-inactive)"){
+//         likeButtons[i].style.color = "red";
+//     }
+//     else{
+//         likeButtons[i].style.color = "var(--main-color6-inactive)"
+//     }
+// }
+//     likeButtons[i].addEventListener("click", likeButton);
+// }
 // var likeButtons = document.getElementById("save-btn");
 // likeButtons.style.color = "red";
+
+// * filter form varibles
+
+
+// moreOption.onclick=function(){toggleOption()}
+function toggleOption(){
+    const filter2 = document.getElementById("filter2");
+    const moreOption = document.getElementById("more-option");
+    const lessOption = document.getElementById("less-option");
+    if (moreOption.style.display === "block"){
+        moreOption.style.display = "none";
+        lessOption.style.display = "block";
+        filter2.style.display = "flex";
+    }
+    else{
+        moreOption.style.display = "block";
+        lessOption.style.display = "none";
+        filter2.style.display = "none";
+    }
+}
+// Less Options <i class="fas fa-chevron-up"></i>
+// moreOption.style.display = "none";

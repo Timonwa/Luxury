@@ -69,22 +69,22 @@
       <!-- welcome space and search bar space -->
       <header id="header-section">
         <div class="header-wrapper header-wrapper2">
-          <!-- the search space. the user selects the type of accomodation he is looking for and the prefered location and then press search to get matching results -->
-          <div class="search-form-cntr">
-            <form class="search-form" action="">
-              <!-- form heading -->
-              <div class="form-group-1">
-                <h3 class="form-search-hdr"
-                  >What type of accomodation are you looking for?</h3
-                >
-              </div>
 
-              <!-- form accomodation dropdown -->
-              <div class="form-group-2">
-                <select class="form-search-dropdn" name="accomodations">
-                  <option value="holder" name="holder" >
-                    --Select Acommodation--
-                  </option>
+          <!-- the search space. the user selects the type of accomodation he is looking for and the prefered location and then press search to get matching results -->
+          <div class="form-cntr">
+            <form action="">
+              <h3>FILTER</h3>
+              <div class="filter1">
+                <!-- form location dropdown -->
+                <select class="filter-search-input" name="location">
+                  <option value="holder" name="holder">--Location--</option>
+                  <option value="akoka" name="akoka">Akoka</option>
+                  <option value="abuleOja" name="abuleOja">Abule Oja</option>
+                  <option value="pako" name="pako">Pako</option>
+                </select>
+                <!-- form accomodation dropdown -->
+                <select class="filter-search-input" name="type">
+                  <option value="holder" name="holder">--Type--</option>
                   <option value="hostel" name="hostel">Hostel</option>
                   <option value="privatApartment" name="privatApartment">
                     Private Apartment
@@ -93,38 +93,86 @@
                     Shared Apartment
                   </option>
                 </select>
-              </div>
-
-              <!-- form location dropdown -->
-              <div class="form-group-3">
-                <select class="form-search-dropdn" name="locations">
-                  <option value="holder" name="holder">
-                    --Select Location--
-                  </option>
-                  <option value="akoka" name="akoka">Akoka</option>
-                  <option value="abuleOja" name="abuleOja">Abule Oja</option>
-                  <option value="pako" name="pako">Pako</option>
+                <!-- sort by -->
+                <select class="filter-search-input" name="sort-by">
+                  <option value="holder">--Sort by--</option>
+                  <option value="akoka">Relevance</option>
+                  <option value="abuleOja">Popularity</option>
+                  <option value="pako">New to Old</option>
+                  <option value="pako">Old to New</option>
+                </select>
+                <!-- location of accomodation -->
+                <select class="filter-search-input" name="price">
+                  <option type="checkbox" value="holder">--Price--</option>
+                  <option value="akoka">Lowest price</option>
+                  <option value="abuleOja">Highest price</option>
                 </select>
               </div>
-
-              <!-- form search and filter button -->
-              <div class="form-group-4">
-                <!-- search -->
-                <button
-                  type="submit"
-                  id="form-search-btn"
-                  class="form-search-btn"
+              <div id="filter2" class="filter2">
+                <!-- number of bedroom -->
+                <div class="filter-search-input">
+                  <label for="bedroom">Bedrooms</label>
+                  <select name="bedroom">
+                    <option value="any">Any</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                  </select>
+                </div>
+                <!-- number of toilet -->
+                <div class="filter-search-input">
+                  <label for="toilet">Toilets</label>
+                  <select name="toilet">
+                    <option value="any">Any</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                  </select>
+                </div>
+                <!-- number of bathroom -->
+                <div class="filter-search-input">
+                  <label for="bathroom">Bathrooms</label>
+                  <select name="bathroom">
+                    <option value="any">Any</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                  </select>
+                </div>
+                <!-- serviced -->
+                <div class="filter-search-input">
+                  <label for="serviced">Serviced</label>
+                  <select name="serviced">
+                    <option value="any">Any</option>
+                    <option value="serviced">Serviced</option>
+                    <option value="not serviced">Not serviced</option>
+                  </select>
+                </div>
+                <!-- price range -->
+                <div class="minmax-input">
+                  <label for="min-range">Min price</label>
+                  <input name="min-range" type="text" placeholder="Min price" />
+                </div>
+                <div>
+                  <label for="max-range">Max price</label>
+                  <input name="max-range" type="text" placeholder="Max price" />
+                </div>
+              </div>
+              <div class="filter3"
+                  onclick="toggleOption()">
+                <p id="more-option" class="filter-option">
+                  More Options <i class="fas fa-chevron-down"></i>
+                </p>
+                <p  id="less-option"
+                  class="filter-option"
                 >
-                  Search
-                </button>
-                <!-- filter button -->
-                <button
-                  type="button"
-                  id="form-filter-btn"
-                  class="form-filter-btn"
-                >
-                  <a href="/html/filter.html"><i class="fas fa-filter"></i></a>
-                </button>
+                  Less Options <i class="fas fa-chevron-up"></i>
+                </p>
+                <!-- filter search button -->
+                <button id="fltr-search-btn" type="submit">Search</button>
               </div>
             </form>
           </div>
