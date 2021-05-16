@@ -214,13 +214,6 @@ ul {
   color: #fff;
   font-weight: 700;
 }
-/* * nav empty space */
-/* .flex > #nav-empty-space {
-  height: calc(var(--nav-height) / 2);
-} */
-/* .flex > #nav-empty-space2 {
-  height: calc(var(--nav-height) / 3 * 2);
-} */
 /* * header section */
 .flex > header {
   display: flex;
@@ -244,7 +237,6 @@ ul {
   padding-top: 40px;
 }
 .flex > header > .header-wrapper > div {
-  color: var(--main-bgc2-white);
   color: var(--main-post-bgc-eee);
 }
 .flex > header > .header-wrapper > .greeting-cntr {
@@ -262,7 +254,19 @@ ul {
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
+  padding: 20px;
+  margin: 0 20px;
+  backdrop-filter: blur(2px);
+}
+.flex > header > .header-wrapper2 {
+  position: initial;
+  height: initial;
+}
+.flex > header > .header-wrapper2 > .header-space {
+  height: 50px;
+}
+.flex > header > .header-wrapper2 > .form-cntr {
+  position: relative;
 }
 .flex > header > .header-wrapper > .form-cntr > form {
   display: flex;
@@ -277,35 +281,38 @@ ul {
 .flex > header > .header-wrapper > .form-cntr > form > .filter1 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 10px;
 }
 .flex > header > .header-wrapper > .form-cntr > form > .filter1 select {
-  width: 120px;
-  margin: 0 10px;
-  padding: 2px 0;
+  width: 150px;
+  margin: 10px;
+  padding: 5px;
 }
 .flex > header > .header-wrapper > .form-cntr > form > .filter2 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 10px;
+  margin-top: 10px;
 }
 .flex > header > .header-wrapper > .form-cntr > form > #filter2 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+}
+.flex > header > .header-wrapper > .form-cntr > form > #filter2 label {
+  padding-bottom: 3px;
 }
 .flex > header > .header-wrapper > .form-cntr > form > #filter2 select {
-  width: 75px;
-  margin: 0 10px;
-  padding: 2px 0;
+  width: 150px;
+  padding: 5px;
 }
 .flex > header > .header-wrapper > .form-cntr > form > #filter2 input {
-  width: 75px;
-  margin: 0 10px;
-  padding: 2px 0;
+  width: 150px;
+  padding: 5px;
 }
 .flex > header > .header-wrapper > .form-cntr > form > .filter3 {
   display: flex;
@@ -322,10 +329,10 @@ ul {
   cursor: pointer;
 }
 .flex > header > .header-wrapper > .form-cntr > form > #filter2,
-.flex > header > .header-wrapper > .form-cntr > form > .filter3 > #less-option{
+.flex > header > .header-wrapper > .form-cntr > form > .filter3 > #less-option {
   display: none;
 }
-.flex > header > .header-wrapper > .form-cntr > form > .filter3 > #more-option{
+.flex > header > .header-wrapper > .form-cntr > form > .filter3 > #more-option {
   display: block;
 }
 .flex > header > .header-wrapper > .form-cntr > form > .filter3 > p > i {
@@ -339,6 +346,61 @@ ul {
   background-image: var(--black-linear-gradient);
   color: var(--white);
   border: solid 1px var(--main-bgc3-dark-blue);
+}
+@media screen and (max-width: 360px) {
+  .flex > header > .header-wrapper > .form-cntr {
+  margin: 0 ;
+}
+  .flex > header > .header-wrapper > .form-cntr > form > .filter1 select {
+    width: 120px;
+  }
+  .flex > header > .header-wrapper > .form-cntr > form > #filter2 select {
+    width: 120px;
+  }
+  .flex > header > .header-wrapper > .form-cntr > form > #filter2 input {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .flex > header > .header-wrapper > .form-cntr > form > .filter1 select {
+    width: 120px;
+  }
+  .flex > header > .header-wrapper > .form-cntr > form > #filter2 select {
+    width: 120px;
+  }
+  .flex > header > .header-wrapper > .form-cntr > form > #filter2 input {
+    width: 120px;
+  }
+}
+@media screen and (min-width: 460px) {
+  .flex > header > .header-wrapper > .form-cntr > form > .filter1 select {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .flex > header > .header-wrapper > .form-cntr > form > .filter1 select {
+    width: 120px;
+  }
+  .flex > header > .header-wrapper > .form-cntr > form > #filter2 select {
+    width: 70px;
+  }
+  .flex > header > .header-wrapper > .form-cntr > form > #filter2 input {
+    width: 70px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .flex > header > .header-wrapper > .form-cntr {
+    width: 700px;
+  }
+  .flex > header > .header-wrapper > .form-cntr > form > .filter1 select {
+    width: 130px;
+  }
+  .flex > header > .header-wrapper > .form-cntr > form > #filter2 select {
+    width: 80px;
+  }
+  .flex > header > .header-wrapper > .form-cntr > form > #filter2 input {
+    width: 80px;
+  }
 }
 /* * reviews section */
 .flex > #company-reviews-section {
