@@ -228,7 +228,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background: rgba(0, 0, 0, 0.4);
   position: relative;
 }
@@ -755,6 +755,9 @@ ul {
   color: var(--main-color6-inactive);
   cursor: pointer;
 }
+.flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group1 {
+  width: 100%;
+}
 .flex
   > #ads-section
   > .ads-wrapper
@@ -763,7 +766,7 @@ ul {
   > .ad-group1
   > .ad-pic {
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 .flex
   > #ads-section
@@ -1095,31 +1098,40 @@ price {
   flex-direction: row;
   justify-content: center;
 }
+/* * footer */
 .flex > #footer-section {
   background-image: var(--black-linear-gradient);
   color: var(--main-post-bgc-eee);
 }
 .flex > #footer-section > .footer-wrapper {
-  padding: var(--section-div-padding);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .flex > #footer-section > .footer-wrapper > address {
-  margin: 0;
-  padding: 5px;
+  margin: 10px;
   font-style: normal;
 }
-.flex > #footer-section > .footer-wrapper > .contact-cntr > h5 {
-  margin-bottom: 0;
+.flex > #footer-section > .footer-wrapper > .contact-cntr > address {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 .flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts > span {
-  font-size: 14px;
+  padding: 0 10px;
+  padding-bottom: 5px;
+}
+.flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts > span:first-child {
+  padding-bottom: 5px;
 }
 .flex > #footer-section > .footer-wrapper > .social-handles-cntr > ul {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .flex
   > #footer-section
@@ -1539,7 +1551,7 @@ table th {
 }
 @media screen and (max-width: 500px) {
   :root {
-    --section-div-margin: 20px 20px 30px;
+    --section-div-margin: 30px 20px;
     --section-div-padding: 0px;
   }
   .flex
@@ -1588,4 +1600,10 @@ table th {
     > div:nth-child(2n + 1) {
     background-image: none;
   }
+  .flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts {
+    flex-direction: column;
+  }
+.flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts > span:last-child {
+  padding-bottom: 0px;
+}
 }
