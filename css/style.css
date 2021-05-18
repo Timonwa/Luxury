@@ -1094,6 +1094,10 @@ price {
   padding: 0 10px;
   padding-bottom: 5px;
   font-size: 13px;
+  font-weight: bold;
+}
+.flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts > span a{
+  font-weight: normal;
 }
 .flex
   > #footer-section
