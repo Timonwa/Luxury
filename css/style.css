@@ -617,8 +617,9 @@ ul {
 /* * the ads section */
 .flex > #ads-section > .ads-wrapper {
   margin: var(--section-div-margin);
+  margin-left: auto;
+  margin-right: auto;
   padding: var(--section-div-padding);
-  width: var(--section-width);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -636,7 +637,7 @@ ul {
   justify-content: center;
   align-items: center;
   margin: 10px;
-  width: 100%;
+  width: 700px;
   border: 1px var(--main-bdr);
 }
 .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post:first-child {
@@ -650,6 +651,13 @@ ul {
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1 {
   width: 300px;
   position: relative;
+}
+.flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group2 {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .flex
   > #ads-section
@@ -766,6 +774,7 @@ ul {
   align-items: center;
   padding: 20px;
   height: 250px;
+  border-bottom: solid 1px var(--main-color6-inactive);
 }
 .flex
   > #ads-section
@@ -841,7 +850,6 @@ price {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-top: solid 1px var(--main-color6-inactive);
 }
 .flex
   > #ads-section
@@ -921,13 +929,6 @@ price {
   width: 60px;
   color: var(--main-color6-inactive);
   cursor: pointer;
-}
-.flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group2 {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .flex > #ads-section > .ads-wrapper > .pagination {
   display: flex;
@@ -1394,42 +1395,21 @@ table th {
   }
 }
 @media screen and (max-width: 900px) {
-  /* :root {
+  :root {
     --section-div-margin: 20px 100px 30px;
-    --section-div-padding: 20px;
-  } */
-}
-@media screen and (max-width: 700px) {
-  /* .flex
-    > #company-reviews-section
-    > .company-reviews-section-wrapper
-    > .company-reviews-cntr {
-    width: calc((var(--section-width)) - (var(--section-div-padding) * 2));
-  } */
-  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post {
-    width: calc(var(--section-width) - 100px);
   }
   .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post {
-    flex-wrap: wrap;
+    width: 600px;
   }
   .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > div {
     height: 250px;
   }
   .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group1 {
-    width: 100%;
-    position: relative;
+    width: 250px;
   }
   .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group2 {
-    width: 100%;
-  }
-  .flex
-    > #ads-section
-    > .ads-wrapper
-    > .ads-cntr
-    > .ads-post
-    > .ad-group2
-    > .ad-brief-discription {
-    padding: 10px;
+    --ad-width: 350px;
+    width: var(--ad-width);
   }
   .flex
     > #ads-section
@@ -1447,34 +1427,56 @@ table th {
     > .ad-group2
     > .features-cntr
     > .save-btn {
-    width: calc(360px / 5);
+    width: calc(var(--ad-width) / 5);
   }
 }
-@media screen and (max-width: 500px) {
-  /* :root {
-  --section-div-margin: 20px 150px 30px;
-  --section-div-padding: 20px;
-  } */
-  .flex > #about-section > .about-section-wrapper > .about-us > .about-us-ctnr {
+@media screen and (max-width: 768px) {
+  :root {
+    --section-div-margin: 20px 80px 30px;
+  }
+}
+@media screen and (max-width: 650px) {
+  :root {
+    --section-div-margin: 20px 50px 30px;
+    --section-div-padding: 20px;
+  }
+  .flex > #ads-section > .ads-wrapper {
+    margin: var(--section-div-margin);
+  }
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post {
+    width: 100%;
     flex-direction: column;
-    margin: 20px 40px;
+  }
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group1 {
+    width: 100%;
+    height: 250px;
   }
   .flex
-    > #about-section
-    > .about-section-wrapper
-    > .about-us
-    > .about-us-ctnr
-    > img {
-    width: 200px;
-    height: 200px;
+    > #ads-section
+    > .ads-wrapper
+    > .ads-cntr
+    > .ads-post
+    > .ad-group1
+    > .ad-pic {
+    width: 270px;
+    height: 250px;
+    margin-left: calc((100% - 270px) / 2);
+    margin-right: calc((100% - 270px) / 2);
   }
-}
-@media screen and (max-width: 425px) {
-  /* :root {
-    --section-width: 300px;
-  } */
-  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post {
-    width: 320px;
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group2 {
+    width: 100%;
+  }
+  .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group2 {
+    width: 100%;
+  }
+  .flex
+    > #ads-section
+    > .ads-wrapper
+    > .ads-cntr
+    > .ads-post
+    > .ad-group2
+    > .features-cntr {
+      width: 100%;
   }
   .flex
     > #ads-section
@@ -1483,9 +1485,7 @@ table th {
     > .ads-post
     > .ad-group2
     > .features-cntr
-    > .feature {
-    width: 60px;
-  }
+    > .feature,
   .flex
     > #ads-section
     > .ads-wrapper
@@ -1494,31 +1494,13 @@ table th {
     > .ad-group2
     > .features-cntr
     > .save-btn {
-    width: 60px;
-  }
-}
-@media screen and (max-width: 900px) {
-  :root {
-    --section-div-margin: 20px 100px 30px;
-    --section-div-padding: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  :root {
-    --section-div-margin: 20px 80px 30px;
-    --section-div-padding: 20px;
-  }
-}
-@media screen and (max-width: 650px) {
-  :root {
-    --section-div-margin: 20px 50px 30px;
-    --section-div-padding: 20px;
+    width: calc(100% / 5);
   }
 }
 @media screen and (max-width: 500px) {
   :root {
     --section-div-margin: 20px 20px 30px;
-    --section-div-padding: 20px;
+    --section-div-padding: 0px;
   }
   .flex
     > #company-reviews-section
