@@ -137,6 +137,7 @@ ul {
   /* body */
   body {
     font-size: 18px;
+    background-color: var(--main-post-bgc);
   }
 }
 /** medium=608px (608px-960px) */
@@ -1096,7 +1097,7 @@ price {
   font-size: 13px;
   font-weight: bold;
 }
-.flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts > span a{
+.flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts > span a {
   font-weight: normal;
 }
 .flex
@@ -1147,7 +1148,7 @@ price {
 /* * main post section */
 .flex > #post-section {
   display: flex;
-  background-color: var(--white);
+  background-color: var(--main-post-bgc);
 }
 .flex > #post-section > .post-section-wrapper {
   margin: var(--section-div-margin);
@@ -1156,7 +1157,6 @@ price {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: var(--section-width);
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr {
   display: flex;
@@ -1164,6 +1164,7 @@ price {
   justify-content: center;
   align-items: center;
   border: solid 1px var(--main-post-bgc-eee);
+  background-color: var(--main-bgc2-white);
   width: var(--section-width);
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .post-title {
@@ -1199,8 +1200,8 @@ price {
   text-align: right;
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1 {
-  width: var(--section-width);
-  height: 500px;
+  width: 100%;
+  height: 400px;
   position: relative;
 }
 .flex
@@ -1209,35 +1210,37 @@ price {
   > .post-cntr
   > .ad-group1::before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 800;
+  font-weight: 900;
   content: "\f053";
   position: absolute;
   z-index: 99;
   top: 50%;
   left: 0px;
   color: var(--main-color4-silver);
-  background-color: var(--filter-btn-bgc);
-  opacity: 0.7;
   padding: 10px;
-  border: solid 1px var(--main-post-bgc-eee);
+  border: 1px var(--main-bdr);
+  font-size: 8px;
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1::after {
   font-family: "Font Awesome 5 Free";
-  font-weight: 800;
+  font-weight: 900;
   content: "\f054";
   position: absolute;
   z-index: 99;
   top: 50%;
   right: 0px;
   color: var(--main-color4-silver);
-  background-color: var(--filter-btn-bgc);
-  opacity: 0.7;
   padding: 10px;
-  border: solid var(--main-bdr);
+  border: 1px var(--main-bdr);
+  font-size: 8px;
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1 > img {
-  width: inherit;
+  width: 100%;
   height: inherit;
+}
+.flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group2 {
+  border-bottom: solid 1px var(--main-post-bgc-eee);
+  width: 100%;
 }
 .flex
   > #post-section
@@ -1245,9 +1248,9 @@ price {
   > .post-cntr
   > .ad-group2
   > .features-cntr {
-  border: none;
-  border-bottom: solid 1px var(--main-post-bgc-eee);
-  width: var(--section-width);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .flex
   > #post-section
@@ -1318,6 +1321,7 @@ table th {
   margin: 5px;
   padding: 5px 10px;
   border-radius: 5px;
+  width: initial;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1325,16 +1329,19 @@ table th {
 }
 .flex > #post-section > .post-section-wrapper > .post-cta-cntr {
   padding: var(--section-div-padding);
-  background-color: var(--main-post-bgc-eee);
-  width: var(--section-width);
+  padding-bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .flex > #post-section > .post-section-wrapper > .post-cta-cntr > button {
   font-weight: bold;
   font-size: 18px;
   margin: 5px;
-  padding: 10px;
+  padding: 10px 20px;
   border: none;
-  background-color: var(--search-btn-bgc);
+  background-image: var(--black-linear-gradient);
   color: var(--main-bgc2-white);
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1343,16 +1350,14 @@ table th {
   -o-border-radius: 5px;
 }
 .flex > #ad-reviews-section {
-  border-top: solid 1px var(--main-post-bgc-eee);
   display: flex;
-  background-color: var(--white);
+  background-color: var(--main-post-bgc-eee);
 }
 .flex > #ad-reviews-section > .ad-reviews-wrapper {
   display: flex;
   flex-direction: column;
   margin: var(--section-div-margin);
   padding: var(--section-div-padding);
-  width: var(--section-width);
 }
 .flex > #ad-reviews-section > .ad-reviews-wrapper > .ad-reviews-cntr {
   display: flex;
@@ -1367,6 +1372,7 @@ table th {
   > .ad-reviews-wrapper
   > .ad-reviews-cntr
   > .user-ad-review {
+  box-shadow: 0px 0px 5px 2px rgb(219, 218, 218);
   border: solid 1px var(--main-post-bgc-eee);
   margin: 10px;
   display: flex;
@@ -1393,6 +1399,16 @@ table th {
   padding: 10px 20px;
   font-size: 12px;
   background-color: var(--main-post-bgc-eee);
+  border-bottom: solid 1px rgb(219, 218, 218);
+}
+.flex
+  > #ad-reviews-section
+  > .ad-reviews-wrapper
+  > .ad-reviews-cntr
+  > .user-ad-review
+  > .user-ad-review-heading > .user-ad-ratings {
+  font-size: 10px;
+  align-self: flex-end;
 }
 .flex
   > #ad-reviews-section
@@ -1483,6 +1499,10 @@ table th {
     width: 100%;
     height: 250px;
   }
+  .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1 {
+    width: 100%;
+    height: 250px;
+  }
   .flex
     > #ads-section
     > .ads-wrapper
@@ -1490,11 +1510,17 @@ table th {
     > .ads-post
     > .ad-group1
     > .ad-pic {
-    --width: 300px;
+    --width: 100%;
     width: var(--width);
-    height: 250px;
-    margin-left: calc((100% - var(--width)) / 2);
-    margin-right: calc((100% - var(--width)) / 2);
+  }
+  .flex
+    > #post-section
+    > .post-section-wrapper
+    > .post-cntr
+    > .ad-group1
+    > img {
+    --width: 100%;
+    width: var(--width);
   }
   .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post > .ad-group2 {
     width: 100%;
@@ -1655,5 +1681,18 @@ table th {
     > .contacts
     > span:last-child {
     padding-bottom: 0px;
+  }
+  .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group5 {
+    padding: 10px;
+  }
+  .flex > #post-section > .post-section-wrapper > .post-cta-cntr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  .flex > #post-section > .post-section-wrapper > .post-cta-cntr > button {
+    width: 100%;
   }
 }
