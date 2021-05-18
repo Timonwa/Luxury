@@ -46,9 +46,8 @@
 
   /* dimensions */
   --nav-height: 40px;
-  --section-div-margin: 20px auto 30px;
+  --section-div-margin: 20px 150px 30px;
   --section-div-padding: 20px;
-  --section-width: 700px;
 }
 /** all elements */
 * {
@@ -349,8 +348,8 @@ ul {
 }
 @media screen and (max-width: 360px) {
   .flex > header > .header-wrapper > .form-cntr {
-  margin: 0 ;
-}
+    margin: 0;
+  }
   .flex > header > .header-wrapper > .form-cntr > form > .filter1 select {
     width: 120px;
   }
@@ -404,7 +403,8 @@ ul {
 }
 /* * reviews section */
 .flex > #company-reviews-section {
-  border-bottom: 1px var(--main-bdr);
+  background-color: var(--main-post-bgc-eee);
+  width: 100%;
 }
 .flex > #company-reviews-section > .company-reviews-section-wrapper {
   margin: var(--section-div-margin);
@@ -412,7 +412,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: var(--section-width);
 }
 .flex
   > #company-reviews-section
@@ -423,9 +422,10 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(var(--section-width) - (var(--section-div-padding) * 2));
+  width: 100%;
   height: 230px;
   margin: 10px;
+  background-color: var(--white);
 }
 .flex
   > #company-reviews-section
@@ -441,6 +441,7 @@ ul {
   color: var(--main-color4-silver);
   padding: 10px;
   border: 1px var(--main-bdr);
+  font-size: 8px;
 }
 .flex
   > #company-reviews-section
@@ -456,6 +457,7 @@ ul {
   color: var(--main-color4-silver);
   padding: 10px;
   border: 1px var(--main-bdr);
+  font-size: 8px;
 }
 .flex
   > #company-reviews-section
@@ -466,9 +468,9 @@ ul {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: stretch;
-  margin: auto;
   padding: 30px;
-  box-shadow: 0px 0px 5px 5px #eee;
+  box-shadow: 0px 0px 5px 3px rgb(219, 218, 218);
+  background-color: var(--main-post-bgc-eee);
 }
 .flex
   > #company-reviews-section
@@ -495,8 +497,7 @@ ul {
   > .user-company-review
   > .user-review
   > p {
-  position: relative;
-  padding: 10px 30px;
+  padding: 10px 10px;
   font-size: 12px;
   text-align: center;
   margin-bottom: 0;
@@ -516,8 +517,8 @@ ul {
   font-weight: 800;
   content: "\f10d";
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 20px;
+  left: 20px;
   font-size: 20px;
   color: var(--main-color2-light-blue);
 }
@@ -536,8 +537,8 @@ ul {
   font-weight: 800;
   content: "\f10e";
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 20px;
+  right: 20px;
   font-size: 20px;
   color: var(--main-color2-light-blue);
 }
@@ -547,7 +548,9 @@ ul {
   > .company-reviews-cntr
   > .user-company-review
   > .user-img {
-  background-color: var(--main-post-bgc-eee);
+  background-color: var(--main-bgc2-white);
+  height: 160px;
+  width: 140px;
 }
 .flex
   > #company-reviews-section
@@ -558,7 +561,7 @@ ul {
   > img {
   width: 100px;
   height: 100px;
-  box-shadow: 0px 0px 5px rgb(134, 134, 134);
+  box-shadow: 0px 0px 5px 2px rgb(177, 176, 176);
 }
 .flex
   > #company-reviews-section
@@ -567,7 +570,7 @@ ul {
   > .user-company-review
   > .user-img
   > h6 {
-  font-weight: bold;
+  font-weight: 800;
   padding-top: 5px;
 }
 .flex
@@ -1378,9 +1381,6 @@ table th {
   font-size: 12px;
 }
 @media screen and (min-width: 1200px) {
-  :root {
-    --section-width: 960px;
-  }
   /* body */
   body {
     font-size: 18px;
@@ -1393,16 +1393,19 @@ table th {
     width: 530px;
   }
 }
+@media screen and (max-width: 900px) {
+  /* :root {
+    --section-div-margin: 20px 100px 30px;
+    --section-div-padding: 20px;
+  } */
+}
 @media screen and (max-width: 700px) {
-  :root {
-    --section-width: 500px;
-  }
-  .flex
+  /* .flex
     > #company-reviews-section
     > .company-reviews-section-wrapper
     > .company-reviews-cntr {
     width: calc((var(--section-width)) - (var(--section-div-padding) * 2));
-  }
+  } */
   .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post {
     width: calc(var(--section-width) - 100px);
   }
@@ -1448,11 +1451,10 @@ table th {
   }
 }
 @media screen and (max-width: 500px) {
-  :root {
-    --section-div-margin: 20px auto;
-    --section-div-padding: 10px;
-    --section-width: 400px;
-  }
+  /* :root {
+  --section-div-margin: 20px 150px 30px;
+  --section-div-padding: 20px;
+  } */
   .flex > #about-section > .about-section-wrapper > .about-us > .about-us-ctnr {
     flex-direction: column;
     margin: 20px 40px;
@@ -1468,9 +1470,9 @@ table th {
   }
 }
 @media screen and (max-width: 425px) {
-  :root {
+  /* :root {
     --section-width: 300px;
-  }
+  } */
   .flex > #ads-section > .ads-wrapper > .ads-cntr > .ads-post {
     width: 320px;
   }
@@ -1493,5 +1495,43 @@ table th {
     > .features-cntr
     > .save-btn {
     width: 60px;
+  }
+}
+@media screen and (max-width: 900px) {
+  :root {
+    --section-div-margin: 20px 100px 30px;
+    --section-div-padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --section-div-margin: 20px 80px 30px;
+    --section-div-padding: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  :root {
+    --section-div-margin: 20px 50px 30px;
+    --section-div-padding: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  :root {
+    --section-div-margin: 20px 20px 30px;
+    --section-div-padding: 20px;
+  }
+  .flex
+    > #company-reviews-section
+    > .company-reviews-section-wrapper
+    > .company-reviews-cntr {
+    height: 360px;
+  }
+  .flex
+    > #company-reviews-section
+    > .company-reviews-section-wrapper
+    > .company-reviews-cntr
+    > .user-company-review {
+    flex-wrap: wrap;
+    padding: 0px;
   }
 }
