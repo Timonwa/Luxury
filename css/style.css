@@ -223,26 +223,21 @@ ul {
   background-repeat: no-repeat;
 }
 .flex > header > .header-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 90vh;
   background: rgba(0, 0, 0, 0.4);
-  position: relative;
-}
-.flex > header > .header-wrapper2 {
-  height: 300px;
-  padding-top: 40px;
 }
 .flex > header > .header-wrapper > div {
   color: var(--main-post-bgc-eee);
 }
+.flex > header > .header-wrapper > .header-space {
+  height: 100px;
+}
 .flex > header > .header-wrapper > .greeting-cntr {
   display: flex;
   flex-direction: column;
-  padding: var(--section-div-padding);
+  justify-content: flex-end;
+  padding: 40px 20px;
+  height: 50vh;
 }
 .flex > header > .header-wrapper > .greeting-cntr > h1 {
   margin-bottom: 0;
@@ -251,22 +246,11 @@ ul {
   margin-bottom: 0;
 }
 .flex > header > .header-wrapper > .form-cntr {
-  position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   margin: 0 20px;
   backdrop-filter: blur(2px);
-}
-.flex > header > .header-wrapper2 {
-  position: initial;
-  height: initial;
-}
-.flex > header > .header-wrapper2 > .header-space {
-  height: 50px;
-}
-.flex > header > .header-wrapper2 > .form-cntr {
-  position: relative;
 }
 .flex > header > .header-wrapper > .form-cntr > form {
   display: flex;
@@ -1571,8 +1555,8 @@ table th {
     flex-direction: column-reverse;
   }
   .flex > #cta-section > .cta-section-wrapper > .reg-cntr {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts span {
     display: flex;
