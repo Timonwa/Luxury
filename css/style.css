@@ -963,7 +963,7 @@ price {
 }
 /* * about section */
 .flex > #about-section {
-  background-color: var(--main-post-bgc-eee);
+  background-color: var(--main-bgc2-white);
 }
 .flex > #about-section > .about-section-wrapper {
   margin: var(--section-div-margin);
@@ -1008,23 +1008,6 @@ price {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    90deg,
-    var(--main-bgc2-white) 3,
-    var(--main-post-bgc-eee)
-  );
-}
-.flex
-  > #about-section
-  > .about-section-wrapper
-  > .about-us
-  > .about-us-ctnr
-  > div:nth-child(2n + 1) {
-  background-image: linear-gradient(
-    270deg,
-    var(--main-bgc2-white),
-    var(--main-post-bgc-eee)
-  );
 }
 /* * cta section */
 .flex > #cta-section {
@@ -1054,7 +1037,6 @@ price {
   -o-border-radius: 20px 20px 0 0;
 }
 .flex > #cta-section > .cta-section-wrapper > .reg-cntr {
-  margin: var(--section-div-margin);
   padding: var(--section-div-padding);
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1120,13 +1102,18 @@ price {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
 }
 .flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts > span {
   padding: 0 10px;
   padding-bottom: 5px;
+  font-size: 13px;
 }
-.flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts > span:first-child {
+.flex
+  > #footer-section
+  > .footer-wrapper
+  > .contact-cntr
+  > .contacts
+  > span:first-child {
   padding-bottom: 5px;
 }
 .flex > #footer-section > .footer-wrapper > .social-handles-cntr > ul {
@@ -1502,7 +1489,7 @@ table th {
     > .ads-post
     > .ad-group1
     > .ad-pic {
-    --width: 320px;
+    --width: 300px;
     width: var(--width);
     height: 250px;
     margin-left: calc((100% - var(--width)) / 2);
@@ -1570,9 +1557,6 @@ table th {
     flex-wrap: wrap;
     padding: 0px;
   }
-  .flex > #about-section {
-    background-color: var(--main-bgc2-white);
-  }
   .flex > #about-section > .about-section-wrapper > .about-us > .about-us-ctnr {
     flex-direction: column;
     align-items: center;
@@ -1586,29 +1570,22 @@ table th {
     > .about-us-ctnr:nth-child(2n) {
     flex-direction: column-reverse;
   }
-  .flex
-    > #about-section
-    > .about-section-wrapper
-    > .about-us
-    > .about-us-ctnr
-    > div {
-    background-image: none;
+  .flex > #cta-section > .cta-section-wrapper > .reg-cntr {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .flex
-    > #about-section
-    > .about-section-wrapper
-    > .about-us
-    > .about-us-ctnr
-    > div:nth-child(2n + 1) {
-    background-image: none;
-  }
-  .flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts span{
+  .flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts span {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-.flex > #footer-section > .footer-wrapper > .contact-cntr > .contacts > span:last-child {
-  padding-bottom: 0px;
-}
+  .flex
+    > #footer-section
+    > .footer-wrapper
+    > .contact-cntr
+    > .contacts
+    > span:last-child {
+    padding-bottom: 0px;
+  }
 }
