@@ -1218,8 +1218,9 @@ price {
   left: 0px;
   color: var(--main-color4-silver);
   padding: 10px;
-  border: 1px var(--main-bdr);
+  border: 1px rgba(128, 128, 128);
   font-size: 8px;
+  background-color: rgba(128, 128, 128, 0.3);
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1::after {
   font-family: "Font Awesome 5 Free";
@@ -1231,8 +1232,9 @@ price {
   right: 0px;
   color: var(--main-color4-silver);
   padding: 10px;
-  border: 1px var(--main-bdr);
+  border: 1px rgba(128, 128, 128);
   font-size: 8px;
+  background-color: rgba(128, 128, 128, 0.3);
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1 > img {
   width: 100%;
