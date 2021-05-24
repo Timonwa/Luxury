@@ -61,10 +61,10 @@
         </div>
       </nav>
       <main class="form-cntr">
-        <div class="circle"></div>
+        <!-- <div class="circle"></div>
         <div class="square"></div>
-        <div class="triangle"></div>
-        <form action="/message.html" onsubmit="return signupValidate()" id="signup">
+        <div class="triangle"></div> -->
+        <form action="/message.html" onsubmit="" id="signup">
           <!-- legend/title of the form -->
           <h3>SIGN UP</h3>
           <div class="group1">
@@ -73,7 +73,7 @@
               id="name"
               name="name"
               type="text"
-              placeholder="name"
+              placeholder="name" required
             />
            <label id="name-lbl" for="name"></label>
             <!-- user email -->
@@ -81,7 +81,7 @@
               id="email"
               name="email"
               type="email"
-              placeholder="email"
+              placeholder="email" required
             />
             <label id="email-lbl" for="email"></label>
             <!-- user password -->
@@ -89,14 +89,14 @@
               id="password"
               name="password"
               type="password"
-              placeholder="password"
+              placeholder="password" required
             />
             <label id="password-lbl" for="password"></label>
             <input
               id="confirm-password"
               name="confirm-password"
               type="password"
-              placeholder="confirm password"
+              placeholder="confirm password" required
             />
             <label id="confirm-password-lbl" for="password"></label>
             <!-- sign up button -->
@@ -105,7 +105,7 @@
           <div class="group2">
             <!-- terms and conditions checkbox  -->
             <div class="terms">
-              <input id="terms" name="terms" type="checkbox" />
+              <input id="terms" name="terms" type="checkbox" required/>
               <label for="terms">
                 I accept the
                 <a class="terms-cons" href="#">terms and conditions</a> and
@@ -120,8 +120,7 @@
                 class="signIn-radio"
                 type="radio"
                 value="looking"
-                name="service"
-                checked
+                name="service" required
               />
               <label class="">looking for accomodation.</label>
 
