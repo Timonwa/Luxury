@@ -1335,7 +1335,7 @@ table th {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 .flex > #post-section > .post-section-wrapper > .post-cta-cntr > button {
   font-weight: bold;

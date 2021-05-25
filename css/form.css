@@ -3,7 +3,7 @@
   --glass-color: hsla(0, 0%, 0%, 0.3);
   --blur: 7px;
   --blur: 2px;
-  --input-bgc: hsla(0, 0%, 100%, 0.2);
+  --input-bgc: hsla(0, 0%, 100%, 0.25);
   --btn: hsla(195, 50%, 35%, 0.6);
 }
 .flex {
@@ -97,7 +97,7 @@
 }
 .flex > .form-cntr > form > .group1 > input,
 .flex > .form-cntr > form > .group1 > button {
-  margin: 10px;
+  margin: 15px 10px;
   padding: 7px 10px;
   width: 240px;
   border: none;
@@ -111,13 +111,14 @@
 .flex > .form-cntr > form > .group1 > input {
   margin-bottom: 0;
   background-color: var(--input-bgc);
-  /* border: solid 2px red; */
 }
 .flex > .form-cntr > form > .group1 > input:focus {
   background-color: var(--input-bgc);
 }
 .flex > .form-cntr > form > .group1 > button,
 button {
+  margin-top: 25px;
+  margin-bottom: 10px;
   background-color: var(--btn);
   color: var(--white);
   font-weight: bold;
