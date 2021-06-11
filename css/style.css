@@ -419,10 +419,10 @@ ul {
 .flex
   > #company-reviews-section
   > .company-reviews-section-wrapper
-  > .company-reviews-cntr::before {
+  > .company-reviews-cntr > .prev-btn {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f053";
+  /* content: "\f053"; */
   position: absolute;
   z-index: 99;
   top: 50%;
@@ -435,10 +435,10 @@ ul {
 .flex
   > #company-reviews-section
   > .company-reviews-section-wrapper
-  > .company-reviews-cntr::after {
+  > .company-reviews-cntr > .next-btn {
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
-  content: "\f054";
+  /* content: "\f054"; */
   position: absolute;
   z-index: 99;
   top: 50%;
@@ -1208,10 +1208,10 @@ price {
   > #post-section
   > .post-section-wrapper
   > .post-cntr
-  > .ad-group1::before {
+  > .ad-group1 > .prev-btn {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f053";
+  /* content: "\f053"; */
   position: absolute;
   z-index: 99;
   top: 50%;
@@ -1222,10 +1222,10 @@ price {
   font-size: 8px;
   background-color: rgba(128, 128, 128, 0.3);
 }
-.flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1::after {
+.flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1 > .next-btn {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f054";
+  /* content: "\f054"; */
   position: absolute;
   z-index: 99;
   top: 50%;
