@@ -419,7 +419,8 @@ ul {
 .flex
   > #company-reviews-section
   > .company-reviews-section-wrapper
-  > .company-reviews-cntr > .prev-btn {
+  > .company-reviews-cntr
+  > .prev-btn {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   /* content: "\f053"; */
@@ -435,7 +436,8 @@ ul {
 .flex
   > #company-reviews-section
   > .company-reviews-section-wrapper
-  > .company-reviews-cntr > .next-btn {
+  > .company-reviews-cntr
+  > .next-btn {
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
   /* content: "\f054"; */
@@ -1208,7 +1210,26 @@ price {
   > #post-section
   > .post-section-wrapper
   > .post-cntr
-  > .ad-group1 > .prev-btn {
+  > .ad-group1
+  > .image-counter {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 45%;
+  z-index: 99;
+  /* color: var(--main-color4-silver); */
+  padding: 2px;
+  border: 1px rgba(128, 128, 128);
+  font-size: 12px;
+  background-color: rgba(128, 128, 128, 0.3);
+
+}
+.flex
+  > #post-section
+  > .post-section-wrapper
+  > .post-cntr
+  > .ad-group1
+  > #prev-btn {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   /* content: "\f053"; */
@@ -1222,7 +1243,12 @@ price {
   font-size: 8px;
   background-color: rgba(128, 128, 128, 0.3);
 }
-.flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1 > .next-btn {
+.flex
+  > #post-section
+  > .post-section-wrapper
+  > .post-cntr
+  > .ad-group1
+  > #next-btn {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   /* content: "\f054"; */
@@ -1408,7 +1434,8 @@ table th {
   > .ad-reviews-wrapper
   > .ad-reviews-cntr
   > .user-ad-review
-  > .user-ad-review-heading > .user-ad-ratings {
+  > .user-ad-review-heading
+  > .user-ad-ratings {
   font-size: 10px;
   align-self: flex-end;
 }
