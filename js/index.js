@@ -14,6 +14,7 @@ function toggleOption() {
     }
 }
 
+// ! the post image slider
 // the varibles of the image slider
 const image = document.getElementById("ad-pic");
 const imageNumber = document.getElementById("image-number");

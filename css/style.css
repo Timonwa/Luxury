@@ -421,34 +421,32 @@ ul {
   > .company-reviews-section-wrapper
   > .company-reviews-cntr
   > .prev-btn {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  /* content: "\f053"; */
+  visibility: hidden;
   position: absolute;
   z-index: 99;
   top: 50%;
   left: 0px;
   color: var(--main-color4-silver);
-  padding: 10px;
+  padding: 5px;
   border: 1px var(--main-bdr);
   font-size: 8px;
+  background-color: rgba(128, 128, 128, 0.3);
 }
 .flex
   > #company-reviews-section
   > .company-reviews-section-wrapper
   > .company-reviews-cntr
   > .next-btn {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 800;
-  /* content: "\f054"; */
+  visibility: hidden;
   position: absolute;
   z-index: 99;
   top: 50%;
   right: 0px;
   color: var(--main-color4-silver);
-  padding: 10px;
+  padding: 5px;
   border: 1px var(--main-bdr);
   font-size: 8px;
+  background-color: rgba(128, 128, 128, 0.3);
 }
 .flex
   > #company-reviews-section
@@ -1161,20 +1159,21 @@ price {
   align-items: center;
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: solid 1px var(--main-post-bgc-eee);
   background-color: var(--main-bgc2-white);
-  width: var(--section-width);
+  width: 100%;
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .post-title {
   background-color: var(--main-post-bgc-eee);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 100%;
+  width: inherit;
   padding: 10px 20px;
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .post-title * {
@@ -1202,7 +1201,7 @@ price {
   text-align: right;
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group1 {
-  width: 100%;
+  width: inherit;
   height: 400px;
   position: relative;
 }
@@ -1217,12 +1216,10 @@ price {
   bottom: -10px;
   left: 45%;
   z-index: 99;
-  /* color: var(--main-color4-silver); */
   padding: 2px;
   border: 1px rgba(128, 128, 128);
   font-size: 12px;
   background-color: rgba(128, 128, 128, 0.3);
-
 }
 .flex
   > #post-section
@@ -1230,8 +1227,8 @@ price {
   > .post-cntr
   > .ad-group1
   > #prev-btn {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  /* font-family: "Font Awesome 5 Free"; */
+  /* font-weight: 900; */
   /* content: "\f053"; */
   position: absolute;
   z-index: 99;
@@ -1249,8 +1246,8 @@ price {
   > .post-cntr
   > .ad-group1
   > #next-btn {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  /* font-family: "Font Awesome 5 Free"; */
+  /* font-weight: 900; */
   /* content: "\f054"; */
   position: absolute;
   z-index: 99;
@@ -1268,7 +1265,7 @@ price {
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group2 {
   border-bottom: solid 1px var(--main-post-bgc-eee);
-  width: 100%;
+  width: inherit;
 }
 .flex
   > #post-section
@@ -1311,14 +1308,17 @@ price {
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group4 {
   margin: 40px;
+  width: inherit;
 }
 .flex
   > #post-section
   > .post-section-wrapper
   > .post-cntr
   > .ad-group4
-  > table {
+  > .table-wrapper {
   overflow: hidden;
+}
+.flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group4 table {
   font-size: 14px;
   border-collapse: collapse;
   color: rgb(46, 40, 40);
