@@ -1,4 +1,21 @@
+// ! the like button
+let likeBtns = document.querySelectorAll(".save-btn");
+
+for (i of likeBtns) {
+    i.addEventListener('click', function () {
+        // this.style.color = "red";
+        if (this.style.color !== "red") {
+            this.style.color = "red";
+        }
+        else {
+            this.style.color = "var(--main-color6-inactive)";
+        }
+    });
+};
+
 // ! filter form varibles
+const filter3 = document.querySelector(".filter3");
+filter3.addEventListener("click", toggleOption);
 function toggleOption() {
     const filter2 = document.getElementById("filter2");
     const moreOption = document.getElementById("more-option");
@@ -61,23 +78,4 @@ function prev() {
     }
     showImage(currentImage);
 };
-
-
-// ! the like button
-// var likeButtons = document.querySelectorAll("div.save-btn");
-// for (i = 0; i < likeButtons.length; i++) {
-//     likeButtons[i].style.color = "green";
-//     likeButtons[i].onclick = function () {
-//         likeToggle();
-//     };
-// }
-// function likeToggle() {
-//     if (likeButtons[i].style.color === "red") {
-//         likeButtons[i].style.color = "black";
-//     }
-//     else {
-//         likeButtons[i].style.color = "red";
-//     }
-// }
-
 
