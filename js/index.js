@@ -82,34 +82,34 @@ function prev() {
 
 // ! ratings star
 // varibles
-let ratingNumber = document.querySelector(".rating-number");
-const star1 = document.querySelector(".rstar1");
-const star2 = document.querySelector(".rstar2");
-const star3 = document.querySelector(".rstar3");
-const star4 = document.querySelector(".rstar4");
-const star5 = document.querySelector(".rstar5");
+// let ratingNumber = document.querySelector(".rating-number");
+// const star1 = document.querySelector(".rstar1");
+// const star2 = document.querySelector(".rstar2");
+// const star3 = document.querySelector(".rstar3");
+// const star4 = document.querySelector(".rstar4");
+// const star5 = document.querySelector(".rstar5");
 
-star1.addEventListener('click', function () {
-    if (star1.style.color == "var(--main-color6-inactive)") {
-        star1.style.color = "#107bff"
-        ratingNumber.innerHTML = "1";
-    }
-    else {
-        star1.style.color = "var(--main-color6-inactive)"
-        ratingNumber.innerHTML = "0";
-    }
-    // star1.classList.toggle("star-toggle");
-});
-star2.addEventListener('click', function () {
-    if (star2.style.color == "var(--main-color6-inactive)") {
-        star2.style.color = "#107bff"
-        ratingNumber.innerHTML = "2";
-    }
-    else {
-        star2.style.color = "var(--main-color6-inactive)"
-        ratingNumber.innerHTML = initial;
-    }
-});
+// star1.addEventListener('click', function () {
+//     if (star1.style.color == "var(--main-color6-inactive)") {
+//         star1.style.color = "#107bff"
+//         ratingNumber.innerHTML = "1";
+//     }
+//     else {
+//         star1.style.color = "var(--main-color6-inactive)"
+//         ratingNumber.innerHTML = "0";
+//     }
+//     // star1.classList.toggle("star-toggle");
+// });
+// star2.addEventListener('click', function () {
+//     if (star2.style.color == "var(--main-color6-inactive)") {
+//         star2.style.color = "#107bff"
+//         ratingNumber.innerHTML = "2";
+//     }
+//     else {
+//         star2.style.color = "var(--main-color6-inactive)"
+//         ratingNumber.innerHTML = initial;
+//     }
+// });
 
 // for (i of ratingNumber) {
 //     i.textContent = "s";
