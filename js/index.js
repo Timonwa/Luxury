@@ -3,7 +3,6 @@ let likeBtns = document.querySelectorAll(".save-btn");
 
 for (i of likeBtns) {
     i.addEventListener('click', function () {
-        // this.style.color = "red";
         if (this.style.color !== "red") {
             this.style.color = "red";
         }
@@ -16,10 +15,12 @@ for (i of likeBtns) {
 // ! filter form varibles
 const filter3 = document.querySelector(".filter3");
 filter3.addEventListener("click", toggleOption);
+
 function toggleOption() {
     const filter2 = document.getElementById("filter2");
     const moreOption = document.getElementById("more-option");
     const lessOption = document.getElementById("less-option");
+
     if (moreOption.style.display === "block") {
         moreOption.style.display = "none";
         lessOption.style.display = "block";
@@ -78,4 +79,3 @@ function prev() {
     }
     showImage(currentImage);
 };
-
