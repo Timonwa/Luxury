@@ -1308,20 +1308,16 @@ price {
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group4 {
   margin: 40px;
-  width: inherit;
-}
-.flex
-  > #post-section
-  > .post-section-wrapper
-  > .post-cntr
-  > .ad-group4
-  > .table-wrapper {
-  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .flex > #post-section > .post-section-wrapper > .post-cntr > .ad-group4 table {
   font-size: 14px;
   border-collapse: collapse;
   color: rgb(46, 40, 40);
+  margin: 0 20px;
+  border: solid 1px #eee;
 }
 table [colspan] {
   font-size: 16px;
@@ -1511,6 +1507,29 @@ table th {
   :root {
     --section-div-margin: 20px 80px 30px;
   }
+  /* table */
+  tbody th {
+    display: none;
+  }
+  tbody td {
+    width: 100%;
+    display: block;
+    text-align: right;
+    position: relative;
+    padding: 0 10px;
+    line-height: 2em;
+    border-bottom: 2px solid #eee;
+    border-right: 2px solid #eee;
+  }
+  tbody td:last-child {
+    border-bottom: none;
+  }
+  tbody td::before {
+    content: attr(name);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    text-align: left;
 }
 @media screen and (max-width: 650px) {
   :root {
@@ -1724,4 +1743,7 @@ table th {
   .flex > #post-section > .post-section-wrapper > .post-cta-cntr > button {
     width: 100%;
   }
+}
+.star-toggle {
+  color: #107bff;
 }
