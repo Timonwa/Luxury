@@ -25,7 +25,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- FontAwesome offline -->
-    <link rel="stylesheet" href="/fontawesome5.15\css\all.css" /> 
+    <link rel="stylesheet" href="/fontawesome5.15\css\all.css" />
 
     <!--* My CSS code -->
     <!-- main CSS styles -->
@@ -69,7 +69,7 @@
       <!-- welcome space and search bar space -->
       <header id="header-section">
         <div class="header-wrapper header-wrapper2">
-        <div class="header-space"></div>
+          <div class="header-space"></div>
 
           <!-- the search space. the user selects the type of accomodation he is looking for and the prefered location and then press search to get matching results -->
           <div class="form-cntr">
@@ -88,7 +88,7 @@
                   <option value="holder" name="holder">--Type--</option>
                   <option value="hostel" name="hostel">Apartment</option>
                   <option value="privatApartment" name="privatApartment">
-                    Hotel 
+                    Hotel
                   </option>
                   <option value="sharedApartment" name="sharedApartment">
                     Hostel
@@ -162,14 +162,11 @@
                   <input name="max-range" type="text" placeholder="Max price" />
                 </div>
               </div>
-              <div class="filter3"
-                  onclick="toggleOption()">
+              <div class="filter3">
                 <p id="more-option" class="filter-option">
                   More Options <i class="fas fa-chevron-down"></i>
                 </p>
-                <p  id="less-option"
-                  class="filter-option"
-                >
+                <p id="less-option" class="filter-option">
                   Less Options <i class="fas fa-chevron-up"></i>
                 </p>
                 <!-- filter search button -->
@@ -205,18 +202,43 @@
                 </div>
                 <!-- rating -->
                 <div class="ratings">
-                  <p class="ratings-title">Ratings 5/5</p>
+                  <p class="ratings-title">
+                    Ratings <span class="rating-number">0</span>/5
+                  </p>
                   <p class="ratings-star">
-                    <i class="rstar fa fa-star"></i>
-                    <i class="rstar fa fa-star"></i>
-                    <i class="rstar fa fa-star"></i>
-                    <i class="rstar fa fa-star"></i>
-                    <i class="rstar fa fa-star"></i>
+                    <i class="rstar1 fa fa-star"></i>
+                    <i class="rstar2 fa fa-star"></i>
+                    <i class="rstar3 fa fa-star"></i>
+                    <i class="rstar4 fa fa-star"></i>
+                    <i class="rstar5 fa fa-star"></i>
+                  </p>
+                </div>
+                <div class="ratings">
+                  <p class="ratings-title">
+                    Ratings <span class="rating-number">5</span>/5
+                  </p>
+                  <p class="ratings-star">
+                    <i class="rstar1 fa fa-star"></i>
+                    <i class="rstar2 fa fa-star"></i>
+                    <i class="rstar3 fa fa-star"></i>
+                    <i class="rstar4 fa fa-star"></i>
+                    <i class="rstar5 fa fa-star"></i>
                   </p>
                 </div>
               </div>
               <!-- images of the adverts -->
-              <img class="ad-pic" src="/img/post_images/living-room-couch.jpg" alt="" />
+              <img
+                id="ad-pic"
+                class="ad-pic"
+                src="/img/post_images/living-room-couch.jpg"
+                alt=""
+              />
+              <p class="image-counter">
+                <span id="image-number">2</span> of
+                <span id="total-image-number">3</span>
+              </p>
+              <div id="prev-btn"><i class="fas fa-chevron-left"></i></div>
+              <div id="next-btn"><i class="fas fa-chevron-right"></i></div>
             </div>
             <div class="ad-group2">
               <!-- ad basic features -->
@@ -245,9 +267,9 @@
             </div>
             <div class="ad-group3">
               <!-- title -->
-              <h4 class="post-title"> Grey Hostel serviced apartment</h4>
-                <h4>Akoka road, Yaba, Lagos</h4>
-              
+              <h4 class="post-title">Grey Hostel serviced apartment</h4>
+              <h4>Akoka road, Yaba, Lagos</h4>
+
               <!-- price -->
               <p class="ad-price"><price>200,000</price> per session</p>
               <!-- description title -->
@@ -264,182 +286,166 @@
             </div>
             <div class="ad-group4">
               <!-- table of additional features -->
-              <table style="display: none;">
-                <thead>
-                  <tr>
-                    <th colspan="4">Type</th>
-                  </tr>
-                </thead>
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>No per room</th>
-                    <th>Gender</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">Hostel</td>
-                    <td>2</td>
-                    <td>Female</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-                <thead>
-                  <tr>
-                    <th colspan="4">Payment method</th>
-                  </tr>
-                </thead>
-                <thead>
-                  <tr>
-                    <th>Duration</th>
-                    <th>Price</th>
-                    <th>Installmental payments</th>
-                    <th>Slots available</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">per school session</td>
-                    <td>200,000</td>
-                    <td scope="row">no</td>
-                    <td>5</td>
-                  </tr>
-                </tbody>
-                <thead>
-                  <tr>
-                    <th colspan="4">Rooms</th>
-                  </tr>
-                </thead>
-                <thead>
-                  <tr>
-                    <th>Room</th>
-                    <th>Kitchen</th>
-                    <th>Toilet</th>
-                    <th>Bathroom</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                  </tr>
-                </tbody>
-                <thead>
-                  <tr>
-                    <th colspan="4">Facilities/Utilities</th>
-                  </tr>
-                </thead>
-                <thead>
-                  <tr>
-                    <th>Bed</th>
-                    <th>Matress</th>
-                    <th>Electricity</th>
-                    <th>Water</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">Yes</td>
-                    <td>No</td>
-                    <td scope="row">24hrs</td>
-                    <td>constant</td>
-                  </tr>
-                </tbody>
-                <thead>
-                  <tr>
-                    <th>Fan</th>
-                    <th>AirCon</th>
-                    <th>Cupboard</th>
-                    <th>Wardrobe</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">Yes</td>
-                    <td>Yes</td>
-                    <td scope="row">No</td>
-                    <td>Yes</td>
-                  </tr>
-                </tbody>
-                <thead>
-                  <tr>
-                    <th>Gas</th>
-                    <th>Gen</th>
-                    <th>Wifi</th>
-                    <th>Reading/Commom room</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">Yes</td>
-                    <td>Yes</td>
-                    <td scope="row">No</td>
-                    <td>No</td>
-                  </tr>
-                </tbody>
-                <thead>
-                  <tr>
-                    <th>Cleaning service</th>
-                    <th>Laundering service</th>
-                    <th>Security</th>
-                    <th>Visitation</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">Yes</td>
-                    <td>Yes</td>
-                    <td scope="row">Yes</td>
-                    <td>Allowed</td>
-                  </tr>
-                </tbody>
-                <thead>
-                  <tr>
-                    <th colspan="4">Inspection</th>
-                  </tr>
-                </thead>
-                <thead>
-                  <tr>
-                    <th>Inspection days</th>
-                    <th>Inspection hours</th>
-                    <th></th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">Mon, Thurs</td>
-                    <td>12pm-2pm</td>
-                    <td scope="row"></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-                <thead>
-                  <tr>
-                    <th colspan="4">Additional info</th>
-                  </tr>
-                </thead>
-                <thead>
-                  <tr>
-                    <th>Proximity to road</th>
-                    <th>Proximity to market</th>
-                    <th>Proximity to school</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">5/5</td>
-                    <td>5/5</td>
-                    <td>4/5</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+              <div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th colspan="4">Type</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Type</th>
+                      <th>No per room</th>
+                      <th>Gender</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td name="Type" scope="row">Hostel</td>
+                      <td name="No per room">2</td>
+                      <td name="Gender">Female</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th colspan="4">Payment method</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Duration</th>
+                      <th>Price</th>
+                      <th>Installmental payments</th>
+                      <th>Slots available</th>
+                    </tr>
+                    <tr>
+                      <td name="Duration" scope="row">per school session</td>
+                      <td name="Price">200,000</td>
+                      <td name="Installmental payments" scope="row">no</td>
+                      <td name="Slots available">5</td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th colspan="4">Rooms</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Room</th>
+                      <th>Kitchen</th>
+                      <th>Toilet</th>
+                      <th>Bathroom</th>
+                    </tr>
+                    <tr>
+                      <td name="Room" scope="row">1</td>
+                      <td name="Kitchen">1</td>
+                      <td name="Toilet">1</td>
+                      <td name="Bathroom">1</td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th colspan="4">Facilities/Utilities</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Bed</th>
+                      <th>Matress</th>
+                      <th>Electricity</th>
+                      <th>Water</th>
+                    </tr>
+                    <tr>
+                      <td name="Bed" scope="row">Yes</td>
+                      <td name="Matress">No</td>
+                      <td name="Electricity" scope="row">24hrs</td>
+                      <td name="Water">constant</td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <th>Fan</th>
+                      <th>AirCon</th>
+                      <th>Cupboard</th>
+                      <th>Wardrobe</th>
+                    </tr>
+                    <tr>
+                      <td name="Fan" scope="row">Yes</td>
+                      <td name="AirCon">Yes</td>
+                      <td name="Cupboard" scope="row">No</td>
+                      <td name="Wardrobe">Yes</td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <th>Gas</th>
+                      <th>Gen</th>
+                      <th>Wifi</th>
+                      <th>Reading/Commom room</th>
+                    </tr>
+                    <tr>
+                      <td name="Gas" scope="row">Yes</td>
+                      <td name="Gen">Yes</td>
+                      <td name="Wifi" scope="row">No</td>
+                      <td name="Reading/Commom room">No</td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <th>Cleaning service</th>
+                      <th>Laundering service</th>
+                      <th>Security</th>
+                      <th>Visitation</th>
+                    </tr>
+                    <tr>
+                      <td name="Cleaning service" scope="row">Yes</td>
+                      <td name="Laundering service">Yes</td>
+                      <td name="Security" scope="row">Yes</td>
+                      <td name="Visitation"Visitation>Allowed</td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th colspan="4">Inspection</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Inspection days</th>
+                      <th>Inspection hours</th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td name="Inspection days" scope="row">Mon, Thurs</td>
+                      <td name="Inspection hours">12pm-2pm</td>
+                      <td scope="row"></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th colspan="4">Additional info</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Proximity to road</th>
+                      <th>Proximity to market</th>
+                      <th>Proximity to school</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td name="Proximity to road" scope="row">5/5</td>
+                      <td name="Proximity to market">5/5</td>
+                      <td name="Proximity to school">4/5</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <div class="ad-group5">
               <span class="tags">hostel</span>
@@ -490,8 +496,9 @@
                   <!-- user name -->
                   <h3 class="user-ad-name">User1</h3>
                   <!-- date the post was made -->
-                  <p class="user-ad-review-date"><small>
-                    January 6th, 2021</small></p>
+                  <p class="user-ad-review-date">
+                    <small> January 6th, 2021</small>
+                  </p>
                 </div>
               </div>
               <!-- user review -->
@@ -629,7 +636,7 @@
             </span>
             <span class="reg-btn">
               <button id="reg-btn" class="" type="button">
-                <a href="html/signup.html">Register here!</a>
+                <a href="/html/signup.html">Register here!</a>
               </button>
             </span>
           </div>
